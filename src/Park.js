@@ -1,8 +1,9 @@
-export default function Park({name, state}) {
+export default function Park({name, state, image, city}) {
     return (
         <section>
         <h2>{name}</h2>
-        <p>{state}</p>
+        <p>{city}, {state}</p>
+        <img src={image} />
         </section>
     )
 }

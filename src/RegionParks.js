@@ -11,8 +11,11 @@ export default function RegionParks(){
     const nationalPark = parkByRegion.map(park => {
         return (
             <Park 
+            key={park.id}
             name={park.name}
             state={park.state}
+            image={park.image}
+            city={park.city}
             />
         )
     })
