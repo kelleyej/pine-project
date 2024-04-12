@@ -1,6 +1,7 @@
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 import './App.css';
-import Regions from './Regions'
+import Regions from './Regions';
+import RegionParks from './RegionParks';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Regions />}/>
+        <Route path='/:region' element={<RegionParks />} />
       </Routes>
       
     </div>

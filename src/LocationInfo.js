@@ -1,4 +1,4 @@
-export const locations = 
+const locations = 
     [
         {
           "id": 1,
@@ -379,4 +379,5 @@ export const locations =
           "region": "Intermountain"
         }
       ]
-      
+
+      export default locations; 

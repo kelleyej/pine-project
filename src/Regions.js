@@ -6,14 +6,14 @@ export default function Regions(){
         <main>
             <h1>Choose a region to explore National Parks...</h1>
             <div className='region-grid'>
-                <Link><h2>Alaska</h2></Link>
-                <Link><h2>Intermountain</h2></Link>
-                <Link><h2>Midwest</h2></Link>
-                <Link><h2>National Capital</h2></Link>
-                <Link><h2>Northwest</h2></Link>
-                <Link><h2>Pacific West</h2></Link>
-                <Link><h2>Southeast</h2></Link>
-                <Link><h2>Pacific Islands</h2></Link>
+                <Link to='/Alaska'><h2>Alaska</h2></Link>
+                <Link to='/Intermountain'><h2>Intermountain</h2></Link>
+                <Link to='/Midwest'><h2>Midwest</h2></Link>
+                <Link to='/National Capital'><h2>National Capital</h2></Link>
+                <Link to='/Northeast'><h2>Northeast</h2></Link>
+                <Link to='/Pacific West'><h2>Pacific West</h2></Link>
+                <Link to='/Southeast'><h2>Southeast</h2></Link>
+                <Link to='/Pacific'><h2>Pacific</h2></Link>
             </div>
         </main>
     )
