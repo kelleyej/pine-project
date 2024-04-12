@@ -1,3 +1,5 @@
+import './Park.css';
+
 export default function Park({name, state, image, city}) {
     return (
         <section>

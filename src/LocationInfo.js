@@ -30,119 +30,136 @@ const locations =
                 "name": "Badlands National Park",
                 "state": "South Dakota",
                 "region": "Midwest",
-                "city": "Interior"
+                "city": "Interior",
+                "image": "https://wyandottedaily.com/wp-content/uploads/2024/03/Badlands-National-Park.webp"
             },
             {
                 "id": 5,
                 "name": "Big Bend National Park",
                 "state": "Texas",
                 "region": "Intermountain",
-                "city": "Alpine"
+                "city": "Alpine",
+                "image": "https://national-park.com/wp-content/uploads/2016/04/Welcome-to-Big-Bend-National-Park.jpg"
             },
             {
                 "id": 6,
                 "name": "Biscayne National Park",
                 "state": "Florida",
                 "region": "Southeast",
-                "city": "Miami"
+                "city": "Miami",
+                "image": "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2016/05/web-IMG_4758b.jpg"
             },
             {
                 "id": 7,
                 "name": "Black Canyon of the Gunnison National Park",
                 "state": "Colorado",
                 "region": "Intermountain",
-                "city": "Montrose"
+                "city": "Montrose",
+                "image": "https://lh4.googleusercontent.com/proxy/3Jq91kD_MBbUNL8pCSm1j5qzuFbBcXWjFkx7-2RqST8nWRfHy0eyTLN-ZQoBRZ-AxXipI9Agusc6ewkvCc8XaLW9apta4RX0rg"
             },
             {
                 "id": 8,
                 "name": "Bryce Canyon National Park",
                 "state": "Utah",
                 "region": "Intermountain",
-                "city": "Bryce Canyon City"
+                "city": "Bryce Canyon City",
+                "image": "https://www.rei.com/assets/adventures/images/trip/gallery/northamerica/bhe_08/live.jpg"
             },
             {
                 "id": 9,
                 "name": "Canyonlands National Park",
                 "state": "Utah",
                 "region": "Intermountain",
-                "city": "Moab"
+                "city": "Moab",
+                "image": "https://images.ctfassets.net/0wjmk6wgfops/4xH7cd136DErUNwb5AbBi4/6256c8432bb2ec353bd79a995ab38a59/Canyonalands_National_Park_5291b211-81b6-4c3a-b2bd-3524994b1c9d.jpg?q=70"
             },
             {
                 "id": 10,
                 "name": "Capitol Reef National Park",
                 "state": "Utah",
                 "region": "Intermountain",
-                "city": "Torrey"
+                "city": "Torrey",
+                "image": "https://capitolreefcountry.com/wp-content/uploads/2021/04/Fruita-District-1200-x-800.jpg"
             },
             {
                 "id": 11,
                 "name": "Carlsbad Caverns National Park",
                 "state": "New Mexico",
                 "region": "Intermountain",
-                "city": "Carlsbad"
+                "city": "Carlsbad",
+                "image": "https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/12/1140-carlsbad-caverns-interior.jpg"
             },
             {
                 "id": 12,
                 "name": "Channel Islands National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Ventura"
+                "city": "Ventura",
+                "image": "https://i.natgeofe.com/n/77da8c99-8278-4eb3-8a7b-75a0044355af/resized-NationalGeographic_2206862_2x1.jpg"
             },
             {
                 "id": 13,
                 "name": "Congaree National Park",
                 "state": "South Carolina",
                 "region": "Southeast",
-                "city": "Hopkins"
+                "city": "Hopkins",
+                "image": "https://www.southernliving.com/thmb/Nz1gx0a6eEXVuZv8j1J73-azPxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/congaree_boardwalk_trail_2462202_85-1-c6f12d8ef71e4cec9edf7a336906849c.jpg"
             },
             {
                 "id": 14,
                 "name": "Crater Lake National Park",
                 "state": "Oregon",
                 "region": "Pacific West",
-                "city": "Crater Lake"
+                "city": "Crater Lake",
+                "image": "https://www.gamewarden.org/wp-content/uploads/2015/06/Dollarphotoclub_35150878-640x427.jpg"
             },
             {
                 "id": 15,
                 "name": "Cuyahoga Valley National Park",
                 "state": "Ohio",
                 "region": "Midwest",
-                "city": "Peninsula"
+                "city": "Peninsula",
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/03/cuyahoga-valley-national-park_h.jpg"
             },
             {
                 "id": 16,
                 "name": "Death Valley National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Furnace Creek"
+                "city": "Furnace Creek",
+                "image": "https://npf-prod.imgix.net/uploads/death-valley-istock.jpg?auto=compress%2Cformat&fit=max&q=80&w=1600"
             },
             {
                 "id": 17,
                 "name": "Denali National Park and Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Denali"
+                "city": "Denali",
+                "image": "https://themilepost.com/wp-content/uploads/2015/03/pg427-NPS-Photo-scaled.jpg"
             },
             {
                 "id": 18,
                 "name": "Dry Tortugas National Park",
                 "state": "Florida",
                 "region": "Southeast",
-                "city": "Key West"
+                "city": "Key West",
+                "image": "https://i.natgeofe.com/n/cdee4237-382b-4ce3-a382-e31d0102a825/fortjefferson-drytortugas-florida_16x9.jpg?w=1200"
             },
             {
                 "id": 19,
                 "name": "Everglades National Park",
                 "state": "Florida",
                 "region": "Southeast",
-                "city": "Homestead"
+                "city": "Homestead",
+                "image": "https://www.southernliving.com/thmb/bu1B5-nm64z5WO2iz6mg6Y2GLCI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1216404158-ef6d83a2a48e4e4c8ffe4a3c836a155c.jpg"
             },
             {
                 "id": 20,
                 "name": "Gates of the Arctic National Park and Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Coldfoot"
+                "city": "Coldfoot",
+                "image": "https://www.nps.gov/common/uploads/grid_builder/gaar/crop16_9/FE6863E0-1DD8-B71B-0B4E9A34F681735C.jpg?width=640&quality=90&mode=crop"
             },
             {
                 "id": 21,

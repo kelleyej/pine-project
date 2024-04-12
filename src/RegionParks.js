@@ -1,6 +1,7 @@
 import locations from './LocationInfo';
 import { useParams } from 'react-router-dom';
 import Park from './Park';
+import './RegionParks.css';
 
 export default function RegionParks(){
     const area = useParams().region
@@ -21,7 +22,7 @@ export default function RegionParks(){
     })
 
     return (
-        <div>
+        <div className='park-grid'>
             {nationalPark}
         </div>
     )
