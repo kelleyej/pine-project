@@ -166,140 +166,160 @@ const locations =
                 "name": "Gateway Arch National Park",
                 "state": "Missouri",
                 "region": "Midwest",
-                "city": "St. Louis"
+                "city": "St. Louis",
+                "image": "https://afar.brightspotcdn.com/dims4/default/5d8cd0c/2147483647/strip/false/crop/1900x1267+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F56%2F58%2F95a33bbf1bb47d535be0c0bb270f%2Foriginal-c07a2d169f29f58b9af7666d94661776.jpg"
             },
             {
                 "id": 22,
                 "name": "Glacier National Park",
                 "state": "Montana",
                 "region": "Intermountain",
-                "city": "West Glacier"
+                "city": "West Glacier",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/1200px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg"
             },
             {
                 "id": 23,
                 "name": "Glacier Bay National Park and Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Gustavus"
+                "city": "Gustavus",
+                "image": "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Glacier%20Bay.jpg?h=d72c0ddd&itok=V8OPRhhE"
             },
             {
                 "id": 24,
                 "name": "Grand Canyon National Park",
                 "state": "Arizona",
                 "region": "Intermountain",
-                "city": "Grand Canyon Village"
+                "city": "Grand Canyon Village",
+                "image": "https://fh-sites.imgix.net/sites/4735/2021/07/31173956/Untitled-design-2021-07-31T133906.903.png?auto=compress%2Cformat&w=1000&h=1000&fit=max"
             },
             {
                 "id": 25,
                 "name": "Grand Teton National Park",
                 "state": "Wyoming",
                 "region": "Intermountain",
-                "city": "Jackson"
+                "city": "Jackson",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFmFlEKlHuj-ue4vOs4RA17QuyeAh4bXfgi__U7DCXA&s"
             },
             {
                 "id": 26,
                 "name": "Great Basin National Park",
                 "state": "Nevada",
                 "region": "Intermountain",
-                "city": "Baker"
+                "city": "Baker",
+                "image": "https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/04/1140-great-basin-hero.jpg"
             },
             {
                 "id": 27,
                 "name": "Great Sand Dunes National Park and Preserve",
                 "state": "Colorado",
                 "region": "Intermountain",
-                "city": "Mosca"
+                "city": "Mosca",
+                "image": "https://www.colorado.com/sites/default/files/styles/slideshow_slide_xxsmall/public/legacy_drupal_7_images/sandunes_nps.jpg.webp?itok=IcrMHWtl"
             },
             {
                 "id": 28,
                 "name": "Great Smoky Mountains National Park",
                 "state": "North Carolina, Tennessee",
                 "region": "Southeast",
-                "city": "Gatlinburg"
+                "city": "Gatlinburg",
+                "image": "https://www.sidneyjames.com/media/62f0cb7671157abd5a4ec4c0/original.webp"
             },
             {
                 "id": 29,
                 "name": "Guadalupe Mountains National Park",
                 "state": "Texas",
                 "region": "Intermountain",
-                "city": "Salt Flat"
+                "city": "Salt Flat",
+                "image": "https://i.natgeofe.com/n/74eb6b34-073c-40ac-a5a0-670dae43cd02/guadalupe-mountains-national-park-590_2x1.jpg"
             },
             {
                 "id": 30,
                 "name": "Haleakalā National Park",
                 "state": "Hawaii",
                 "region": "Pacific West",
-                "city": "Kula"
+                "city": "Kula",
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/12/haleakala-crater-slidingsands_h.jpg"
             },
             {
                 "id": 31,
                 "name": "Hawai'i Volcanoes National Park",
                 "state": "Hawaii",
                 "region": "Pacific West",
-                "city": "Volcano"
+                "city": "Volcano",
+                "image": "https://i.natgeofe.com/k/4ab71fc1-36e0-49c8-a382-fd02ee37a1a5/Hawaii-flowing-lava_16x9.jpg?w=1200"
             },
             {
                 "id": 32,
                 "name": "Hot Springs National Park",
                 "state": "Arkansas",
                 "region": "Midwest",
-                "city": "Hot Springs"
+                "city": "Hot Springs",
+                "image": "https://www.travelandleisure.com/thmb/fQoDKxd0on8atscufvyhndLcihA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/waterfall-HOTSPRINGS0117-26beda2a26f543f49fce2df482eb218c.jpg"
             },
             {
                 "id": 33,
                 "name": "Indiana Dunes National Park",
                 "state": "Indiana",
                 "region": "Midwest",
-                "city": "Chesterton"
+                "city": "Chesterton",
+                "image": "https://media.cntraveler.com/photos/5c6c25735ac5fd121f4375a1/16:9/w_4000,h_2250,c_limit/Indiana-Dunes-Nat'l-Park_A7DC44.jpg"
             },
             {
                 "id": 34,
                 "name": "Isle Royale National Park",
                 "state": "Michigan",
                 "region": "Midwest",
-                "city": "Houghton"
+                "city": "Houghton",
+                "image": "https://www.rei.com/assets/adventures/images/trip/gallery/northamerica/irk_08/live.jpg"
             },
             {
                 "id": 35,
                 "name": "Joshua Tree National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Twentynine Palms"
+                "city": "Twentynine Palms",
+                "image": "https://i0.wp.com/www.mattandkaren.com/wp-content/uploads/2024/02/0a07ea.jpg?resize=1873%2C1200&ssl=1"
             },
             {
                 "id": 36,
                 "name": "Katmai National Park and Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "King Salmon"
+                "city": "King Salmon",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg"
             },
             {
                 "id": 37,
                 "name": "Kenai Fjords National Park",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Seward"
+                "city": "Seward",
+                "image": "https://www.travelalaska.com/sites/default/files/2021-12/Destinations_ParksPublicLands_Kenai%20Fjords%20National%20Park_Hero_%28Makayla%20Crump%29.jpg"
             },
             {
                 "id": 38,
                 "name": "Kings Canyon National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Three Rivers"
+                "city": "Three Rivers",
+                "image": "https://res.cloudinary.com/simpleview/image/upload/v1654809567/clients/fresnoca/Kings_Canyon_Rae_Lakes_AlexanderHadik_e9156d63-72a0-4168-a798-71a0f5051595.jpg"
             },
             {
                 "id": 39,
                 "name": "Kobuk Valley National Park",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Kotzebue"
+                "city": "Kotzebue",
+                "image": "https://images.squarespace-cdn.com/content/v1/564d14dfe4b0290681184a82/1478818179627-IYBN319R96U9OMVI81WI/Kobuk+Valley+National+Park+-+002.jpg"
             },
             {
                 "id": 40,
                 "name": "Lake Clark National Park and Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Port Alsworth"
+                "city": "Port Alsworth",
+                "image": "https://www.nps.gov/articles/images/LACL_Crescent-Lake_web.jpg?maxwidth=1300&autorotate=false"
             },
             {
                 "id": 41,

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Regions(){
     return (
         <main>
-            <h1>Choose a region to explore National Parks...</h1>
+            <h2>Choose a region to explore National Parks...</h2>
             <div className='region-grid'>
                 <Link to='/Alaska'><h2>Alaska</h2></Link>
                 <Link to='/Intermountain'><h2>Intermountain</h2></Link>
