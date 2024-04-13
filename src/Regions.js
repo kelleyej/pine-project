@@ -1,7 +1,67 @@
 import './Regions.css'
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export default function Regions(){
+    const [parks, setAllParks] = useState([])
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=50')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+    
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=100')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+    
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=150')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+    
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=200')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=250')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+    
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=300')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=350')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=400')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+    
+useEffect(() => {
+    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=450')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}, [])  
+
     return (
         <main>
             <h2>Choose a region to explore National Parks...</h2>

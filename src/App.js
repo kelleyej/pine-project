@@ -3,6 +3,7 @@ import './App.css';
 import Regions from './Regions';
 import RegionParks from './RegionParks';
 import { Routes, Route } from 'react-router-dom';
+import ParkDetails from './ParkDetails';
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Regions />}/>
         <Route path='/:region' element={<RegionParks />} />
+        <Route path='/region/:park' element={<ParkDetails />} />
       </Routes>
       
     </div>
