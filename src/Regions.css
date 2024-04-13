@@ -1,9 +1,15 @@
 .region-grid {
     display: grid; 
     grid-template-columns: repeat(4, 1fr);
+    background-color: #F5E8DD;
 }
 
 img {
     height: 250px; 
     width: 330px; 
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit; 
 }
