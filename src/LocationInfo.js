@@ -326,63 +326,72 @@ const locations =
                 "name": "Lassen Volcanic National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Mineral"
+                "city": "Mineral", 
+                "image": "https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/vc_ca101_nationalparks_lassenvolcanic_manzanitalake_rf_628846294_1280x640.jpg"
             },
             {
                 "id": 42,
                 "name": "Mammoth Cave National Park",
                 "state": "Kentucky",
                 "region": "Midwest",
-                "city": "Mammoth Cave"
+                "city": "Mammoth Cave",
+                "image": "https://www.worldatlas.com/upload/40/5e/65/shutterstock-1847679637.jpg"
             },
             {
                 "id": 43,
                 "name": "Mesa Verde National Park",
                 "state": "Colorado",
                 "region": "Intermountain",
-                "city": "Mancos"
+                "city": "Mancos",
+                "image": "https://www.adventurousway.com/images/i/hvwfexwa700b/2000w/national-parks/mesa-verde-national-park/mesa-verde-national-park.jpeg"
             },
             {
                 "id": 44,
                 "name": "Mount Rainier National Park",
                 "state": "Washington",
                 "region": "Pacific West",
-                "city": "Ashford"
+                "city": "Ashford",
+                "image": "https://i.natgeofe.com/n/6e6d2eea-06d3-4ac4-94ca-2aba6f7f8757/mountain-pine-trees_3x2.jpg"
             },
             {
                 "id": 45,
                 "name": "North Cascades National Park",
                 "state": "Washington",
                 "region": "Pacific West",
-                "city": "Sedro-Woolley"
+                "city": "Sedro-Woolley",
+                "image": "https://www.tripsavvy.com/thmb/UW8JknuD_U4DnAx3_UXlcTOtT-Q=/3072x2048/filters:no_upscale():max_bytes(150000):strip_icc()/ViewoflakeinmountainsMountShuksanNorthCascadesNationalPark-139d1b4e5218411cb43dcd6152588b44.jpg"
             },
             {
                 "id": 46,
                 "name": "Olympic National Park",
                 "state": "Washington",
                 "region": "Pacific West",
-                "city": "Port Angeles"
+                "city": "Port Angeles",
+                "image": "https://www.tripsavvy.com/thmb/1W0WJCoDqKaJmf8FKTXeqlr81p4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/DSCF0144-3c0cb60c0a0d4931bb6c9c092bb204ad.jpg"
             },
             {
                 "id": 47,
                 "name": "Petrified Forest National Park",
                 "state": "Arizona",
                 "region": "Intermountain",
-                "city": "Holbrook"
+                "city": "Holbrook",
+                "image": "https://arizonahighways.com/sites/default/files/activities/0518_petrifiedforest.jpg"
             },
             {
                 "id": 48,
                 "name": "Pinnacles National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Paicines"
+                "city": "Paicines",
+                "image": "https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2023/06/1140-sunrise-pinnacles-national-park-california.jpg"
             },
             {
                 "id": 49,
                 "name": "Redwood National and State Parks",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Crescent City"
+                "city": "Crescent City",
+                "image": "https://morethanjustparks.com/wp-content/uploads/2020/09/2Q3A5635-2.jpg"
             },
             {
                 "id": 50,
