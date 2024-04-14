@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import NavBar from './NavBar';
 import './App.css';
+import Regions from './Regions';
+import RegionParks from './RegionParks';
+import { Routes, Route } from 'react-router-dom';
+import ParkDetails from './ParkDetails';
+import ErrorMessage from './ErrorMessage';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Regions />}/>
+        <Route path='/:region' element={<RegionParks />} />
+        <Route path='/region/:park' element={<ParkDetails />} />
+        {/* <Route path='*' element={<ErrorMessage />} /> */}
+      </Routes>
+      
     </div>
   );
 }
