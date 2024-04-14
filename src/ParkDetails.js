@@ -35,8 +35,9 @@ export default function ParkDetails(){
             <section>
                  <h2>{parks[0].fullName}</h2>
                 <h3>{parks[0].description}</h3>
+                <p>{parks[0].directionsInfo}</p>
+                {/* <img src={parks[0].images[0].url}/> */}
             </section>
-           
         )
     }
 }
