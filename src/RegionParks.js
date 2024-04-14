@@ -1,5 +1,5 @@
 import locations from './LocationInfo';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Park from './Park';
 import './RegionParks.css';
 import State from './State';
@@ -25,13 +25,16 @@ export default function RegionParks(){
     
     const nationalPark = parkByRegion.map(park => {
         return (
-            <Park 
-            key={park.id}
-            name={park.name}
-            state={park.state}
-            image={park.image}
-            city={park.city}
-            />
+            <Link to={`/region/${park.name}`}>
+                <Park 
+                key={park.id}
+                name={park.name}
+                state={park.state}
+                image={park.image}
+                city={park.city}
+                />
+            </Link>
+            
         )
     })
         useEffect(() => {
@@ -39,8 +42,7 @@ export default function RegionParks(){
         setStates([...allStates])
         }, [])
        
-    
-    
+
     return (
         <main>
         <State states={states}/>
