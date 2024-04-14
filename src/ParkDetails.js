@@ -31,7 +31,11 @@ export default function ParkDetails(){
         )
     } else {
         return (
-            <h1>{parks[0].fullName}</h1>
+            <section>
+                 <h2>{parks[0].fullName}</h2>
+                <h3>{parks[0].description}</h3>
+            </section>
+           
         )
     }
 }

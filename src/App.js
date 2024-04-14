@@ -4,6 +4,7 @@ import Regions from './Regions';
 import RegionParks from './RegionParks';
 import { Routes, Route } from 'react-router-dom';
 import ParkDetails from './ParkDetails';
+import ErrorMessage from './ErrorMessage';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Regions />}/>
         <Route path='/:region' element={<RegionParks />} />
         <Route path='/region/:park' element={<ParkDetails />} />
+        {/* <Route path='*' element={<ErrorMessage />} /> */}
       </Routes>
       
     </div>
