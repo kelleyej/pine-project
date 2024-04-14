@@ -15,6 +15,7 @@ export default function Regions(){
                 <Link to='/Pacific West'><h2>Pacific West</h2><img src="https://i.pinimg.com/736x/33/a6/49/33a6491aa16471074b7fd6894993ebe4.jpg"/></Link>
                 <Link to='/Southeast'><h2>Southeast</h2><img src="https://i.ebayimg.com/images/g/H54AAOSweohfdz8W/s-l1200.webp"/></Link>
                 <Link to='/Pacific'><h2>Pacific</h2><img src="https://storage.googleapis.com/hippostcard/p/3382134aeb4712ccb16e07806cae0116.jpg"/></Link>
+                <Link to='/Mid-Atlantic'><h2>Mid-Atlantic</h2><img src="https://mds.marshall.edu/john_miller_west_postcard_collection/1136/preview.jpg"/></Link>
             </div>
         </main>
     )

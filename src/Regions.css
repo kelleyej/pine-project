@@ -1,6 +1,6 @@
 .region-grid {
     display: grid; 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color: #F5E8DD;
 }
 

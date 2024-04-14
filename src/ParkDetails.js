@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Loading from './Loading';
 
+
 export default function ParkDetails(){
     const parkName = useParams().park
     const [parks, setParks] = useState([])
@@ -14,7 +15,7 @@ export default function ParkDetails(){
     'yell', 'yose', 'zion']  
     
     useEffect(() => {
-         fetch(`https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=${parkCodes}&limit=62`)
+         fetch(`https://developer.nps.gov/api/v1/parks/?api_key=${process.env.REACT_APP_API_KEY}&parkCode=${parkCodes}&limit=62`)
 
     .then(res => res.json())
     .then(data => setParks(findPark(data.data)))
@@ -24,7 +25,7 @@ export default function ParkDetails(){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
-    console.log(parks)
+
     if(!parks.length){
         return (
             <Loading />

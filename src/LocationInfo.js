@@ -496,7 +496,8 @@ const locations =
                 "name": "New River Gorge National Park & Preserve",
                 "state": "West Virginia",
                 "region": "Mid-Atlantic",
-                "city": "Glen Jean"
+                "city": "Glen Jean",
+                "image": "https://assets.vogue.com/photos/60342bd00a6b7990c15bf0c4/master/w_2560%2Cc_limit/EJ1K0R.jpg"
             }
       ]
 

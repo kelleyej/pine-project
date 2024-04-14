@@ -7,7 +7,7 @@ import ParkDetails from './ParkDetails';
 import ErrorMessage from './ErrorMessage';
 
 function App() {
-  
+
   return (
     <div className="App">
       <NavBar />
