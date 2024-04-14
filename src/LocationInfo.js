@@ -416,28 +416,32 @@ const locations =
                 "name": "Shenandoah National Park",
                 "state": "Virginia",
                 "region": "National Capital",
-                "city": "Luray"
+                "city": "Luray",
+                "image": "https://cdn.britannica.com/79/176979-050-DC64B229/Little-Stony-Man-Cliffs-Blue-Ridge-Mountains.jpg"
             },
             {
                 "id": 53,
                 "name": "Theodore Roosevelt National Park",
                 "state": "North Dakota",
                 "region": "Midwest",
-                "city": "Medora"
+                "city": "Medora",
+                "image": "https://www.midwestliving.com/thmb/EoD4O7SAxz14e6yuLGS8y7R7LVQ=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/TRNP-Header-bfc5d0cb0299485ca64ee4454caed321.png"
             },
             {
                 "id": 54,
                 "name": "Virgin Islands National Park",
                 "state": "U.S. Virgin Islands",
                 "region": "Southeast",
-                "city": "Cruz Bay"
+                "city": "Cruz Bay",
+                "image": "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2803,w_4200,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1200/Virgin_Islands_National_Park_tjblao.jpg"
             },
             {
                 "id": 55,
                 "name": "Voyageurs National Park",
                 "state": "Minnesota",
                 "region": "Midwest",
-                "city": "International Falls"
+                "city": "International Falls",
+                "image": "https://img.apmcdn.org/4771e42719bdfdf41b22b39412d219abc5555d2d/uncropped/3d2587-20090925-kabetogama.jpg"
             },
             {
                 "id": 56,
@@ -452,7 +456,8 @@ const locations =
                 "name": "Wind Cave National Park",
                 "state": "South Dakota",
                 "region": "Midwest",
-                "city": "Hot Springs"
+                "city": "Hot Springs",
+                "image": "https://mediaim.expedia.com/destination/9/73e199c4ae7fbb3ce0fcb4025634d8dc.jpg"
             },
             {
                 "id": 58,
@@ -475,7 +480,8 @@ const locations =
                 "name": "Yosemite National Park",
                 "state": "California",
                 "region": "Pacific West",
-                "city": "Yosemite Valley"
+                "city": "Yosemite Valley",
+                "image": "https://www.hertz.com/content/dam/hertz/global/blog-articles/planning-a-trip/yosemite/Yosemite-National-Park-Header.rendition.medium.jpg"
             },
             {
                 "id": 61,
