@@ -9,11 +9,11 @@ export default function Regions(){
 'mora', 'neri', 'noca', 'npsa', 'olym', 'pefo', 'pinn', 'redw', 'romo', 'sagu', 'seki', 'shen', 'thro', 'viis', 'voya', 'whsa', 'wica', 'wrst',
 'yell', 'yose', 'zion']  
 
-fetch(`https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=${parkCode}&limit=62`)
-// fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=150')
-.then(res => res.json())
-.then(data => console.log(data))
-console.log(parkCode.length)
+// fetch(`https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=${parkCode}&limit=62`)
+// // fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=150')
+// .then(res => res.json())
+// .then(data => console.log(data))
+// console.log(parkCode.length)
     return (
         <main>
             <h2>Choose a region to explore National Parks...</h2>

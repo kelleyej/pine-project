@@ -400,14 +400,16 @@ const locations =
                 "name": "Rocky Mountain National Park",
                 "state": "Colorado",
                 "region": "Intermountain",
-                "city": "Estes Park"
+                "city": "Estes Park",
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg?width=1200"
             },
             {
                 "id": 51,
                 "name": "Saguaro National Park",
                 "state": "Arizona",
                 "region": "Intermountain",
-                "city": "Tucson"
+                "city": "Tucson",
+                "image": "https://symphony.cdn.tambourine.com/westward-look-wyndham/media/saguaro-national-park-5f68e9c55fafd.jpg"
             },
             {
                 "id": 52,
@@ -442,7 +444,8 @@ const locations =
                 "name": "White Sands National Park",
                 "state": "New Mexico",
                 "region": "Intermountain",
-                "city": "Alamogordo"
+                "city": "Alamogordo",
+                "image": "https://www.fodors.com/wp-content/uploads/2023/10/0-HERO-Shutterstock-123300241.jpg"
             },
             {
                 "id": 57,
@@ -456,14 +459,16 @@ const locations =
                 "name": "Wrangell - St. Elias National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
-                "city": "Copper Center"
+                "city": "Copper Center",
+                "image": "https://www.expeditionsalaska.com/wp-content/uploads/2017/03/11_jun0896-1.jpg"
             },
             {
                 "id": 59,
                 "name": "Yellowstone National Park",
                 "state": "Wyoming, Montana, Idaho",
                 "region": "Intermountain",
-                "city": "West Yellowstone"
+                "city": "West Yellowstone",
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg"
             },
             {
                 "id": 60,
@@ -477,7 +482,8 @@ const locations =
                 "name": "Zion National Park",
                 "state": "Utah",
                 "region": "Intermountain",
-                "city": "Springdale"
+                "city": "Springdale",
+                "image": "https://a.cdn-hotels.com/gdcs/production21/d594/67824cc8-c13c-4cfa-b687-4f948864e4c9.jpg?impolicy=fcrop&w=800&h=533&q=medium"
             },
             {
                 "id": 62,
