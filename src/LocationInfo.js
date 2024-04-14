@@ -7,11 +7,13 @@ const locations =
                 "state": "Maine",
                 "region": "Northeast",
                 "image": "https://www.tripsavvy.com/thmb/YwnJbSbTcv0LTzddyzmEfjKlcyM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AcadiaNationalParkMaine-0d82794c812449c1ba514f4642f8aea2.jpg",
-                "city": "Bar Harbor"
+                "city": "Bar Harbor",
+                "address": "25 Visitor Center Road",
+                "emailAddress": "acadia_information@nps.gov"
             },
             {
                 "id": 2,
-                "name": "American Samoa National Park",
+                "name": "National Park of American Samoa",
                 "state": "American Samoa",
                 "region": "Pacific",
                 "image": "https://i.natgeofe.com/n/c7008ade-4fd7-4974-86cf-da3a6ba2972c/92925_16x9.jpg?w=1200",
@@ -51,7 +53,7 @@ const locations =
             },
             {
                 "id": 7,
-                "name": "Black Canyon of the Gunnison National Park",
+                "name": "Black Canyon Of The Gunnison National Park",
                 "state": "Colorado",
                 "region": "Intermountain",
                 "city": "Montrose",
@@ -131,7 +133,7 @@ const locations =
             },
             {
                 "id": 17,
-                "name": "Denali National Park and Preserve",
+                "name": "Denali National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Denali",
@@ -155,7 +157,7 @@ const locations =
             },
             {
                 "id": 20,
-                "name": "Gates of the Arctic National Park and Preserve",
+                "name": "Gates Of The Arctic National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Coldfoot",
@@ -179,7 +181,7 @@ const locations =
             },
             {
                 "id": 23,
-                "name": "Glacier Bay National Park and Preserve",
+                "name": "Glacier Bay National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Gustavus",
@@ -211,7 +213,7 @@ const locations =
             },
             {
                 "id": 27,
-                "name": "Great Sand Dunes National Park and Preserve",
+                "name": "Great Sand Dunes National Park & Preserve",
                 "state": "Colorado",
                 "region": "Intermountain",
                 "city": "Mosca",
@@ -283,7 +285,7 @@ const locations =
             },
             {
                 "id": 36,
-                "name": "Katmai National Park and Preserve",
+                "name": "Katmai National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "King Salmon",
@@ -299,7 +301,7 @@ const locations =
             },
             {
                 "id": 38,
-                "name": "Kings Canyon National Park",
+                "name": "Sequoia & Kings Canyon National Parks",
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Three Rivers",
@@ -315,7 +317,7 @@ const locations =
             },
             {
                 "id": 40,
-                "name": "Lake Clark National Park and Preserve",
+                "name": "Lake Clark National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Port Alsworth",
@@ -409,89 +411,81 @@ const locations =
             },
             {
                 "id": 52,
-                "name": "Sequoia National Park",
-                "state": "California",
-                "region": "Pacific West",
-                "city": "Three Rivers"
-            },
-            {
-                "id": 53,
                 "name": "Shenandoah National Park",
                 "state": "Virginia",
                 "region": "National Capital",
                 "city": "Luray"
             },
             {
-                "id": 54,
+                "id": 53,
                 "name": "Theodore Roosevelt National Park",
                 "state": "North Dakota",
                 "region": "Midwest",
                 "city": "Medora"
             },
             {
-                "id": 55,
+                "id": 54,
                 "name": "Virgin Islands National Park",
                 "state": "U.S. Virgin Islands",
                 "region": "Southeast",
                 "city": "Cruz Bay"
             },
             {
-                "id": 56,
+                "id": 55,
                 "name": "Voyageurs National Park",
                 "state": "Minnesota",
                 "region": "Midwest",
                 "city": "International Falls"
             },
             {
-                "id": 57,
+                "id": 56,
                 "name": "White Sands National Park",
                 "state": "New Mexico",
                 "region": "Intermountain",
                 "city": "Alamogordo"
             },
             {
-                "id": 58,
+                "id": 57,
                 "name": "Wind Cave National Park",
                 "state": "South Dakota",
                 "region": "Midwest",
                 "city": "Hot Springs"
             },
             {
-                "id": 59,
-                "name": "Wrangell-St. Elias National Park and Preserve",
+                "id": 58,
+                "name": "Wrangell - St. Elias National Park & Preserve",
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Copper Center"
             },
             {
-                "id": 60,
+                "id": 59,
                 "name": "Yellowstone National Park",
                 "state": "Wyoming, Montana, Idaho",
                 "region": "Intermountain",
                 "city": "West Yellowstone"
             },
             {
-                "id": 61,
+                "id": 60,
                 "name": "Yosemite National Park",
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Yosemite Valley"
             },
             {
-                "id": 62,
+                "id": 61,
                 "name": "Zion National Park",
                 "state": "Utah",
                 "region": "Intermountain",
                 "city": "Springdale"
             },
             {
-                "id": 63,
-                "name": "Great Sand Dunes National Park and Preserve",
-                "state": "Colorado",
-                "region": "Intermountain",
-                "city": "Mosca"
+                "id": 62,
+                "name": "New River Gorge National Park & Preserve",
+                "state": "West Virginia",
+                "region": "Mid-Atlantic",
+                "city": "Glen Jean"
             }
-        
       ]
 
       export default locations; 

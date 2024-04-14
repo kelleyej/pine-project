@@ -3,80 +3,17 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export default function Regions(){
-    const [parks, setAllParks] = useState([])
-const url = ['https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=50',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=100',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=150',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=200',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=250',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=300',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=350',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=400',
-'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=450'
-]
+  const parkCode = ['acad', 'arch', 'badl', 'bibe', 'bisc', 'blca', 'brca', 'cany', 'care', 'cave', 'chis', 'cong', 
+'crla', 'cuva', 'deva', 'drto', 'dena', 'ever', 'jeff', 'gaar', 'glac', 'glba', 'grca', 'grte', 'grba', 'grsa', 'grsm', 
+'gumo', 'hale', 'havo', 'hosp', 'indu', 'isro', 'jotr', 'katm', 'kefj', 'kova', 'lacl', 'lavo', 'maca', 'meve', 
+'mora', 'neri', 'noca', 'npsa', 'olym', 'pefo', 'pinn', 'redw', 'romo', 'sagu', 'seki', 'shen', 'thro', 'viis', 'voya', 'whsa', 'wica', 'wrst',
+'yell', 'yose', 'zion']  
 
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu')
-    .then(res => res.json())
-    .then(data => setAllParks([...parks, data.data]))
- 
-}, [])  
-  
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=50')
-    .then(res => res.json())
-    .then(data => setAllParks([...parks, data.data]))
-}, [])  
-
-    console.log('PARKS:', parks) 
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=100')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-    
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=150')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-    
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=200')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=250')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-    
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=300')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=350')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=400')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-    
-useEffect(() => {
-    fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=450')
-    .then(res => res.json())
-    .then(data => console.log(data.data))
-}, [])  
-
+fetch(`https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=${parkCode}&limit=62`)
+// fetch('https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&start=150')
+.then(res => res.json())
+.then(data => console.log(data))
+console.log(parkCode.length)
     return (
         <main>
             <h2>Choose a region to explore National Parks...</h2>
@@ -93,3 +30,4 @@ useEffect(() => {
         </main>
     )
 }
+
