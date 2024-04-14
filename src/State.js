@@ -1,9 +1,19 @@
-import './State.css'
+import './State.css';
+import StateCard from './StateCard';
 
-export default function State(){
+export default function State({states}){
+console.log(states)
+const eachState = states.map(location => {
     return (
-        <div>
-            <h1>state lies here</h1>
+        <StateCard
+        location={location}
+        />
+    )
+})
+    return (
+        <div className="state-grid">
+            {eachState}
         </div>
     )
+    
 }
