@@ -1,6 +1,7 @@
 import './ParkDetails';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Loading from './Loading';
 
 export default function ParkDetails(){
     const parkName = useParams().park
@@ -18,16 +19,19 @@ export default function ParkDetails(){
     .then(res => res.json())
     .then(data => setParks(findPark(data.data)))
     }, [])
-    console.log(parks[0].fullName)
-   
+  
     function findPark(allParks){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
-
-    return (
-        <div>
+    console.log(parks)
+    if(!parks.length){
+        return (
+            <Loading />
+        )
+    } else {
+        return (
             <h1>{parks[0].fullName}</h1>
-        </div>
-    )
+        )
+    }
 }
