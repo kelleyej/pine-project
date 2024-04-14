@@ -12,7 +12,7 @@ const eachState = states.map(location => {
 })
     return (
         <div className="state-grid">
-            {eachState}
+            {states.length > 1 && eachState}
         </div>
     )
     
