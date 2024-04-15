@@ -7,12 +7,13 @@ import { useState, useEffect } from 'react';
 
 export default function RegionParks(){
     const [states, setStates] = useState([])
+    const [test, setTest] = useState([])
 
     const area = useParams().region
     const parkByRegion = locations.filter(location => {
         return location.region === area
     })
-    
+
     const nationalPark = parkByRegion.map(park => {
         return (
             <Link to={`/region/${park.name}`}>
@@ -27,16 +28,25 @@ export default function RegionParks(){
             
         )
     })
- 
-        useEffect(() => {
-            const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
-            setStates([...allStates])
-        }, [])
-       
 
+    useEffect(() => {
+        const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
+        setStates([...allStates])
+    }, [])
+      
+    function filterParks(state){
+        const filteredParks = parkByRegion.filter(park => {
+            return park.state === state 
+        })
+        setTest([...filteredParks])
+        
+        return filteredParks; 
+
+    }
+   console.log(test)
     return (
         <main>
-        <State states={states}/>
+        <State states={states} filterParks={filterParks}/>
         <div className='park-grid'>
             {nationalPark}
         </div> 

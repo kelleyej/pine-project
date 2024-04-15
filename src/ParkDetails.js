@@ -28,7 +28,6 @@ export default function ParkDetails(){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
-    console.log(parks)
 
     if(!parks.length){
         return (
