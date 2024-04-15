@@ -4,7 +4,7 @@ import Regions from './Regions';
 import RegionParks from './RegionParks';
 import { Routes, Route } from 'react-router-dom';
 import ParkDetails from './ParkDetails';
-import ErrorMessage from './ErrorMessage';
+import ParkTracker from './ParkTracker';
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
         <Route path='/' element={<Regions />}/>
         <Route path='/:region' element={<RegionParks />} />
         <Route path='/region/:park' element={<ParkDetails />} />
+        <Route path='/parks/tracker' element={<ParkTracker />} />
         {/* <Route path='*' element={<ErrorMessage />} /> */}
       </Routes>
       

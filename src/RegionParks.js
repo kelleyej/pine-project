@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react';
 export default function RegionParks(){
     const [states, setStates] = useState([])
 
-    
     const area = useParams().region
     const parkByRegion = locations.filter(location => {
         return location.region === area
@@ -28,9 +27,10 @@ export default function RegionParks(){
             
         )
     })
+ 
         useEffect(() => {
-            const allStates = new Set(nationalPark.map(park => park.props.state)) 
-        setStates([...allStates])
+            const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
+            setStates([...allStates])
         }, [])
        
 
