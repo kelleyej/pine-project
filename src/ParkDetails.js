@@ -5,6 +5,7 @@ import Loading from './Loading';
 import EntranceFees from './EntranceFees';
 import OperatingHours from './OperatingHours';
 import EntrancePasses from './EntrancePasses';
+import CurrentWeather from './CurrentWeather';
 
 export default function ParkDetails(){
     const parkName = useParams().park
@@ -44,6 +45,7 @@ export default function ParkDetails(){
                 <p>Phone Number: {parks[0].contacts.phoneNumbers[0].phoneNumber} ({parks[0].contacts.phoneNumbers[0].type})</p>
                 <p>{parks[0].weatherInfo}</p>
                 <img src={parks[0].images[0].url}/>
+                <CurrentWeather parks={parks}/>
                 <OperatingHours parks={parks}/>
                 <EntrancePasses parks={parks}/>
                 <EntranceFees parks={parks}/>
