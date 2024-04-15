@@ -5,7 +5,7 @@ export default function NavBar(){
     return (
         <header>
             <h1>PINE</h1>
-            {/* <NavLink to='/parks/tracker'>Park Tracker</NavLink> */}
+            <NavLink to='/parks/tracker'>Park Tracker</NavLink>
         </header>    
     )
 }

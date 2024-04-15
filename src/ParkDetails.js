@@ -25,6 +25,7 @@ export default function ParkDetails(){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
+    console.log(parks[0].addresses)
 
     if(!parks.length){
         return (
@@ -36,6 +37,9 @@ export default function ParkDetails(){
                  <h2>{parks[0].fullName}</h2>
                 <h3>{parks[0].description}</h3>
                 <p>{parks[0].directionsInfo}</p>
+                <a href={parks[0].directionsUrl}>Link to Directions</a>
+                <a href={parks[0].url}>Link to Official Site</a>
+                {/* <p>{parks[0].entranceFees}</p> */}
                 {/* <img src={parks[0].images[0].url}/> */}
             </section>
         )
