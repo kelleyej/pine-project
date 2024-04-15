@@ -1,6 +1,6 @@
 
 export default function OperatingHoursCard({description, standardHours}) {
-    console.log(standardHours)
+
     return (
         <div>
             <p>{description}</p>

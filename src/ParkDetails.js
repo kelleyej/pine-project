@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Loading from './Loading';
 import EntranceFees from './EntranceFees';
 import OperatingHours from './OperatingHours';
+import EntrancePasses from './EntrancePasses';
 
 export default function ParkDetails(){
     const parkName = useParams().park
@@ -44,6 +45,7 @@ export default function ParkDetails(){
                 <p>{parks[0].weatherInfo}</p>
                 <img src={parks[0].images[0].url}/>
                 <OperatingHours parks={parks}/>
+                <EntrancePasses parks={parks}/>
                 <EntranceFees parks={parks}/>
             </section>
         )
