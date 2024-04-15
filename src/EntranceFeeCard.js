@@ -1,9 +1,9 @@
 import './EntranceFeeCard.css'
 
-export default function EntranceFeeCard({title, fee, description}) {
+export default function EntranceFeeCard({title, cost, description}) {
     return (
         <section>
-            <p>{title}: ${fee}</p>
+            <p>{title}: ${cost}</p>
             <p>{description}</p>
         </section>
     )

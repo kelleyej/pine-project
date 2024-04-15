@@ -3,12 +3,12 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Loading from './Loading';
 import EntranceFees from './EntranceFees';
+import OperatingHours from './OperatingHours';
 
 export default function ParkDetails(){
     const parkName = useParams().park
     const [parks, setParks] = useState([])
-    const [entranceFees, setEntranceFees] = useState([])
-
+ 
     const parkCodes = ['acad', 'arch', 'badl', 'bibe', 'bisc', 'blca', 'brca', 'cany', 'care', 'cave', 'chis', 'cong', 
     'crla', 'cuva', 'deva', 'drto', 'dena', 'ever', 'jeff', 'gaar', 'glac', 'glba', 'grca', 'grte', 'grba', 'grsa', 'grsm', 
     'gumo', 'hale', 'havo', 'hosp', 'indu', 'isro', 'jotr', 'katm', 'kefj', 'kova', 'lacl', 'lavo', 'maca', 'meve', 
@@ -26,6 +26,7 @@ export default function ParkDetails(){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
+    console.log(parks)
 
     if(!parks.length){
         return (
@@ -41,8 +42,8 @@ export default function ParkDetails(){
                 <a href={parks[0].url}>Link to Official Site</a>
                 <p>Phone Number: {parks[0].contacts.phoneNumbers[0].phoneNumber} ({parks[0].contacts.phoneNumbers[0].type})</p>
                 <p>{parks[0].weatherInfo}</p>
-                {/* <p>{parks[0].entranceFees}</p> */}
-                {/* <img src={parks[0].images[0].url}/> */}
+                <img src={parks[0].images[0].url}/>
+                <OperatingHours parks={parks}/>
                 <EntranceFees parks={parks}/>
             </section>
         )
