@@ -7,7 +7,7 @@ export default function Regions(){
         <main>
             <h2>Choose a region to explore National Parks...</h2>
             <div className='region-grid'>
-                <Link to='/Alaska'><h2>Alaska</h2><img src="https://i.pinimg.com/736x/91/62/4f/91624fec2afa426222a0aaeb49d9df32.jpg"/></Link>
+                <Link className='region' to='/Alaska'><h2>Alaska</h2><img src="https://i.pinimg.com/736x/91/62/4f/91624fec2afa426222a0aaeb49d9df32.jpg"/></Link>
                 <Link to='/Intermountain'><h2>Intermountain</h2><img src="https://i.ebayimg.com/images/g/lw8AAOSwTG1gVl1p/s-l1600.jpg" /></Link>
                 <Link to='/Midwest'><h2>Midwest</h2><img src="https://thenewinquiry.com/app/uploads/2023/04/midwest-postcard-1200x820.jpeg"/></Link>
                 <Link to='/National Capital'><h2>National Capital</h2><img src="https://i.ebayimg.com/images/g/REQAAOSwvTRino57/s-l1200.webp"/></Link>

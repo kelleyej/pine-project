@@ -1,7 +1,7 @@
 .region-grid {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
-    background-color: #F5E8DD;
+    background-color: #E9E5D5;
 }
 
 img {
@@ -18,3 +18,8 @@ h2 {
     font-family: "Rubik", sans-serif;
     font-style: normal;
 }
+
+main {
+    background-color: #E9E5D5;
+}
+
