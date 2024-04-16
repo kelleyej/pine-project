@@ -6,6 +6,7 @@ import EntranceFees from './EntranceFees';
 import OperatingHours from './OperatingHours';
 import EntrancePasses from './EntrancePasses';
 import CurrentWeather from './CurrentWeather';
+import './ParkDetails.css';
 
 export default function ParkDetails(){
     const parkName = useParams().park
@@ -37,7 +38,7 @@ export default function ParkDetails(){
         return (
             <section>
                  <h2>{parks[0].fullName}</h2>
-                <h3>{parks[0].description}</h3>
+                <h3 className='description'>{parks[0].description}</h3>
                 <p>{parks[0].directionsInfo}</p>
                 <a href={parks[0].directionsUrl}>Link to Directions</a>
                 <a href={parks[0].url}>Link to Official Site</a>
