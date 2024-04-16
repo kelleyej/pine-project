@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function OperatingHoursCard({description, standardHours}) {
 
@@ -13,4 +14,9 @@ export default function OperatingHoursCard({description, standardHours}) {
             <p>Sunday: {standardHours.sunday}</p>
         </div>
     )
+}
+
+OperatingHoursCard.propTypes = {
+    description: PropTypes.string.isRequired, 
+    standardHours: PropTypes.string.isRequired
 }

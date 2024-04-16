@@ -2,3 +2,7 @@
     display: grid; 
     grid-template-columns: repeat(7, 1fr);
 }
+
+.park-tracker-container {
+    background-color: #E9E5D5;
+}

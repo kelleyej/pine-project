@@ -1,6 +1,7 @@
 import './Park.css';
+import PropTypes from 'prop-types'
 
-export default function Park({name, state, image, city, test}) {
+export default function Park({name, state, image, city}) {
     
           return (
         <section className="state-widget">
@@ -10,4 +11,11 @@ export default function Park({name, state, image, city, test}) {
         </section>
     )
 
+}
+
+Park.propTypes = {
+    name: PropTypes.string.isRequired, 
+    state: PropTypes.string.isRequired, 
+    image: PropTypes.string.isRequired, 
+    city: PropTypes.string.isRequired,
 }

@@ -17,7 +17,7 @@ export default function ParkTracker(){
         })
      console.log(parks)
     return (
-        <div>
+        <div className='park-tracker-container'>
 
              <h1>Park Tracker</h1>
         <div className='tracker-grid'>

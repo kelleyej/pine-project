@@ -1,4 +1,5 @@
 import EntrancePassCard from './EntrancePassCard';
+import PropTypes from 'prop-types';
 
 export default function EntrancePasses({parks}){
 
@@ -18,3 +19,7 @@ export default function EntrancePasses({parks}){
     )
    
 }
+
+// EntrancePasses.propTypes = {
+
+// }

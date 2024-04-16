@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './CurrentWeather.css';
+import PropTypes from 'prop-types';
 
 export default function CurrentWeather({parks}){
     const [weather, setWeather] = useState('')

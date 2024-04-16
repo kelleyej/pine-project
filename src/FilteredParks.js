@@ -1,9 +1,10 @@
 import FilteredParksCard from './FilteredParksCard';
 import './FilteredParks.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function FilteredParks({test}){
-
+console.log('test:', test)
 const parkByState = test.map(t => {
    return (
     <Link to={`/region/${t.name}`}>
@@ -24,3 +25,18 @@ return (
 )
  
 }
+
+FilteredParks.propTypes = {
+    test: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired, 
+            city: PropTypes.string.isRequired, 
+            image: PropTypes.string.isRequired, 
+            name: PropTypes.string.isRequired, 
+            region: PropTypes.string.isRequired, 
+            state: PropTypes.string.isRequired
+        })
+    )
+}
+
+
