@@ -15,7 +15,7 @@ export default function ParkTracker(){
         </div>   
             )
         })
-     
+     console.log(parks)
     return (
         <div>
 

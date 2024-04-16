@@ -1,4 +1,5 @@
-import './EntranceFeeCard.css'
+import './EntranceFeeCard.css';
+import PropTypes from 'prop-types';
 
 export default function EntranceFeeCard({title, cost, description}) {
     return (
@@ -7,4 +8,10 @@ export default function EntranceFeeCard({title, cost, description}) {
             <p>{description}</p>
         </section>
     )
+}
+
+EntranceFeeCard.propTypes = {
+    title: PropTypes.string.isRequired, 
+    cost: PropTypes.string.isRequired, 
+    description: PropTypes.string.isRequired
 }

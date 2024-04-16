@@ -1,4 +1,5 @@
 import './StateCard.css';
+import PropTypes from 'prop-types';
 
 export default function StateCard({location, filterParks}){
 
@@ -9,4 +10,9 @@ export default function StateCard({location, filterParks}){
         </div>  
 
     )
+}
+
+StateCard.propTypes = {
+    filterParks: PropTypes.func.isRequired, 
+    location: PropTypes.string.isRequired
 }

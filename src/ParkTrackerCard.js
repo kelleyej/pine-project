@@ -1,5 +1,6 @@
 import './ParkTrackerCard.css';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function ParkTrackerCard({name}){
 const [checked, setChecked] = useState(false)
@@ -11,7 +12,7 @@ const [visitedParks, setVisitedParks] = useState(0)
             setChecked(false)
         }
     }
-console.log(visitedParks)
+console.log('NAME:', name)
     if(checked){
          return (
         <div className='park-container'>
@@ -30,5 +31,8 @@ console.log(visitedParks)
         </div>
         )
     }
-   
+}
+
+ParkTrackerCard.propTypes = {
+    name: PropTypes.string.isRequired
 }

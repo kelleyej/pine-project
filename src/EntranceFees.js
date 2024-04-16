@@ -1,5 +1,6 @@
 import './EntranceFees.css';
 import EntranceFeeCard from './EntranceFeeCard';
+import PropTypes from 'prop-types';
 
 export default function EntranceFees({parks}) {
 
@@ -23,3 +24,11 @@ export default function EntranceFees({parks}) {
  
   
 }
+
+// EntranceFees.propTypes = {
+//     parks: PropTypes.arrayof(
+//         PropTypes.shape({
+
+//         })
+//     )
+// }
