@@ -10,9 +10,7 @@ export default function ParkTracker(){
           
             <ParkTrackerCard 
                 name={area.name}
-                state={area.state}
-                city={area.city}
-                image={area.image}
+                key={area.id}
             />  
         </div>   
             )
@@ -21,7 +19,7 @@ export default function ParkTracker(){
     return (
         <div>
 
-             <h2>Park Tracker</h2>
+             <h1>Park Tracker</h1>
         <div className='tracker-grid'>
             
             {parks}
