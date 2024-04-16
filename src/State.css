@@ -1,4 +1,6 @@
 .state-grid {
     display: flex; 
     justify-content: space-evenly; 
+    background-color: #EADFCB;
+    border-bottom: 4px solid #382819;
 }

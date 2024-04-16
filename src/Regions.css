@@ -1,12 +1,30 @@
 .region-grid {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
-    background-color: #F5E8DD;
+    background-color: #E9E5D5;
+    grid-gap: 25px; 
+}
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    width: 200px;
+    border-radius: 10px; 
 }
 
 img {
     height: 250px; 
     width: 330px; 
+    border-radius: 5px; 
+    opacity: .8;
+    
+}
+
+.image {
+   border: 5px solid rgb(56, 40, 25, .9);
+   border-radius: 10px;   
+   &:hover {
+        transform: scale(1.1)
+    }
 }
 
 a {
@@ -16,5 +34,18 @@ a {
 
 h2 {
     font-family: "Rubik", sans-serif;
-    font-style: normal;
+    font-style: normal;  
 }
+
+
+
+main {
+    background-color: #E9E5D5;
+}
+
+.region {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

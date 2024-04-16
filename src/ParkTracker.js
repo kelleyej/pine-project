@@ -1,5 +1,30 @@
+import locations from './LocationInfo';
+import ParkTrackerCard from './ParkTrackerCard';
+import './ParkTracker.css';
+
 export default function ParkTracker(){
+
+        const parks = locations.map(area => {
+            return (
+                 <div>
+          
+            <ParkTrackerCard 
+                name={area.name}
+                key={area.id}
+            />  
+        </div>   
+            )
+        })
+     
     return (
-        <h1>Map will be here.</h1>
+        <div>
+
+             <h1>Park Tracker</h1>
+        <div className='tracker-grid'>
+            
+            {parks}
+        </div> 
+        </div>
+      
     )
 }

@@ -1,10 +1,10 @@
 
 export default function FilteredParksCard({name, city, state, image}){
     return (
-        <section>
-        <h2>{name}</h2>
-        <p>{city}, {state}</p>
+        <section> 
         <img className='park' src={image} />
+        <h2 className='park-name'>{name}</h2>
+        <p className="location">{city}, {state}</p>
         </section>
     )
 }
