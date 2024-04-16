@@ -18,7 +18,7 @@ const parkByState = test.map(t => {
 
 })
 return (
-    <div >
+    <div className='state-park-grid'>
         {parkByState}
     </div>
 )
