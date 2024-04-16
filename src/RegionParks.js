@@ -4,15 +4,22 @@ import Park from './Park';
 import './RegionParks.css';
 import State from './State';
 import { useState, useEffect } from 'react';
+import FilteredParks from './FilteredParks';
 
 export default function RegionParks(){
     const [states, setStates] = useState([])
-    const [test, setTest] = useState([])
+    const [test, setTest] = useState(null)
 
     const area = useParams().region
     const parkByRegion = locations.filter(location => {
         return location.region === area
     })
+
+
+    function filterParks(state){
+        const filteredParks = parkByRegion.filter(park => park.state === state)
+        setTest(filteredParks)
+    }
 
     const nationalPark = parkByRegion.map(park => {
         return (
@@ -23,6 +30,7 @@ export default function RegionParks(){
                 state={park.state}
                 image={park.image}
                 city={park.city}
+                test={test}
                 />
             </Link>
             
@@ -33,22 +41,12 @@ export default function RegionParks(){
         const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
         setStates([...allStates])
     }, [])
-      
-    function filterParks(state){
-        const filteredParks = parkByRegion.filter(park => {
-            return park.state === state 
-        })
-        setTest([...filteredParks])
-        
-        return filteredParks; 
 
-    }
-   console.log(test)
     return (
         <main>
-        <State states={states} filterParks={filterParks}/>
+        <State states={states} parkByRegion={parkByRegion} filterParks={filterParks}/>
         <div className='park-grid'>
-            {nationalPark}
+            {test ? <FilteredParks test={test}/> : nationalPark}
         </div> 
         </main>
        
