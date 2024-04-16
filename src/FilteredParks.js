@@ -1,7 +1,8 @@
 import FilteredParksCard from './FilteredParksCard';
+import './FilteredParks.css';
 
 export default function FilteredParks({test}){
-console.log(test)
+
 const parkByState = test.map(t => {
    return (
         <FilteredParksCard
@@ -14,7 +15,7 @@ const parkByState = test.map(t => {
 
 })
 return (
-    <div className='park-state-grid'>
+    <div >
         {parkByState}
     </div>
 )
