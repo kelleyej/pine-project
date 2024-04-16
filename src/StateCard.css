@@ -1,5 +1,6 @@
 .state-container {
     border-bottom: 4px solid #382819;
+        cursor: pointer;
 }
 
 .pine {
@@ -9,5 +10,4 @@
 
 h3 {
     margin-bottom: 0; 
-     cursor: pointer;
 }
