@@ -2,11 +2,17 @@
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     background-color: #E9E5D5;
+    grid-gap: 25px; 
 }
 
 img {
     height: 250px; 
     width: 330px; 
+    border: 5px solid #382819; 
+    border-radius: 5px; 
+    &:hover {
+        transform: scale(1.1)
+    }
 }
 
 a {
@@ -17,9 +23,15 @@ a {
 h2 {
     font-family: "Rubik", sans-serif;
     font-style: normal;
+    position: absolute;
 }
 
 main {
     background-color: #E9E5D5;
+}
+
+.region {
+    display: flex;
+    justify-content: center;
 }
 
