@@ -4,3 +4,13 @@
     cursor: pointer; 
     border: solid 2px black; 
 }
+
+.park-name {
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.location {
+    margin-top: 3px; 
+}
+

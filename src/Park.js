@@ -4,9 +4,9 @@ export default function Park({name, state, image, city, test}) {
     
           return (
         <section className="state-widget">
-        <h2>{name}</h2>
-        <p>{city}, {state}</p>
         <img className='park' src={image} />
+        <h2 className='park-name'>{name}</h2>
+        <p className='location'>{city}, {state}</p>
         </section>
     )
 
