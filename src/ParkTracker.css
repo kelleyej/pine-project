@@ -1,8 +1,13 @@
 .tracker-grid {
     display: grid; 
     grid-template-columns: repeat(7, 1fr);
+    align-items: center;
 }
 
 .park-tracker-container {
     background-color: #E9E5D5;
+}
+
+.park-tracker-heading {
+    font-size: 4em; 
 }

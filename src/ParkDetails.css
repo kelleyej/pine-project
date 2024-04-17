@@ -1,5 +1,20 @@
 .description {
-    display: inline; 
+    width: 70%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.park-details {
+    background-color: #E9E5D5;;
+}
+
+.park-fullname {
+    font-size: 3em; 
+}
+
+.description-container {
+    display: flex; 
+    justify-content: center;
 }
 
 .info-grid {
@@ -17,5 +32,9 @@
 .weather-info {
     padding-right: 70px; 
     padding-left: 70px; 
+}
+
+.link {
+    text-decoration: underline;
 }
 

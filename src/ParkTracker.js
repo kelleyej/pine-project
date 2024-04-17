@@ -21,7 +21,7 @@ export default function ParkTracker(){
     return (
         <div className='park-tracker-container'>
 
-             <h1>Park Tracker</h1>
+             <h1 className='park-tracker-heading'>Park Tracker</h1>
         <div className='tracker-grid'>
             {parks}
         </div> 

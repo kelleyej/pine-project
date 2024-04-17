@@ -8,6 +8,7 @@ export default function StateCard({location, filterParks}){
             <h3 id={location} className='state'>{location} </h3>
             <img id={location} className='pine' src="https://img.freepik.com/premium-vector/vintage-pine-tree-illustration_722738-97.jpg"/>
         </div>  
+  
 
     )
 }

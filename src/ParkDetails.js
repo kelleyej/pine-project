@@ -36,14 +36,19 @@ export default function ParkDetails(){
         )
     } else {
         return (
-            <section>
+            <section className='park-details'>
                 <div className='heading'>
-                    <a href={parks[0].directionsUrl}>Link to Directions</a>
-                <h2>{parks[0].fullName} </h2>
-                <a href={parks[0].url}>Link to Official Site</a> 
+                    <a className='link' href={parks[0].directionsUrl}>Link to Directions</a>
+                <h1 className='park-fullname'>{parks[0].fullName} </h1>
+                <a className='link' href={parks[0].url}>Link to Official Site</a> 
                 </div>
                 <p>Phone Number: {parks[0].contacts.phoneNumbers[0].phoneNumber} ({parks[0].contacts.phoneNumbers[0].type})</p>
-                  <h3 className='description'>{parks[0].description}</h3> 
+                <div className='description-container'>
+                    <h4 className='description'>{parks[0].description}</h4> 
+                </div>
+                    
+            
+                  
             
                         <div className='info-grid'>
                             <CurrentWeather parks={parks}/>  
