@@ -1,5 +1,5 @@
 import './State.css';
-import StateCard from './StateCard';
+import StateCard from '../../StateCard';
 import PropTypes from 'prop-types';
 
 export default function State({states, filterParks, parkByRegion}){

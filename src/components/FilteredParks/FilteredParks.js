@@ -1,4 +1,4 @@
-import FilteredParksCard from './FilteredParksCard';
+import FilteredParksCard from '../FilteredParksCard/FilteredParksCard';
 import './FilteredParks.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';

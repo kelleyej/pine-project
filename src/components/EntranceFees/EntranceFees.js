@@ -1,5 +1,5 @@
 import './EntranceFees.css';
-import EntranceFeeCard from './EntranceFeeCard';
+import EntranceFeeCard from '../EntranceFeeCard/EntranceFeeCard';
 import PropTypes from 'prop-types';
 
 export default function EntranceFees({parks}) {

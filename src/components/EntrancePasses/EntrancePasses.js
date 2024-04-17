@@ -1,4 +1,4 @@
-import EntrancePassCard from './EntrancePassCard';
+import EntrancePassCard from '../EntrancePassCard/EntrancePassCard';
 import PropTypes from 'prop-types';
 
 export default function EntrancePasses({parks}){

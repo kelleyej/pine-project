@@ -1,12 +1,12 @@
 
 import { useParams, Link } from 'react-router-dom';
-import Park from './Park';
+import Park from '../Park/Park';
 import './RegionParks.css';
-import State from './State';
+import State from '../State/State';
 import { useState, useEffect } from 'react';
-import FilteredParks from './FilteredParks';
-import ErrorMessage from './ErrorMessage';
-import Loading from './Loading';
+import FilteredParks from '../FilteredParks/FilteredParks';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import Loading from '../Loading/Loading';
 
 export default function RegionParks({parks, setParks}){
     const [states, setStates] = useState([])

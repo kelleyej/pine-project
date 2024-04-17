@@ -1,11 +1,11 @@
-import NavBar from './NavBar';
+import NavBar from '../NavBar/NavBar';
 import './App.css';
-import Regions from './Regions';
-import RegionParks from './RegionParks';
+import Regions from '../../Regions';
+import RegionParks from '../RegionParks/RegionParks';
 import { Routes, Route } from 'react-router-dom';
-import ParkDetails from './ParkDetails';
-import ParkTracker from './ParkTracker';
-import NotFound from './NotFound';
+import ParkDetails from '../ParkDetails/ParkDetails';
+import ParkTracker from '../ParkTracker/ParkTracker';
+import NotFound from '../NotFound/NotFound';
 import {useEffect, useState } from 'react';
 
 export default function App() {

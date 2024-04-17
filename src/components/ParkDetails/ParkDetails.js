@@ -1,12 +1,12 @@
 import './ParkDetails';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Loading from './Loading';
-import EntranceFees from './EntranceFees';
-import OperatingHours from './OperatingHours';
-import EntrancePasses from './EntrancePasses';
-import CurrentWeather from './CurrentWeather';
-import ErrorMessage from './ErrorMessage';
+import Loading from '../Loading/Loading';
+import EntranceFees from '../EntranceFees/EntranceFees';
+import OperatingHours from '../OperatingHours/OperatingHours';
+import EntrancePasses from '../EntrancePasses/EntrancePasses';
+import CurrentWeather from '../CurrentWeather/CurrentWeather';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import './ParkDetails.css';
 
 export default function ParkDetails(){

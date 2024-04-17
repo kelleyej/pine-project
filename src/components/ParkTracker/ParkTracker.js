@@ -1,5 +1,5 @@
-import locations from './LocationInfo';
-import ParkTrackerCard from './ParkTrackerCard';
+import locations from '../LocationInfo/LocationInfo';
+import ParkTrackerCard from '../../ParkTrackerCard';
 import './ParkTracker.css';
 import { useState } from 'react'
 
