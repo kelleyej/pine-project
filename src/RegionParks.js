@@ -8,27 +8,27 @@ import FilteredParks from './FilteredParks';
 import ErrorMessage from './ErrorMessage';
 import Loading from './Loading';
 
-export default function RegionParks(){
+export default function RegionParks({parks, setParks}){
     const [states, setStates] = useState([])
     const [test, setTest] = useState(null)
-    const [parks, setParks] = useState([])
+    // const [parks, setParks] = useState([])
     const [error, setError] = useState(null)
 
-    useEffect(() => {
-        fetch('http://localhost:3000/api/v1/locations')
-        .then(res => {
-            if(!res.ok){
-                throw new Error('Something went wrong. Please try again later.')
-            } else {
-                return res.json()
-            }
-        })
-        .then(data => {
-            setParks(data.locations)
+    // useEffect(() => {
+    //     fetch('http://localhost:3000/api/v1/locations')
+    //     .then(res => {
+    //         if(!res.ok){
+    //             throw new Error('Something went wrong. Please try again later.')
+    //         } else {
+    //             return res.json()
+    //         }
+    //     })
+    //     .then(data => {
+    //         setParks(data.locations)
    
-        })
-        .catch(error => setError(error))
-    }, [])
+    //     })
+    //     .catch(error => setError(error))
+    // }, [])
     
 
     const area = useParams().region

@@ -3,9 +3,9 @@ import ParkTrackerCard from './ParkTrackerCard';
 import './ParkTracker.css';
 import { useState } from 'react'
 
-export default function ParkTracker(){
-
-        const parks = locations.map(area => {
+export default function ParkTracker({parks}){
+console.log('PARK TRACKERRRRRR:', parks)
+        const park = locations.map(area => {
             return (
                  <div>
           
@@ -24,7 +24,7 @@ export default function ParkTracker(){
 
              <h1 className='park-tracker-heading'>Park Tracker</h1>
         <div className='tracker-grid'>
-            {parks}
+            {park}
         </div> 
         </div>
       
