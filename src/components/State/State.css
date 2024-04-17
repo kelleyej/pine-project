@@ -4,3 +4,11 @@
     background-color: #EADFCB;
     border-bottom: 4px solid #382819;
 }
+
+@media screen and (max-width: 767px) {
+    .state-grid {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}

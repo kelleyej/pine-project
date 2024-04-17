@@ -32,6 +32,7 @@ useEffect(() => {
   .catch(error => setError(error))
 }, [])
 
+
   return (
     <div className="App">
       <NavBar />

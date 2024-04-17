@@ -49,3 +49,11 @@ main {
     align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+    .region-grid {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #E9E5D5;
+    }
+}
+
