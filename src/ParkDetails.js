@@ -37,15 +37,21 @@ export default function ParkDetails(){
     } else {
         return (
             <section>
-                 <h2>{parks[0].fullName}</h2>
-                <h3 className='description'>{parks[0].description}</h3>
-                <p>{parks[0].directionsInfo}</p>
-                <a href={parks[0].directionsUrl}>Link to Directions</a>
-                <a href={parks[0].url}>Link to Official Site</a>
+                <div className='heading'>
+                    <a href={parks[0].directionsUrl}>Link to Directions</a>
+                <h2>{parks[0].fullName} </h2>
+                <a href={parks[0].url}>Link to Official Site</a> 
+                </div>
                 <p>Phone Number: {parks[0].contacts.phoneNumbers[0].phoneNumber} ({parks[0].contacts.phoneNumbers[0].type})</p>
-                <p>{parks[0].weatherInfo}</p>
-                <img src={parks[0].images[0].url}/>
-                <CurrentWeather parks={parks}/>
+                  <h3 className='description'>{parks[0].description}</h3> 
+            
+                        <div className='info-grid'>
+                            <CurrentWeather parks={parks}/>  
+                             <img src={parks[0].images[0].url}/>
+                        <p className='weather-info'>{parks[0].weatherInfo}</p>
+                         
+                        </div>
+                       
                 <OperatingHours parks={parks}/>
                 <EntrancePasses parks={parks}/>
                 <EntranceFees parks={parks}/>

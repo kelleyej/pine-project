@@ -1,3 +1,21 @@
 .description {
     display: inline; 
 }
+
+.info-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weather-info {
+    padding-right: 70px; 
+    padding-left: 70px; 
+}
+

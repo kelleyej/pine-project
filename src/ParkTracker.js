@@ -11,17 +11,18 @@ export default function ParkTracker(){
             <ParkTrackerCard 
                 name={area.name}
                 key={area.id}
+                id={area.id}
+                visited={area.visited}
             />  
         </div>   
             )
         })
-     console.log(parks)
+
     return (
         <div className='park-tracker-container'>
 
              <h1>Park Tracker</h1>
         <div className='tracker-grid'>
-            
             {parks}
         </div> 
         </div>

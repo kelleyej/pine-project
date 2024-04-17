@@ -1,4 +1,5 @@
 import OperatingHoursCard from "./OperatingHoursCard";
+import './OperatingHours.css';
 
 export default function OperatingHours({parks}) {
 
@@ -11,7 +12,7 @@ export default function OperatingHours({parks}) {
     )
     })
     return (
-        <div>
+        <div className='operating-hours'>
             {hours}
         </div>
     )
