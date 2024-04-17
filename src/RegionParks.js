@@ -38,17 +38,13 @@ export default function RegionParks(){
     useEffect(() => {
          const uniqueStates = new Set(parkByRegion.map(region => region.state))
     setStates([...uniqueStates])
-    })
+    }, [parks])
    
-    console.log(states)
-
-
     function filterParks(state){
         const filteredParks = parkByRegion.filter(park => park.state === state)
         setTest(filteredParks)
     }
   
-
       function resetStates(){
         setTest(parkByRegion)
     }
@@ -69,17 +65,14 @@ export default function RegionParks(){
         )
     })
 
-  
-    // useEffect(() => {
-    //     const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
-    //     setStates([...allStates])
-    // }, [])
- 
-
-
     if(error){
         return (
-                 <ErrorMessage error={error} /> 
+            <ErrorMessage error={error} /> 
+        )
+    }
+    if(!states){
+        return (
+            <Loading />
         )
     }
 

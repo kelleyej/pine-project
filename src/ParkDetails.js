@@ -33,7 +33,7 @@ export default function ParkDetails(){
     .then(data => setParks(findPark(data.data)))
     .catch(error => setError(error.message))
     }, [])
-  
+  console.log(parks)
     function findPark(allParks){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 

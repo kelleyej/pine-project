@@ -1,0 +1,18 @@
+[ {
+    "activities": [{
+        "id": 1, 
+        "name": "camping"
+    }],
+    "addresses": [
+        {
+        "postalCode": "80216",
+        "city": "Crater Lake",
+        "stateCode": "OR"
+        }
+    ],
+    "description": "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak.",
+    "directionsInfo": "From the west (Medford) - Take Hwy 62 to the West Entrance. Open year-round.",
+    "directionsURL": "http://www.nps.gov/crla/planyourvisit/directions.htm",
+    "fullName": "Crater Lake National Park"
+
+}]

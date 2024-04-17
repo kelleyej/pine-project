@@ -1,6 +1,7 @@
 import locations from './LocationInfo';
 import ParkTrackerCard from './ParkTrackerCard';
 import './ParkTracker.css';
+import { useState } from 'react'
 
 export default function ParkTracker(){
 
