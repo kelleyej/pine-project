@@ -1,6 +1,6 @@
 import NavBar from '../NavBar/NavBar';
 import './App.css';
-import Regions from '../../Regions';
+import Regions from '../Regions/Regions';
 import RegionParks from '../RegionParks/RegionParks';
 import { Routes, Route } from 'react-router-dom';
 import ParkDetails from '../ParkDetails/ParkDetails';

@@ -1,4 +1,4 @@
-import OperatingHoursCard from "../../OperatingHoursCard";
+import OperatingHoursCard from "../OperatingHoursCard/OperatingHoursCard";
 import './OperatingHours.css';
 
 export default function OperatingHours({parks}) {
