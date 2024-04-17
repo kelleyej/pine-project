@@ -1,0 +1,27 @@
+{ "locations": [
+    {
+        "id": 12,
+        "name": "Channel Islands National Park",
+        "state": "California",
+        "region": "Pacific West",
+        "city": "Ventura",
+        "image": "https://i.natgeofe.com/n/77da8c99-8278-4eb3-8a7b-75a0044355af/resized-NationalGeographic_2206862_2x1.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Crater Lake National Park",
+            "state": "Oregon",
+            "region": "Pacific West",
+            "city": "Crater Lake",
+            "image": "https://www.gamewarden.org/wp-content/uploads/2015/06/Dollarphotoclub_35150878-640x427.jpg"
+            },
+    {
+    "id": 3,
+    "name": "Arches National Park",
+    "state": "Utah",
+    "region": "Intermountain",
+    "image": "https://images.ctfassets.net/0wjmk6wgfops/6X7stlHaF9n3Nkfkzc99Tc/af09bb17eaf3425d737373b6f418bfbf/Delicate_Artch_resize_AdobeStock_333825728.jpeg?q=70",
+    "city": "Moab"
+    }
+]
+}
