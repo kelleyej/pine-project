@@ -6,11 +6,13 @@ import EntranceFees from './EntranceFees';
 import OperatingHours from './OperatingHours';
 import EntrancePasses from './EntrancePasses';
 import CurrentWeather from './CurrentWeather';
+import ErrorMessage from './ErrorMessage';
 import './ParkDetails.css';
 
 export default function ParkDetails(){
     const parkName = useParams().park
     const [parks, setParks] = useState([])
+    const [error, setError] = useState(null)
  
     const parkCodes = ['acad', 'arch', 'badl', 'bibe', 'bisc', 'blca', 'brca', 'cany', 'care', 'cave', 'chis', 'cong', 
     'crla', 'cuva', 'deva', 'drto', 'dena', 'ever', 'jeff', 'gaar', 'glac', 'glba', 'grca', 'grte', 'grba', 'grsa', 'grsm', 
@@ -21,13 +23,28 @@ export default function ParkDetails(){
     useEffect(() => {
          fetch(`https://developer.nps.gov/api/v1/parks/?api_key=${process.env.REACT_APP_API_KEY}&parkCode=${parkCodes}&limit=62`)
 
-    .then(res => res.json())
+    .then(res => {
+        if(!res.ok){
+           setError('Something went wrong. Please try again later')
+        } else {
+            return res.json()
+        }
+    })
     .then(data => setParks(findPark(data.data)))
+    .catch(error => setError(error.message))
     }, [])
   
     function findPark(allParks){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
+    }
+
+
+
+    if(error){
+        return (
+            <ErrorMessage error={error}/>
+        )
     }
 
     if(!parks.length){

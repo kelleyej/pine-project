@@ -9,7 +9,7 @@ export default function CurrentWeather({parks}){
         .then(res => res.json())
         .then(data => setWeather(data.main))
     }, [])
-    console.log('WEATHER:', weather)
+
     return (
         <div>
             <img className='weather-img' src="https://cdn-icons-png.flaticon.com/256/1248/1248023.png"/>

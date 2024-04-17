@@ -7,8 +7,7 @@ const locations =
                 "state": "Maine",
                 "region": "Northeast",
                 "image": "https://www.tripsavvy.com/thmb/YwnJbSbTcv0LTzddyzmEfjKlcyM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AcadiaNationalParkMaine-0d82794c812449c1ba514f4642f8aea2.jpg",
-                "city": "Bar Harbor",
-                "visited": false
+                "city": "Bar Harbor"
             },
             {
                 "id": 2,
@@ -16,8 +15,7 @@ const locations =
                 "state": "American Samoa",
                 "region": "Pacific",
                 "image": "https://i.natgeofe.com/n/c7008ade-4fd7-4974-86cf-da3a6ba2972c/92925_16x9.jpg?w=1200",
-                "city": "Pago Pago",
-                "visited": false
+                "city": "Pago Pago"
             },
             {
                 "id": 3,
@@ -25,8 +23,7 @@ const locations =
                 "state": "Utah",
                 "region": "Intermountain",
                 "image": "https://images.ctfassets.net/0wjmk6wgfops/6X7stlHaF9n3Nkfkzc99Tc/af09bb17eaf3425d737373b6f418bfbf/Delicate_Artch_resize_AdobeStock_333825728.jpeg?q=70",
-                "city": "Moab",
-                "visited": false
+                "city": "Moab"
             },
             {
                 "id": 4,
@@ -34,8 +31,7 @@ const locations =
                 "state": "South Dakota",
                 "region": "Midwest",
                 "city": "Interior",
-                "image": "https://wyandottedaily.com/wp-content/uploads/2024/03/Badlands-National-Park.webp",
-                "visited": false
+                "image": "https://wyandottedaily.com/wp-content/uploads/2024/03/Badlands-National-Park.webp"
             },
             {
                 "id": 5,
@@ -43,8 +39,7 @@ const locations =
                 "state": "Texas",
                 "region": "Intermountain",
                 "city": "Alpine",
-                "image": "https://national-park.com/wp-content/uploads/2016/04/Welcome-to-Big-Bend-National-Park.jpg",
-                "visited": false
+                "image": "https://national-park.com/wp-content/uploads/2016/04/Welcome-to-Big-Bend-National-Park.jpg"
             },
             {
                 "id": 6,
@@ -52,8 +47,7 @@ const locations =
                 "state": "Florida",
                 "region": "Southeast",
                 "city": "Miami",
-                "image": "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2016/05/web-IMG_4758b.jpg",
-                "visited": false
+                "image": "https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2016/05/web-IMG_4758b.jpg"
             },
             {
                 "id": 7,
@@ -61,8 +55,7 @@ const locations =
                 "state": "Colorado",
                 "region": "Intermountain",
                 "city": "Montrose",
-                "image": "https://lh4.googleusercontent.com/proxy/3Jq91kD_MBbUNL8pCSm1j5qzuFbBcXWjFkx7-2RqST8nWRfHy0eyTLN-ZQoBRZ-AxXipI9Agusc6ewkvCc8XaLW9apta4RX0rg",
-                "visited": false
+                "image": "https://lh4.googleusercontent.com/proxy/3Jq91kD_MBbUNL8pCSm1j5qzuFbBcXWjFkx7-2RqST8nWRfHy0eyTLN-ZQoBRZ-AxXipI9Agusc6ewkvCc8XaLW9apta4RX0rg"
             },
             {
                 "id": 8,
@@ -70,8 +63,7 @@ const locations =
                 "state": "Utah",
                 "region": "Intermountain",
                 "city": "Bryce Canyon City",
-                "image": "https://www.rei.com/assets/adventures/images/trip/gallery/northamerica/bhe_08/live.jpg",
-                "visited": false
+                "image": "https://www.rei.com/assets/adventures/images/trip/gallery/northamerica/bhe_08/live.jpg"
             },
             {
                 "id": 9,
@@ -79,8 +71,7 @@ const locations =
                 "state": "Utah",
                 "region": "Intermountain",
                 "city": "Moab",
-                "image": "https://images.ctfassets.net/0wjmk6wgfops/4xH7cd136DErUNwb5AbBi4/6256c8432bb2ec353bd79a995ab38a59/Canyonalands_National_Park_5291b211-81b6-4c3a-b2bd-3524994b1c9d.jpg?q=70",
-                "visited": false
+                "image": "https://images.ctfassets.net/0wjmk6wgfops/4xH7cd136DErUNwb5AbBi4/6256c8432bb2ec353bd79a995ab38a59/Canyonalands_National_Park_5291b211-81b6-4c3a-b2bd-3524994b1c9d.jpg?q=70"
             },
             {
                 "id": 10,
@@ -88,8 +79,7 @@ const locations =
                 "state": "Utah",
                 "region": "Intermountain",
                 "city": "Torrey",
-                "image": "https://capitolreefcountry.com/wp-content/uploads/2021/04/Fruita-District-1200-x-800.jpg",
-                "visited": false
+                "image": "https://capitolreefcountry.com/wp-content/uploads/2021/04/Fruita-District-1200-x-800.jpg"
             },
             {
                 "id": 11,
@@ -97,8 +87,7 @@ const locations =
                 "state": "New Mexico",
                 "region": "Intermountain",
                 "city": "Carlsbad",
-                "image": "https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/12/1140-carlsbad-caverns-interior.jpg",
-                "visited": false
+                "image": "https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/12/1140-carlsbad-caverns-interior.jpg"
             },
             {
                 "id": 12,
@@ -106,8 +95,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Ventura",
-                "image": "https://i.natgeofe.com/n/77da8c99-8278-4eb3-8a7b-75a0044355af/resized-NationalGeographic_2206862_2x1.jpg",
-                "visited": false
+                "image": "https://i.natgeofe.com/n/77da8c99-8278-4eb3-8a7b-75a0044355af/resized-NationalGeographic_2206862_2x1.jpg"
             },
             {
                 "id": 13,
@@ -123,8 +111,7 @@ const locations =
                 "state": "Oregon",
                 "region": "Pacific West",
                 "city": "Crater Lake",
-                "image": "https://www.gamewarden.org/wp-content/uploads/2015/06/Dollarphotoclub_35150878-640x427.jpg",
-                "visited": false
+                "image": "https://www.gamewarden.org/wp-content/uploads/2015/06/Dollarphotoclub_35150878-640x427.jpg"
             },
             {
                 "id": 15,
@@ -132,8 +119,7 @@ const locations =
                 "state": "Ohio",
                 "region": "Midwest",
                 "city": "Peninsula",
-                "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/03/cuyahoga-valley-national-park_h.jpg",
-                "visited": false
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/03/cuyahoga-valley-national-park_h.jpg"
             },
             {
                 "id": 16,
@@ -141,8 +127,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Furnace Creek",
-                "image": "https://npf-prod.imgix.net/uploads/death-valley-istock.jpg?auto=compress%2Cformat&fit=max&q=80&w=1600",
-                "visited": false
+                "image": "https://npf-prod.imgix.net/uploads/death-valley-istock.jpg?auto=compress%2Cformat&fit=max&q=80&w=1600"
             },
             {
                 "id": 17,
@@ -150,8 +135,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Denali",
-                "image": "https://themilepost.com/wp-content/uploads/2015/03/pg427-NPS-Photo-scaled.jpg",
-                "visited": false
+                "image": "https://themilepost.com/wp-content/uploads/2015/03/pg427-NPS-Photo-scaled.jpg"
             },
             {
                 "id": 18,
@@ -159,8 +143,7 @@ const locations =
                 "state": "Florida",
                 "region": "Southeast",
                 "city": "Key West",
-                "image": "https://i.natgeofe.com/n/cdee4237-382b-4ce3-a382-e31d0102a825/fortjefferson-drytortugas-florida_16x9.jpg?w=1200",
-                "visited": false
+                "image": "https://i.natgeofe.com/n/cdee4237-382b-4ce3-a382-e31d0102a825/fortjefferson-drytortugas-florida_16x9.jpg?w=1200"
             },
             {
                 "id": 19,
@@ -168,8 +151,7 @@ const locations =
                 "state": "Florida",
                 "region": "Southeast",
                 "city": "Homestead",
-                "image": "https://www.southernliving.com/thmb/bu1B5-nm64z5WO2iz6mg6Y2GLCI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1216404158-ef6d83a2a48e4e4c8ffe4a3c836a155c.jpg",
-                "visited": false
+                "image": "https://www.southernliving.com/thmb/bu1B5-nm64z5WO2iz6mg6Y2GLCI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1216404158-ef6d83a2a48e4e4c8ffe4a3c836a155c.jpg"
             },
             {
                 "id": 20,
@@ -177,8 +159,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Coldfoot",
-                "image": "https://www.nps.gov/common/uploads/grid_builder/gaar/crop16_9/FE6863E0-1DD8-B71B-0B4E9A34F681735C.jpg?width=640&quality=90&mode=crop",
-                "visited": false
+                "image": "https://www.nps.gov/common/uploads/grid_builder/gaar/crop16_9/FE6863E0-1DD8-B71B-0B4E9A34F681735C.jpg?width=640&quality=90&mode=crop"
             },
             {
                 "id": 21,
@@ -186,8 +167,7 @@ const locations =
                 "state": "Missouri",
                 "region": "Midwest",
                 "city": "St. Louis",
-                "image": "https://afar.brightspotcdn.com/dims4/default/5d8cd0c/2147483647/strip/false/crop/1900x1267+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F56%2F58%2F95a33bbf1bb47d535be0c0bb270f%2Foriginal-c07a2d169f29f58b9af7666d94661776.jpg",
-                "visited": false
+                "image": "https://afar.brightspotcdn.com/dims4/default/5d8cd0c/2147483647/strip/false/crop/1900x1267+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F56%2F58%2F95a33bbf1bb47d535be0c0bb270f%2Foriginal-c07a2d169f29f58b9af7666d94661776.jpg" 
             },
             {
                 "id": 22,
@@ -195,8 +175,7 @@ const locations =
                 "state": "Montana",
                 "region": "Intermountain",
                 "city": "West Glacier",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/1200px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg",
-                "visited": false
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/1200px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg"
             },
             {
                 "id": 23,
@@ -204,8 +183,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Gustavus",
-                "image": "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Glacier%20Bay.jpg?h=d72c0ddd&itok=V8OPRhhE",
-                "visited": false
+                "image": "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Glacier%20Bay.jpg?h=d72c0ddd&itok=V8OPRhhE"
             },
             {
                 "id": 24,
@@ -213,8 +191,7 @@ const locations =
                 "state": "Arizona",
                 "region": "Intermountain",
                 "city": "Grand Canyon Village",
-                "image": "https://fh-sites.imgix.net/sites/4735/2021/07/31173956/Untitled-design-2021-07-31T133906.903.png?auto=compress%2Cformat&w=1000&h=1000&fit=max",
-                "visited": false
+                "image": "https://fh-sites.imgix.net/sites/4735/2021/07/31173956/Untitled-design-2021-07-31T133906.903.png?auto=compress%2Cformat&w=1000&h=1000&fit=max"
             },
             {
                 "id": 25,
@@ -222,8 +199,7 @@ const locations =
                 "state": "Wyoming",
                 "region": "Intermountain",
                 "city": "Jackson",
-                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFmFlEKlHuj-ue4vOs4RA17QuyeAh4bXfgi__U7DCXA&s",
-                "visited": false
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFmFlEKlHuj-ue4vOs4RA17QuyeAh4bXfgi__U7DCXA&s"
             },
             {
                 "id": 26,
@@ -231,8 +207,7 @@ const locations =
                 "state": "Nevada",
                 "region": "Intermountain",
                 "city": "Baker",
-                "image": "https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/04/1140-great-basin-hero.jpg",
-                "visited": false
+                "image": "https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/04/1140-great-basin-hero.jpg"
             },
             {
                 "id": 27,
@@ -240,8 +215,7 @@ const locations =
                 "state": "Colorado",
                 "region": "Intermountain",
                 "city": "Mosca",
-                "image": "https://www.colorado.com/sites/default/files/styles/slideshow_slide_xxsmall/public/legacy_drupal_7_images/sandunes_nps.jpg.webp?itok=IcrMHWtl",
-                "visited": false
+                "image": "https://www.colorado.com/sites/default/files/styles/slideshow_slide_xxsmall/public/legacy_drupal_7_images/sandunes_nps.jpg.webp?itok=IcrMHWtl"
             },
             {
                 "id": 28,
@@ -249,8 +223,7 @@ const locations =
                 "state": "North Carolina, Tennessee",
                 "region": "Southeast",
                 "city": "Gatlinburg",
-                "image": "https://www.sidneyjames.com/media/62f0cb7671157abd5a4ec4c0/original.webp",
-                "visited": false
+                "image": "https://www.sidneyjames.com/media/62f0cb7671157abd5a4ec4c0/original.webp"
             },
             {
                 "id": 29,
@@ -258,8 +231,7 @@ const locations =
                 "state": "Texas",
                 "region": "Intermountain",
                 "city": "Salt Flat",
-                "image": "https://i.natgeofe.com/n/74eb6b34-073c-40ac-a5a0-670dae43cd02/guadalupe-mountains-national-park-590_2x1.jpg",
-                "visited": false
+                "image": "https://i.natgeofe.com/n/74eb6b34-073c-40ac-a5a0-670dae43cd02/guadalupe-mountains-national-park-590_2x1.jpg"
             },
             {
                 "id": 30,
@@ -267,8 +239,7 @@ const locations =
                 "state": "Hawaii",
                 "region": "Pacific West",
                 "city": "Kula",
-                "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/12/haleakala-crater-slidingsands_h.jpg",
-                "visited": false
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/12/haleakala-crater-slidingsands_h.jpg"
             },
             {
                 "id": 31,
@@ -276,8 +247,7 @@ const locations =
                 "state": "Hawaii",
                 "region": "Pacific West",
                 "city": "Volcano",
-                "image": "https://i.natgeofe.com/k/4ab71fc1-36e0-49c8-a382-fd02ee37a1a5/Hawaii-flowing-lava_16x9.jpg?w=1200",
-                "visited": false
+                "image": "https://i.natgeofe.com/k/4ab71fc1-36e0-49c8-a382-fd02ee37a1a5/Hawaii-flowing-lava_16x9.jpg?w=1200" 
             },
             {
                 "id": 32,
@@ -285,8 +255,7 @@ const locations =
                 "state": "Arkansas",
                 "region": "Midwest",
                 "city": "Hot Springs",
-                "image": "https://www.travelandleisure.com/thmb/fQoDKxd0on8atscufvyhndLcihA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/waterfall-HOTSPRINGS0117-26beda2a26f543f49fce2df482eb218c.jpg",
-                "visited": false
+                "image": "https://www.travelandleisure.com/thmb/fQoDKxd0on8atscufvyhndLcihA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/waterfall-HOTSPRINGS0117-26beda2a26f543f49fce2df482eb218c.jpg"
             },
             {
                 "id": 33,
@@ -294,8 +263,7 @@ const locations =
                 "state": "Indiana",
                 "region": "Midwest",
                 "city": "Chesterton",
-                "image": "https://media.cntraveler.com/photos/5c6c25735ac5fd121f4375a1/16:9/w_4000,h_2250,c_limit/Indiana-Dunes-Nat'l-Park_A7DC44.jpg",
-                "visited": false
+                "image": "https://media.cntraveler.com/photos/5c6c25735ac5fd121f4375a1/16:9/w_4000,h_2250,c_limit/Indiana-Dunes-Nat'l-Park_A7DC44.jpg"
             },
             {
                 "id": 34,
@@ -303,8 +271,7 @@ const locations =
                 "state": "Michigan",
                 "region": "Midwest",
                 "city": "Houghton",
-                "image": "https://www.rei.com/assets/adventures/images/trip/gallery/northamerica/irk_08/live.jpg",
-                "visited": false
+                "image": "https://www.rei.com/assets/adventures/images/trip/gallery/northamerica/irk_08/live.jpg"
             },
             {
                 "id": 35,
@@ -312,8 +279,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Twentynine Palms",
-                "image": "https://i0.wp.com/www.mattandkaren.com/wp-content/uploads/2024/02/0a07ea.jpg?resize=1873%2C1200&ssl=1",
-                "visited": false
+                "image": "https://i0.wp.com/www.mattandkaren.com/wp-content/uploads/2024/02/0a07ea.jpg?resize=1873%2C1200&ssl=1"
             },
             {
                 "id": 36,
@@ -321,8 +287,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "King Salmon",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg",
-                "visited": false
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg"
             },
             {
                 "id": 37,
@@ -330,8 +295,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Seward",
-                "image": "https://www.travelalaska.com/sites/default/files/2021-12/Destinations_ParksPublicLands_Kenai%20Fjords%20National%20Park_Hero_%28Makayla%20Crump%29.jpg",
-                "visited": false
+                "image": "https://www.travelalaska.com/sites/default/files/2021-12/Destinations_ParksPublicLands_Kenai%20Fjords%20National%20Park_Hero_%28Makayla%20Crump%29.jpg"
             },
             {
                 "id": 38,
@@ -339,8 +303,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Three Rivers",
-                "image": "https://res.cloudinary.com/simpleview/image/upload/v1654809567/clients/fresnoca/Kings_Canyon_Rae_Lakes_AlexanderHadik_e9156d63-72a0-4168-a798-71a0f5051595.jpg",
-                "visited": false
+                "image": "https://res.cloudinary.com/simpleview/image/upload/v1654809567/clients/fresnoca/Kings_Canyon_Rae_Lakes_AlexanderHadik_e9156d63-72a0-4168-a798-71a0f5051595.jpg"
             },
             {
                 "id": 39,
@@ -348,8 +311,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Kotzebue",
-                "image": "https://images.squarespace-cdn.com/content/v1/564d14dfe4b0290681184a82/1478818179627-IYBN319R96U9OMVI81WI/Kobuk+Valley+National+Park+-+002.jpg",
-                "visited": false
+                "image": "https://images.squarespace-cdn.com/content/v1/564d14dfe4b0290681184a82/1478818179627-IYBN319R96U9OMVI81WI/Kobuk+Valley+National+Park+-+002.jpg"
             },
             {
                 "id": 40,
@@ -357,8 +319,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Port Alsworth",
-                "image": "https://www.nps.gov/articles/images/LACL_Crescent-Lake_web.jpg?maxwidth=1300&autorotate=false",
-                "visited": false
+                "image": "https://www.nps.gov/articles/images/LACL_Crescent-Lake_web.jpg?maxwidth=1300&autorotate=false"
             },
             {
                 "id": 41,
@@ -366,8 +327,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Mineral", 
-                "image": "https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/vc_ca101_nationalparks_lassenvolcanic_manzanitalake_rf_628846294_1280x640.jpg",
-                "visited": false
+                "image": "https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/vc_ca101_nationalparks_lassenvolcanic_manzanitalake_rf_628846294_1280x640.jpg"
             },
             {
                 "id": 42,
@@ -375,8 +335,7 @@ const locations =
                 "state": "Kentucky",
                 "region": "Midwest",
                 "city": "Mammoth Cave",
-                "image": "https://www.worldatlas.com/upload/40/5e/65/shutterstock-1847679637.jpg",
-                "visited": false
+                "image": "https://www.worldatlas.com/upload/40/5e/65/shutterstock-1847679637.jpg"
             },
             {
                 "id": 43,
@@ -384,8 +343,7 @@ const locations =
                 "state": "Colorado",
                 "region": "Intermountain",
                 "city": "Mancos",
-                "image": "https://www.adventurousway.com/images/i/hvwfexwa700b/2000w/national-parks/mesa-verde-national-park/mesa-verde-national-park.jpeg",
-                "visited": false
+                "image": "https://www.adventurousway.com/images/i/hvwfexwa700b/2000w/national-parks/mesa-verde-national-park/mesa-verde-national-park.jpeg"
             },
             {
                 "id": 44,
@@ -393,8 +351,7 @@ const locations =
                 "state": "Washington",
                 "region": "Pacific West",
                 "city": "Ashford",
-                "image": "https://i.natgeofe.com/n/6e6d2eea-06d3-4ac4-94ca-2aba6f7f8757/mountain-pine-trees_3x2.jpg",
-                "visited": false
+                "image": "https://i.natgeofe.com/n/6e6d2eea-06d3-4ac4-94ca-2aba6f7f8757/mountain-pine-trees_3x2.jpg" 
             },
             {
                 "id": 45,
@@ -402,8 +359,7 @@ const locations =
                 "state": "Washington",
                 "region": "Pacific West",
                 "city": "Sedro-Woolley",
-                "image": "https://www.tripsavvy.com/thmb/UW8JknuD_U4DnAx3_UXlcTOtT-Q=/3072x2048/filters:no_upscale():max_bytes(150000):strip_icc()/ViewoflakeinmountainsMountShuksanNorthCascadesNationalPark-139d1b4e5218411cb43dcd6152588b44.jpg",
-                "visited": false
+                "image": "https://www.tripsavvy.com/thmb/UW8JknuD_U4DnAx3_UXlcTOtT-Q=/3072x2048/filters:no_upscale():max_bytes(150000):strip_icc()/ViewoflakeinmountainsMountShuksanNorthCascadesNationalPark-139d1b4e5218411cb43dcd6152588b44.jpg" 
             },
             {
                 "id": 46,
@@ -411,8 +367,7 @@ const locations =
                 "state": "Washington",
                 "region": "Pacific West",
                 "city": "Port Angeles",
-                "image": "https://www.tripsavvy.com/thmb/1W0WJCoDqKaJmf8FKTXeqlr81p4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/DSCF0144-3c0cb60c0a0d4931bb6c9c092bb204ad.jpg",
-                "visited": false
+                "image": "https://www.tripsavvy.com/thmb/1W0WJCoDqKaJmf8FKTXeqlr81p4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/DSCF0144-3c0cb60c0a0d4931bb6c9c092bb204ad.jpg"
             },
             {
                 "id": 47,
@@ -420,8 +375,7 @@ const locations =
                 "state": "Arizona",
                 "region": "Intermountain",
                 "city": "Holbrook",
-                "image": "https://arizonahighways.com/sites/default/files/activities/0518_petrifiedforest.jpg",
-                "visited": false
+                "image": "https://arizonahighways.com/sites/default/files/activities/0518_petrifiedforest.jpg"
             },
             {
                 "id": 48,
@@ -429,8 +383,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Paicines",
-                "image": "https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2023/06/1140-sunrise-pinnacles-national-park-california.jpg",
-                "visited": false
+                "image": "https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2023/06/1140-sunrise-pinnacles-national-park-california.jpg"
             },
             {
                 "id": 49,
@@ -438,8 +391,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Crescent City",
-                "image": "https://morethanjustparks.com/wp-content/uploads/2020/09/2Q3A5635-2.jpg",
-                "visited": false
+                "image": "https://morethanjustparks.com/wp-content/uploads/2020/09/2Q3A5635-2.jpg"
             },
             {
                 "id": 50,
@@ -447,8 +399,7 @@ const locations =
                 "state": "Colorado",
                 "region": "Intermountain",
                 "city": "Estes Park",
-                "image": "https://cdn.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg?width=1200",
-                "visited": false
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg?width=1200"
             },
             {
                 "id": 51,
@@ -456,8 +407,7 @@ const locations =
                 "state": "Arizona",
                 "region": "Intermountain",
                 "city": "Tucson",
-                "image": "https://symphony.cdn.tambourine.com/westward-look-wyndham/media/saguaro-national-park-5f68e9c55fafd.jpg",
-                "visited": false
+                "image": "https://symphony.cdn.tambourine.com/westward-look-wyndham/media/saguaro-national-park-5f68e9c55fafd.jpg"
             },
             {
                 "id": 52,
@@ -465,8 +415,7 @@ const locations =
                 "state": "Virginia",
                 "region": "National Capital",
                 "city": "Luray",
-                "image": "https://cdn.britannica.com/79/176979-050-DC64B229/Little-Stony-Man-Cliffs-Blue-Ridge-Mountains.jpg",
-                "visited": false
+                "image": "https://cdn.britannica.com/79/176979-050-DC64B229/Little-Stony-Man-Cliffs-Blue-Ridge-Mountains.jpg"
             },
             {
                 "id": 53,
@@ -474,7 +423,7 @@ const locations =
                 "state": "North Dakota",
                 "region": "Midwest",
                 "city": "Medora",
-                "image": "https://www.midwestliving.com/thmb/EoD4O7SAxz14e6yuLGS8y7R7LVQ=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/TRNP-Header-bfc5d0cb0299485ca64ee4454caed321.png"
+                "image": "https://www.midwestliving.com/thmb/EoD4O7SAxz14e6yuLGS8y7R7LVQ=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/TRNP-Header-bfc5d0cb0299485ca64ee4454caed321.png" 
             },
             {
                 "id": 54,
@@ -482,8 +431,7 @@ const locations =
                 "state": "U.S. Virgin Islands",
                 "region": "Southeast",
                 "city": "Cruz Bay",
-                "image": "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2803,w_4200,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1200/Virgin_Islands_National_Park_tjblao.jpg",
-                "visited": false
+                "image": "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2803,w_4200,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1200/Virgin_Islands_National_Park_tjblao.jpg"
             },
             {
                 "id": 55,
@@ -491,8 +439,7 @@ const locations =
                 "state": "Minnesota",
                 "region": "Midwest",
                 "city": "International Falls",
-                "image": "https://img.apmcdn.org/4771e42719bdfdf41b22b39412d219abc5555d2d/uncropped/3d2587-20090925-kabetogama.jpg",
-                "visited": false
+                "image": "https://img.apmcdn.org/4771e42719bdfdf41b22b39412d219abc5555d2d/uncropped/3d2587-20090925-kabetogama.jpg"
             },
             {
                 "id": 56,
@@ -500,8 +447,7 @@ const locations =
                 "state": "New Mexico",
                 "region": "Intermountain",
                 "city": "Alamogordo",
-                "image": "https://www.fodors.com/wp-content/uploads/2023/10/0-HERO-Shutterstock-123300241.jpg",
-                "visited": false
+                "image": "https://www.fodors.com/wp-content/uploads/2023/10/0-HERO-Shutterstock-123300241.jpg"
             },
             {
                 "id": 57,
@@ -509,8 +455,7 @@ const locations =
                 "state": "South Dakota",
                 "region": "Midwest",
                 "city": "Hot Springs",
-                "image": "https://mediaim.expedia.com/destination/9/73e199c4ae7fbb3ce0fcb4025634d8dc.jpg",
-                "visited": false
+                "image": "https://mediaim.expedia.com/destination/9/73e199c4ae7fbb3ce0fcb4025634d8dc.jpg" 
             },
             {
                 "id": 58,
@@ -518,8 +463,7 @@ const locations =
                 "state": "Alaska",
                 "region": "Alaska",
                 "city": "Copper Center",
-                "image": "https://www.expeditionsalaska.com/wp-content/uploads/2017/03/11_jun0896-1.jpg",
-                "visited": false
+                "image": "https://www.expeditionsalaska.com/wp-content/uploads/2017/03/11_jun0896-1.jpg"
             },
             {
                 "id": 59,
@@ -527,8 +471,7 @@ const locations =
                 "state": "Wyoming, Montana, Idaho",
                 "region": "Intermountain",
                 "city": "West Yellowstone",
-                "image": "https://cdn.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg",
-                "visited": false
+                "image": "https://cdn.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg"
             },
             {
                 "id": 60,
@@ -536,8 +479,7 @@ const locations =
                 "state": "California",
                 "region": "Pacific West",
                 "city": "Yosemite Valley",
-                "image": "https://www.hertz.com/content/dam/hertz/global/blog-articles/planning-a-trip/yosemite/Yosemite-National-Park-Header.rendition.medium.jpg",
-                "visited": false
+                "image": "https://www.hertz.com/content/dam/hertz/global/blog-articles/planning-a-trip/yosemite/Yosemite-National-Park-Header.rendition.medium.jpg"
             },
             {
                 "id": 61,
@@ -545,8 +487,7 @@ const locations =
                 "state": "Utah",
                 "region": "Intermountain",
                 "city": "Springdale",
-                "image": "https://a.cdn-hotels.com/gdcs/production21/d594/67824cc8-c13c-4cfa-b687-4f948864e4c9.jpg?impolicy=fcrop&w=800&h=533&q=medium",
-                "visited": false
+                "image": "https://a.cdn-hotels.com/gdcs/production21/d594/67824cc8-c13c-4cfa-b687-4f948864e4c9.jpg?impolicy=fcrop&w=800&h=533&q=medium"
             },
             {
                 "id": 62,
@@ -554,8 +495,7 @@ const locations =
                 "state": "West Virginia",
                 "region": "Mid-Atlantic",
                 "city": "Glen Jean",
-                "image": "https://assets.vogue.com/photos/60342bd00a6b7990c15bf0c4/master/w_2560%2Cc_limit/EJ1K0R.jpg",
-                "visited": false
+                "image": "https://assets.vogue.com/photos/60342bd00a6b7990c15bf0c4/master/w_2560%2Cc_limit/EJ1K0R.jpg"
             }
       ]
 

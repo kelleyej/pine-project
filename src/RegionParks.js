@@ -1,29 +1,61 @@
-import locations from './LocationInfo';
+
 import { useParams, Link } from 'react-router-dom';
 import Park from './Park';
 import './RegionParks.css';
 import State from './State';
 import { useState, useEffect } from 'react';
 import FilteredParks from './FilteredParks';
+import ErrorMessage from './ErrorMessage';
+import Loading from './Loading';
 
 export default function RegionParks(){
     const [states, setStates] = useState([])
     const [test, setTest] = useState(null)
+    const [parks, setParks] = useState([])
+    const [error, setError] = useState(null)
+
+    useEffect(() => {
+        fetch('http://localhost:3000/api/v1/locations')
+        .then(res => {
+            if(!res.ok){
+                throw new Error('Something went wrong. Please try again later.')
+            } else {
+                return res.json()
+            }
+        })
+        .then(data => {
+            setParks(data.locations)
+   
+        })
+        .catch(error => setError(error))
+    }, [])
+    
 
     const area = useParams().region
-    const parkByRegion = locations.filter(location => {
+    const parkByRegion = parks.filter(location => {
         return location.region === area
     })
-console.log(parkByRegion)
+    useEffect(() => {
+         const uniqueStates = new Set(parkByRegion.map(region => region.state))
+    setStates([...uniqueStates])
+    })
+   
+    console.log(states)
+
 
     function filterParks(state){
         const filteredParks = parkByRegion.filter(park => park.state === state)
         setTest(filteredParks)
     }
+  
+
+      function resetStates(){
+        setTest(parkByRegion)
+    }
 
     const nationalPark = parkByRegion.map(park => {
         return (
-            <Link to={`/region/${park.name}`}>
+            <Link to={`/parks/region/${park.name}`}>
                 <Park 
                 key={park.id}
                 name={park.name}
@@ -37,19 +69,24 @@ console.log(parkByRegion)
         )
     })
 
-    function resetStates(){
-        setTest(parkByRegion)
-    }
+  
+    // useEffect(() => {
+    //     const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
+    //     setStates([...allStates])
+    // }, [])
+ 
 
-    useEffect(() => {
-        const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
-        setStates([...allStates])
-    }, [])
+
+    if(error){
+        return (
+                 <ErrorMessage error={error} /> 
+        )
+    }
 
     return (
         <main>
         <State states={states} parkByRegion={parkByRegion} filterParks={filterParks}/>
-      <button onClick={resetStates}>RESET STATES</button>
+      {states.length > 1 && <button onClick={resetStates}>RESET STATES</button>}
         <div className='park-grid'>
             {test ? <FilteredParks test={test}/> : nationalPark}
         </div> 

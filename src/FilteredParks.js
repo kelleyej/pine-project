@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function FilteredParks({test}){
-console.log('test:', test)
+
 const parkByState = test.map(t => {
    return (
     <Link to={`/region/${t.name}`}>
