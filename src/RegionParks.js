@@ -14,7 +14,7 @@ export default function RegionParks(){
     const parkByRegion = locations.filter(location => {
         return location.region === area
     })
-
+console.log(parkByRegion)
 
     function filterParks(state){
         const filteredParks = parkByRegion.filter(park => park.state === state)
@@ -37,6 +37,10 @@ export default function RegionParks(){
         )
     })
 
+    function resetStates(){
+        setTest(parkByRegion)
+    }
+
     useEffect(() => {
         const allStates = new Set(nationalPark.map(park => park.props.children.props.state)) 
         setStates([...allStates])
@@ -45,6 +49,7 @@ export default function RegionParks(){
     return (
         <main>
         <State states={states} parkByRegion={parkByRegion} filterParks={filterParks}/>
+      <button onClick={resetStates}>RESET STATES</button>
         <div className='park-grid'>
             {test ? <FilteredParks test={test}/> : nationalPark}
         </div> 
