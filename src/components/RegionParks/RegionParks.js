@@ -78,8 +78,13 @@ export default function RegionParks({parks, setParks}){
 
     return (
         <main>
-        <State states={states} parkByRegion={parkByRegion} filterParks={filterParks}/>
-      {states.length > 1 && <button onClick={resetStates}>RESET STATES</button>}
+
+                <State states={states} parkByRegion={parkByRegion} filterParks={filterParks}/>
+                <div className='button-styling'>
+                    {states.length > 1 && <button className='state-button' onClick={resetStates}>Reset States</button>}
+                </div>
+                
+    
         <div className='park-grid'>
             {test ? <FilteredParks test={test}/> : nationalPark}
         </div> 

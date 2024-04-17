@@ -4,10 +4,14 @@ import { NavLink, Link } from 'react-router-dom';
 export default function NavBar(){
     return (
         <header>
-            <div className='text-container'>
+            <div className='nav-container'>
+                 <div className='text-container'>
                 <Link to='/'><h1>PINE</h1></Link>
-                <NavLink to='/parks/tracker'>Park Tracker</NavLink> 
+            </div>    
+                <NavLink className='tracker' to='/parks/tracker'><button>Park Tracker</button></NavLink> 
+            
             </div>
+           
          
         </header>    
     )
