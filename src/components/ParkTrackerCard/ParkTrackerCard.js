@@ -38,16 +38,16 @@
 //         </div>
 //     )
 // // onClick={event => setChecked(event.target.checked)}
-//     // } else {
+    // } else {
 
-//     //     return (
-//     //         <div className='park-container'> 
-//     //         <p>{name}</p>
-//     //         <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
-//     //         <input id={id} type='checkbox' onClick={event => setChecked(event.target.checked)} />
-//     //     </div>
-//     //     )
-//     // }
+    //     return (
+    //         <div className='park-container'> 
+    //         <p>{name}</p>
+    //         <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
+    //         <input id={id} type='checkbox' onClick={event => setChecked(event.target.checked)} />
+    //     </div>
+    //     )
+    // }
     
 // }
 
