@@ -34,7 +34,7 @@ let number = checkedState.filter(state => state === true)
             ) } else {
                 return (
                     <div className='park-container' key={area.key}> 
-                    <p>{area.name}</p>
+                    <p className='park-tracker-name-second'>{area.name}</p>
                     <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
                     <input id={area.id} type='checkbox' checked={checkedState[index]} onChange={() => handleOnChange(index)} />
                 </div>
@@ -46,7 +46,7 @@ let number = checkedState.filter(state => state === true)
         <div className='park-tracker-container'>
 
              <h1 className='park-tracker-heading'>Park Tracker</h1>
-             <p>You have visited {number.length} National Parks-- you have {63- (number.length)} left to go!</p>
+             <p className='counter'>You have visited {number.length} National Parks-- you have {63- (number.length)} left to go!</p>
         <div className='tracker-grid'>
             {park}
         </div> 

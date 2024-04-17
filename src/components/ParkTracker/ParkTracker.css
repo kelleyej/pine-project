@@ -1,6 +1,6 @@
 .tracker-grid {
     display: grid; 
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 }
 
@@ -29,11 +29,23 @@ input[type='checkbox'] {
 
 .park-tracker-name {
     text-decoration: line-through;
+
+}
+
+.park-tracker-name-second, 
+.park-tracker-name {
+    font-size: .8em; 
 }
 
 .visited-image {
     height: 32px;
     width: 18px;
+}
+
+.counter {
+    font-size: 1.4em; 
+    font-style: italic; 
+    font-weight: bolder; 
 }
 
 @media screen and (max-width: 767px) {
