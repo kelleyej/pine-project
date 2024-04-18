@@ -19,7 +19,7 @@ export default function ParkDetails(){
     'gumo', 'hale', 'havo', 'hosp', 'indu', 'isro', 'jotr', 'katm', 'kefj', 'kova', 'lacl', 'lavo', 'maca', 'meve', 
     'mora', 'neri', 'noca', 'npsa', 'olym', 'pefo', 'pinn', 'redw', 'romo', 'sagu', 'seki', 'shen', 'thro', 'viis', 'voya', 'whsa', 'wica', 'wrst',
     'yell', 'yose', 'zion']  
-    console.log(parkName)
+
     useEffect(() => {
          fetch(`https://developer.nps.gov/api/v1/parks/?api_key=${process.env.REACT_APP_API_KEY}&parkCode=${parkCodes}&limit=62`)
 
@@ -41,8 +41,6 @@ export default function ParkDetails(){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
-
-console.log(parks)
 
     if(error){
         return (
@@ -66,16 +64,11 @@ console.log(parks)
                 <div className='description-container'>
                     <h4 className='description'>{parks[0].description}</h4> 
                 </div>
-                    
-            
-                  
-            
-                        <div className='info-grid'>
-                            <CurrentWeather parks={parks}/>  
-                             <img src={parks[0].images[0].url}/>
-                        <p className='weather-info'>{parks[0].weatherInfo}</p>
-                         
-                        </div>
+                <div className='info-grid'>
+                    <CurrentWeather parks={parks}/>  
+                    <img src={parks[0].images[0].url}/>
+                    <p className='weather-info'>{parks[0].weatherInfo}</p>
+                </div>
                        
                 {/* <OperatingHours parks={parks}/>
                 <EntrancePasses parks={parks}/>

@@ -3,31 +3,30 @@ import './FilteredParks.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export default function FilteredParks({test}){
+export default function FilteredParks({filterStates}){
 
-const parkByState = test.map(t => {
-   return (
-    <Link to={`/region/${t.name}`}>
-        <FilteredParksCard
-            name={t.name}
-            city={t.city}
-            state={t.state}
-            image={t.image}
-       />
-       </Link>
+    const parkByState = filterStates.map(state => {
+    return (
+            <Link to={`/region/${state.name}`}>
+                <FilteredParksCard
+                    name={state.name}
+                    city={state.city}
+                    state={state.state}
+                    image={state.image}
+                />
+            </Link>
+        )
+    })
+
+    return (
+        <div className='state-park-grid'>
+            {parkByState}
+        </div>
     )
-
-})
-return (
-    <div className='state-park-grid'>
-        {parkByState}
-    </div>
-)
- 
 }
 
 FilteredParks.propTypes = {
-    test: PropTypes.arrayOf(
+    filterStates: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired, 
             city: PropTypes.string.isRequired, 
