@@ -1,4 +1,4 @@
-[ {
+{ "data": [ {
     "activities": [{
         "id": 1, 
         "name": "camping"
@@ -10,9 +10,27 @@
         "stateCode": "OR"
         }
     ],
+    "contacts": {
+        
+            "phoneNumbers": [{
+                "phoneNumber": "5415943000",
+                "type": "Voice"
+            }]
+        
+    },
     "description": "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak.",
     "directionsInfo": "From the west (Medford) - Take Hwy 62 to the West Entrance. Open year-round.",
     "directionsURL": "http://www.nps.gov/crla/planyourvisit/directions.htm",
-    "fullName": "Crater Lake National Park"
+    "fullName": "Crater Lake National Park",
+    "latitude": "42.94065854",
+    "longitude": "-122.1338414",
+    "images": [
+        {
+            "url": 
+            "https://www.nps.gov/common/uploads/structured_data/3C7B227E-1DD8-B71B-0BEECDD24771C381.jpg"
+        }
+    ],
+    "weatherInfo": "July, August, and September are your best bets for warm, dry weather. In May, June, and October, sunny days alternate with periods of rain and snow."
 
 }]
+}

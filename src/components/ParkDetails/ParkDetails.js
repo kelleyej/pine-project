@@ -19,7 +19,7 @@ export default function ParkDetails(){
     'gumo', 'hale', 'havo', 'hosp', 'indu', 'isro', 'jotr', 'katm', 'kefj', 'kova', 'lacl', 'lavo', 'maca', 'meve', 
     'mora', 'neri', 'noca', 'npsa', 'olym', 'pefo', 'pinn', 'redw', 'romo', 'sagu', 'seki', 'shen', 'thro', 'viis', 'voya', 'whsa', 'wica', 'wrst',
     'yell', 'yose', 'zion']  
-    
+    console.log(parkName)
     useEffect(() => {
          fetch(`https://developer.nps.gov/api/v1/parks/?api_key=${process.env.REACT_APP_API_KEY}&parkCode=${parkCodes}&limit=62`)
 
@@ -30,16 +30,19 @@ export default function ParkDetails(){
             return res.json()
         }
     })
-    .then(data => setParks(findPark(data.data)))
+    .then(data => {
+        console.log(data.data)
+        setParks(findPark(data.data))
+    })
     .catch(error => setError(error.message))
     }, [])
-  console.log(parks)
+
     function findPark(allParks){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
     }
 
-
+console.log(parks)
 
     if(error){
         return (
@@ -74,9 +77,9 @@ export default function ParkDetails(){
                          
                         </div>
                        
-                <OperatingHours parks={parks}/>
+                {/* <OperatingHours parks={parks}/>
                 <EntrancePasses parks={parks}/>
-                <EntranceFees parks={parks}/>
+                <EntranceFees parks={parks}/> */}
             </section>
         )
     }

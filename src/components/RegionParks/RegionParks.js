@@ -51,7 +51,7 @@ export default function RegionParks({parks, setParks}){
 
     const nationalPark = parkByRegion.map(park => {
         return (
-            <Link to={`/parks/region/${park.name}`}>
+            <Link to={`/region/${park.name}`}>
                 <Park 
                 key={park.id}
                 name={park.name}

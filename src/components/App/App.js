@@ -7,20 +7,17 @@ import ParkDetails from '../ParkDetails/ParkDetails';
 import ParkTracker from '../ParkTracker/ParkTracker';
 import NotFound from '../NotFound/NotFound';
 import {useEffect, useState } from 'react';
+import ErrorMessage from '../ErrorMessage/ErrorMessage'
 
 export default function App() {
   const [parks, setParks] = useState([])
   const [error, setError] = useState(null)
-//   useEffect(() => {
-//     fetch('http://localhost:3000/api/v1/locations')
-//     .then(res => res.json())
-//     .then(data => console.log(data))
-// }, [])
+
 useEffect(() => {
   fetch('http://localhost:3000/api/v1/locations')
   .then(res => {
       if(!res.ok){
-          throw new Error('Something went wrong. Please try again later.')
+        setError(`${res.status}`)
       } else {
           return res.json()
       }
@@ -29,17 +26,18 @@ useEffect(() => {
       setParks(data.locations)
 
   })
-  .catch(error => setError(error))
+  .catch(error => setError(error.message))
 }, [])
 
 
   return (
     <div className="App">
       <NavBar />
+      {error && <ErrorMessage error={error} />}
       <Routes>
         <Route path='/' element={<Regions />}/>
         <Route path='/parks/:region' element={<RegionParks parks={parks} setParks={setParks}/>} />
-        <Route path='/parks/region/:park' element={<ParkDetails />} />
+        <Route path='/region/:park' element={<ParkDetails />} />
          {/* <Route path='/states/:state' element={<StateCard />} /> */}
         <Route path='/parks/tracker' element={<ParkTracker parks={parks} />} />
         <Route path='*' element={<NotFound />} />
