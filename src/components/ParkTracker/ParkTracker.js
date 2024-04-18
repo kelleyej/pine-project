@@ -1,18 +1,28 @@
 
 import './ParkTracker.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 export default function ParkTracker({parks}){
-    const [checkedState, setCheckedState] = useState(new Array(parks.length).fill(false))
+    // const [checkedState, setCheckedState] = useState(new Array(parks.length).fill(false))
+    const [checkedState, setCheckedState] = useState([])
 
-     function handleOnChange(position){
+
+   function handleOnChange(position){
          const updatedCheckedState = checkedState.map((item, index) =>
          index === position ? !item : item
         );
   
         setCheckedState(updatedCheckedState);
     }
+
+    useEffect(() => {
+        const test = new Array(parks.length).fill(false)
+            setCheckedState(test)
+        
+    }, [parks])
+
+  console.log("WORK PLEASE:", checkedState)
 
     let number = checkedState.filter(state => state === true)
         const park = parks.map((area, index) => {
@@ -55,7 +65,7 @@ ParkTracker.propTypes = {
            region: PropTypes.string.isRequired,
            city: PropTypes.string.isRequired,
            image: PropTypes.string.isRequired,
-           visited: PropTypes.boo
+           visited: PropTypes.bool
         })
     )
 }

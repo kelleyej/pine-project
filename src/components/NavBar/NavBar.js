@@ -8,7 +8,7 @@ export default function NavBar(){
                 <div className='text-container'>
                     <Link to='/'><h1>PINE</h1></Link>
                 </div>    
-                <NavLink className='tracker' to='/parks/tracker'><button>Park Tracker</button></NavLink> 
+                <NavLink className='tracker' to='/parks/visited/tracker'><button>Park Tracker</button></NavLink> 
             </div>
         </header>    
     )

@@ -1,12 +1,23 @@
 import './Regions.css'
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-export default function Regions(){
+export default function Regions({parks}){
+//     const [regions, setRegions] = useState([])
+//     useEffect(() => {
+//   const allRegions = new Set(parks.map(park => park.region))
+//     setRegions([...allRegions])
+//     }, [])
+  
 
-    return (
+
+// if(regions.length > 0){
+//     regions.map(region => {
+  return (
         <main>
             <h2>Choose a region to explore National Parks...</h2>
             <div className='region-grid'>
+                {/* <Link className='region' to={`parks/${region}`}><h3>{region}</h3></Link> */}
                 <Link className='region' to='parks/Alaska'><div className='image'><img src="https://i.pinimg.com/736x/91/62/4f/91624fec2afa426222a0aaeb49d9df32.jpg"/></div><h3>Alaska</h3></Link>
                 <Link className='region' to='parks/Intermountain'><div className='image'><img src="https://i.ebayimg.com/images/g/lw8AAOSwTG1gVl1p/s-l1600.jpg" /></div><h3>Intermountain</h3></Link>
                 <Link className='region' to='parks/Midwest'><div className='image'><img src="https://thenewinquiry.com/app/uploads/2023/04/midwest-postcard-1200x820.jpeg"/></div><h3>Midwest</h3></Link>
@@ -19,5 +30,14 @@ export default function Regions(){
             </div>
         </main>
     )
+
+// })
+// } else {
+//     return (
+//         <h1>loading</h1>
+//     )
+// }
+
+  
 }
 

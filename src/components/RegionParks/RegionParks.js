@@ -14,7 +14,7 @@ export default function RegionParks({parks}){
     const [states, setStates] = useState([])
     const [filterStates, setFilterStates] = useState(null)
     const [error, setError] = useState(null)
-
+    console.log(states)
     const area = useParams().region
     const parkByRegion = parks.filter(location => {
         return location.region === area
