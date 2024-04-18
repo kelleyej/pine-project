@@ -38,3 +38,34 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+  .description {
+    font-size: 1.1em; 
+  }
+  .info-grid {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.park-fullname {
+    font-size: 2.5em; 
+}
+}
+
+@media screen and (max-width: 767px) {
+    .info-grid {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .park-fullname {
+        font-size: 1.6em; 
+    }
+    .link {
+        font-size: .8em; 
+    }
+    .description {
+        font-size: 1em; 
+    }
+ 
+}
