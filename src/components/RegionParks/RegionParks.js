@@ -83,7 +83,7 @@ RegionParks.propTypes = {
            region: PropTypes.string.isRequired,
            city: PropTypes.string.isRequired,
            image: PropTypes.string.isRequired,
-           visited: PropTypes.boo
+           visited: PropTypes.bool
         })
     )
 }
