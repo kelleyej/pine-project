@@ -16,7 +16,19 @@ Visit the site at: pine-project.vercel.app
 
 ## 🌵 Context 
 - Goals:
+  - Create a React application with mutiple pages via Router.
+  - Build a robust E2E testing suite using Cypress.
+  - Deploy application. 
 - Wins:
+  - Updating state with multiple checkboxes and varying the checkbox display based on state.
+  - Consistently updating the GitHub project board with user stories and bugs.
+  - Utilizing multiple public APIs and an API created using Express and deploying with Heroku.
+  - Making application responsive across all breakpoints.
+  - Utilizing localStorage to persist state on the Park Tracker page. 
 - Challenges:
-
+  - While having an API return a robust repsonse body, it was initially challenging figuring out what information I actually wanted to utilize in the application.
+  - Correctly updating state with use of multiple checkboxes, user interaction, and change in state with the Park Tracker page!
+    
 ## 🐿️ Future Improvements 
+- Add routing pages from the specific park page to show more details, such as camping sites, activities, accessibility, and information on entrance passes.
+- Add a maps feature, possibly utilizing the Google Maps API. 
