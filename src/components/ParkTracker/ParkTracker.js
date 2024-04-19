@@ -48,7 +48,7 @@ export default function ParkTracker({parks}){
   return (
     <div className='park-tracker-container'>   
         <h1 className='park-tracker-heading'>Park Tracker</h1>
-        <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>
+        {visited.length === 1 ? <p className='counter'>You have visited {visited.length} National Park-- you have {63- (visited.length)} left to go!</p> : <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>}
         <div className='tracker-grid'>
             {parkDisplay}
         </div> 
