@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Loading from '../Loading/Loading';
 import EntranceFees from '../EntranceFees/EntranceFees';
 import OperatingHours from '../OperatingHours/OperatingHours';
-import EntrancePasses from '../EntrancePasses/EntrancePasses';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import './ParkDetails.css';
@@ -87,10 +86,9 @@ export default function ParkDetails({parks}){
                     <p className='weather-info'>{specificPark[0].weatherInfo}</p>
                 </div>
                  <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
-                 <h2>More information on operating hours:</h2>  
+                 <h2>More information on operating hours and entrance fees:</h2>  
                 <OperatingHours parks={specificPark}/>
-                {/* <EntrancePasses parks={specificPark}/>
-                <EntranceFees parks={specificPark}/> */}
+                <EntranceFees parks={specificPark}/>
 
             </section>
         )

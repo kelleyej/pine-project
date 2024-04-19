@@ -49,13 +49,23 @@ input[type='checkbox'] {
     border: 3px solid #fcffcd;
 }
 
+@media screen and (max-width: 1024px) {
+    .tracker-grid {
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .tracker-grid {
         display: grid; 
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
     .counter {
         font-size: 1em; 
     }
 }
+
+

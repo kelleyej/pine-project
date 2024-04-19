@@ -31,8 +31,6 @@ useEffect(() => {
   .catch(error => setError(error.message))
 }, [])
 
-
-
   return (
     <div className="App">
       <NavBar />
