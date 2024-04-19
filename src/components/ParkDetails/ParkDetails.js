@@ -82,12 +82,14 @@ export default function ParkDetails({parks}){
                 </div>
                 <div className='info-grid'>
                     <CurrentWeather parks={specificPark}/>  
-                    <img src={specificPark[0].images[0].url}/>
+                    <img className='details-image' src={specificPark[0].images[0].url}/>
+         
                     <p className='weather-info'>{specificPark[0].weatherInfo}</p>
                 </div>
-                 <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>      
-                {/* <OperatingHours parks={specificPark}/>
-                <EntrancePasses parks={specificPark}/>
+                 <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
+                 <h2>More information on operating hours:</h2>  
+                <OperatingHours parks={specificPark}/>
+                {/* <EntrancePasses parks={specificPark}/>
                 <EntranceFees parks={specificPark}/> */}
 
             </section>
