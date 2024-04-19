@@ -13,7 +13,6 @@ export default function App() {
   const [parks, setParks] = useState([])
   const [error, setError] = useState(null)
  
-
 useEffect(() => {
   fetch('http://localhost:3000/api/v1/locations')
   .then(res => {
@@ -25,8 +24,6 @@ useEffect(() => {
   })
   .then(data => {
       setParks(data.locations)
-
-
   })
   .catch(error => setError(error.message))
 }, [])
@@ -42,7 +39,6 @@ useEffect(() => {
         <Route path='/parks/visited/tracker' element={<ParkTracker parks={parks} />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      
     </div>
   );
 }

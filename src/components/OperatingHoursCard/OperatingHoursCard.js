@@ -19,5 +19,5 @@ export default function OperatingHoursCard({description, standardHours}) {
 
 OperatingHoursCard.propTypes = {
     description: PropTypes.string.isRequired, 
-    standardHours: PropTypes.string.isRequired
+    standardHours: PropTypes.object.isRequired
 }

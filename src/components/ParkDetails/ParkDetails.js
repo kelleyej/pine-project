@@ -1,4 +1,4 @@
-import './ParkDetails';
+
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Loading from '../Loading/Loading';
@@ -7,22 +7,12 @@ import OperatingHours from '../OperatingHours/OperatingHours';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import './ParkDetails.css';
-import NotFound from '../NotFound/NotFound';
 
-export default function ParkDetails({parks}){
+export default function ParkDetails(){
     const parkName = useParams().park
     const [specificPark, setSpecificPark] = useState([])
     const [error, setError] = useState(null)
-    const [badRoute, setBadRoute] = useState(false)
 
-    useEffect(() => {
-       const badPath = parks.map(park => park.name)
-    if(!badPath.includes(parkName)){
-        setBadRoute(true)
-    } 
-    }, [])
-    
-   
     const parkCodes = ['acad', 'arch', 'badl', 'bibe', 'bisc', 'blca', 'brca', 'cany', 'care', 'cave', 'chis', 'cong', 
     'crla', 'cuva', 'deva', 'drto', 'dena', 'ever', 'jeff', 'gaar', 'glac', 'glba', 'grca', 'grte', 'grba', 'grsa', 'grsm', 
     'gumo', 'hale', 'havo', 'hosp', 'indu', 'isro', 'jotr', 'katm', 'kefj', 'kova', 'lacl', 'lavo', 'maca', 'meve', 
@@ -56,12 +46,6 @@ export default function ParkDetails({parks}){
         )
     }
 
-    if(badRoute){
-        return (
-            <NotFound />
-        )
-    }
-
     if(!specificPark.length){
         return (
             <Loading />
@@ -71,9 +55,8 @@ export default function ParkDetails({parks}){
             <section className='park-details'>
                 <div className='heading'>
                     <a className='link' href={specificPark[0].directionsUrl}>Link to Directions  </a>
-                <h1 className='park-fullname'>{specificPark[0].fullName} </h1>  
-                <a className='link' href={specificPark[0].url}>Link to Official Site </a> 
-                {/* <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/>  */}
+                    <h1 className='park-fullname'>{specificPark[0].fullName} </h1>  
+                    <a className='link' href={specificPark[0].url}>Link to Official Site </a> 
                 </div>
                 <p>Phone Number: {specificPark[0].contacts.phoneNumbers[0].phoneNumber} ({specificPark[0].contacts.phoneNumbers[0].type})</p>
                 <div className='description-container'>
@@ -82,15 +65,14 @@ export default function ParkDetails({parks}){
                 <div className='info-grid'>
                     <CurrentWeather parks={specificPark}/>  
                     <img className='details-image' src={specificPark[0].images[0].url}/>
-         
                     <p className='weather-info'>{specificPark[0].weatherInfo}</p>
                 </div>
-                 <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
-                 <h2>More information on operating hours and entrance fees:</h2>  
+                <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
+                <h2>More information on operating hours and entrance fees:</h2>  
                 <OperatingHours parks={specificPark}/>
                 <EntranceFees parks={specificPark}/>
-
             </section>
         )
     }
 }
+

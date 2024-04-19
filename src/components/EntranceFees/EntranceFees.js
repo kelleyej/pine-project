@@ -3,7 +3,7 @@ import EntranceFeeCard from '../EntranceFeeCard/EntranceFeeCard';
 import PropTypes from 'prop-types';
 
 export default function EntranceFees({parks}) {
-console.log(parks)
+
   const fees = parks[0].entranceFees.map(fee => {
       return (
         <section>
@@ -21,20 +21,17 @@ console.log(parks)
         {fees}
     </div>
    )
- 
-  
 }
 
 EntranceFees.propTypes ={
     parks: PropTypes.arrayOf(
         PropTypes.shape({
            entranceFees: PropTypes.arrayOf(
-            PropTypes.shape({
-                cost: PropTypes.string,
-                description: PropTypes.string, 
-                title: PropTypes.string
-            })
-           )
-
-})
+                PropTypes.shape({
+                    cost: PropTypes.string,
+                    description: PropTypes.string, 
+                    title: PropTypes.string
+                })
+           )            
+        })
     )}

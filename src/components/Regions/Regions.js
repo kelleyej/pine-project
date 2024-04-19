@@ -1,19 +1,8 @@
 import './Regions.css'
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
 
-export default function Regions({parks}){
-//     const [regions, setRegions] = useState([])
-//     useEffect(() => {
-//   const allRegions = new Set(parks.map(park => park.region))
-  
-//     setRegions([...allRegions])
-//     }, [parks])
-  
+export default function Regions(){
 
-// // if(regions.length > 0){
-//    let test= regions.map(region => {
   return (
         <main>
             <h2>Choose a region to explore National Parks...</h2>

@@ -8,7 +8,6 @@ export default function ParkTracker({parks}){
    
     function trackParks(event){
         let parkName = event.target.value
-        console.log(event.target.checked)
         if(event.target.checked){
             setVisited([...visited, parkName])
         } else {
@@ -29,37 +28,32 @@ export default function ParkTracker({parks}){
 
   const parkDisplay = parks.map(park => {
     if(visited.includes(park.name)){
-             return (
-        <div className='park-container'>
-            <p className='park-tracker-name'>{park.name}</p>
-            <img className='retro' src={park.visited} />
-            <input type="checkbox" id={park.id} checked='true' value={park.name} onChange={(event) => trackParks(event)}/>
-        </div>
-    )
+        return (
+            <div className='park-container'>
+                <p className='park-tracker-name'>{park.name}</p>
+                <img className='retro' src={park.visited} />
+                <input type="checkbox" id={park.id} checked='true' value={park.name} onChange={(event) => trackParks(event)}/>
+            </div>
+        )
     } else {
         return (
             <div className='park-container'>
-            <p className='park-tracker-name-second'>{park.name}</p>
-            <img className='retro' src={park.visited} />
-            <input type="checkbox" id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
-        </div>
+                <p className='park-tracker-name-second'>{park.name}</p>
+                <img className='retro' src={park.visited} />
+                <input type="checkbox" id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
+            </div>
         )
     }
- 
   })
   return (
-
     <div className='park-tracker-container'>   
-    <h1 className='park-tracker-heading'>Park Tracker</h1>
-    
-
-    <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>
-<div className='tracker-grid'>
-   {parkDisplay}
-</div> 
-</div>  
-  )
-  
+        <h1 className='park-tracker-heading'>Park Tracker</h1>
+        <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>
+        <div className='tracker-grid'>
+            {parkDisplay}
+        </div> 
+    </div>  
+    )
 }
 
 ParkTracker.propTypes = {
@@ -71,7 +65,7 @@ ParkTracker.propTypes = {
            region: PropTypes.string.isRequired,
            city: PropTypes.string.isRequired,
            image: PropTypes.string.isRequired,
-           visited: PropTypes.bool
+           visited: PropTypes.string.isRequired
         })
     )
 }
