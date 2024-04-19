@@ -20,7 +20,7 @@ export default function RegionParks({parks}){
     const parkByRegion = parks.filter(location => {
         return location.region === area
     })
-console.log(parkByRegion.length)
+
     useEffect(() => {
         const uniqueStates = new Set(parkByRegion.map(region => region.state))
         setStates([...uniqueStates])

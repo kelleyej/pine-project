@@ -16,11 +16,13 @@ export default function ParkDetails({parks}){
     const [error, setError] = useState(null)
     const [badRoute, setBadRoute] = useState(false)
 
-
-    const badPath = parks.map(park => park.name)
+    useEffect(() => {
+       const badPath = parks.map(park => park.name)
     if(!badPath.includes(parkName)){
         setBadRoute(true)
-    }
+    } 
+    }, [])
+    
    
     const parkCodes = ['acad', 'arch', 'badl', 'bibe', 'bisc', 'blca', 'brca', 'cany', 'care', 'cave', 'chis', 'cong', 
     'crla', 'cuva', 'deva', 'drto', 'dena', 'ever', 'jeff', 'gaar', 'glac', 'glba', 'grca', 'grte', 'grba', 'grsa', 'grsm', 
