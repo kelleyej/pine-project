@@ -3,14 +3,13 @@ import './CurrentWeather.css';
 import PropTypes from 'prop-types';
 
 export default function CurrentWeather({parks}){
+    console.log("PARKS:", typeof parks[0].latitude)
     const [weather, setWeather] = useState('')
     useEffect(() => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${parks[0].latitude}&lon=${parks[0].longitude}&appid=${process.env.REACT_APP_API_SECRET_KEY}&units=imperial`)
         .then(res => res.json())
         .then(data => setWeather(data.main))
     }, [])
-
-    console.log(weather)
 
     return (
         <div>
@@ -24,3 +23,12 @@ export default function CurrentWeather({parks}){
         </div>
     )
 }
+
+CurrentWeather.propTypes ={
+    parks: PropTypes.arrayOf(
+        PropTypes.shape({
+           latitude: PropTypes.string.isRequired, 
+           longitude: PropTypes.string.isRequired
+
+})
+    )}

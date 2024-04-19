@@ -2,15 +2,14 @@ import './Park.css';
 import PropTypes from 'prop-types'
 
 export default function Park({name, state, image, city}) {
-    
-          return (
+
+    return (
         <section className="state-widget">
-        <img className='park' src={image} />
-        <h2 className='park-name'>{name}</h2>
-        <p className='location'>{city}, {state}</p>
+            <img className='park' src={image} />
+            <h2 className='park-name'>{name}</h2>
+            <p className='location'>{city}, {state}</p>
         </section>
     )
-
 }
 
 Park.propTypes = {

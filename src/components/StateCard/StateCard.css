@@ -1,14 +1,21 @@
 .state-container {
-    /* border-bottom: 4px solid #382819; */
     cursor: pointer;
     background-color: #EADDC9;
+    width: 120px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .pine {
-    width: 200px; 
-    height: 200px;
+    width: 100px; 
+    height: 100px;
 }
 
 h3 {
     margin-bottom: 0; 
+}
+
+.state {
+    font-size: .8em; 
 }
