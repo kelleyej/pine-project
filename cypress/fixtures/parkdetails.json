@@ -11,11 +11,10 @@
         }
     ],
     "contacts": {
-        
-            "phoneNumbers": [{
-                "phoneNumber": "5415943000",
-                "type": "Voice"
-            }]
+        "phoneNumbers": [{
+            "phoneNumber": "5415943000",
+            "type": "Voice"
+        }]
         
     },
     "description": "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak.",
@@ -30,7 +29,19 @@
             "https://www.nps.gov/common/uploads/structured_data/3C7B227E-1DD8-B71B-0BEECDD24771C381.jpg"
         }
     ],
-    "weatherInfo": "July, August, and September are your best bets for warm, dry weather. In May, June, and October, sunny days alternate with periods of rain and snow."
-
-}]
+    "weatherInfo": "July, August, and September are your best bets for warm, dry weather. In May, June, and October, sunny days alternate with periods of rain and snow.",
+    "operatingHours": [
+        {
+            "description": "The park's West Entrance on Oregon Highway 62 is open year round.",
+            "standardHours": {"wednesday": "All Day", "monday": "All Day"}
+        }
+    ], 
+    "entranceFees": [
+        {
+            "cost": "30.00", 
+            "description": "This is the summer entrance fee and is charged fro…city or less) and all occupants. Good for 7 days.",
+             "title": "Entrance"
+        }
+    ]
+    }]
 }

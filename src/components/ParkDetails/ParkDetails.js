@@ -1,19 +1,18 @@
-import './ParkDetails';
+
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Loading from '../Loading/Loading';
 import EntranceFees from '../EntranceFees/EntranceFees';
 import OperatingHours from '../OperatingHours/OperatingHours';
-import EntrancePasses from '../EntrancePasses/EntrancePasses';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import './ParkDetails.css';
 
 export default function ParkDetails(){
     const parkName = useParams().park
-    const [parks, setParks] = useState([])
+    const [specificPark, setSpecificPark] = useState([])
     const [error, setError] = useState(null)
- 
+
     const parkCodes = ['acad', 'arch', 'badl', 'bibe', 'bisc', 'blca', 'brca', 'cany', 'care', 'cave', 'chis', 'cong', 
     'crla', 'cuva', 'deva', 'drto', 'dena', 'ever', 'jeff', 'gaar', 'glac', 'glba', 'grca', 'grte', 'grba', 'grsa', 'grsm', 
     'gumo', 'hale', 'havo', 'hosp', 'indu', 'isro', 'jotr', 'katm', 'kefj', 'kova', 'lacl', 'lavo', 'maca', 'meve', 
@@ -31,8 +30,7 @@ export default function ParkDetails(){
         }
     })
     .then(data => {
-        console.log(data.data)
-        setParks(findPark(data.data))
+        setSpecificPark(findPark(data.data))
     })
     .catch(error => setError(error.message))
     }, [])
@@ -48,7 +46,7 @@ export default function ParkDetails(){
         )
     }
 
-    if(!parks.length){
+    if(!specificPark.length){
         return (
             <Loading />
         )
@@ -56,24 +54,25 @@ export default function ParkDetails(){
         return (
             <section className='park-details'>
                 <div className='heading'>
-                    <a className='link' href={parks[0].directionsUrl}>Link to Directions</a>
-                <h1 className='park-fullname'>{parks[0].fullName} </h1>
-                <a className='link' href={parks[0].url}>Link to Official Site</a> 
+                    <a className='link' href={specificPark[0].directionsUrl}>Link to Directions  </a>
+                    <h1 className='park-fullname'>{specificPark[0].fullName} </h1>  
+                    <a className='link' href={specificPark[0].url}>Link to Official Site </a> 
                 </div>
-                <p>Phone Number: {parks[0].contacts.phoneNumbers[0].phoneNumber} ({parks[0].contacts.phoneNumbers[0].type})</p>
+                <p>Phone Number: {specificPark[0].contacts.phoneNumbers[0].phoneNumber} ({specificPark[0].contacts.phoneNumbers[0].type})</p>
                 <div className='description-container'>
-                    <h4 className='description'>{parks[0].description}</h4> 
+                    <h4 className='description'>{specificPark[0].description}</h4> 
                 </div>
                 <div className='info-grid'>
-                    <CurrentWeather parks={parks}/>  
-                    <img src={parks[0].images[0].url}/>
-                    <p className='weather-info'>{parks[0].weatherInfo}</p>
+                    <CurrentWeather parks={specificPark}/>  
+                    <img className='details-image' src={specificPark[0].images[0].url}/>
+                    <p className='weather-info'>{specificPark[0].weatherInfo}</p>
                 </div>
-                       
-                {/* <OperatingHours parks={parks}/>
-                <EntrancePasses parks={parks}/>
-                <EntranceFees parks={parks}/> */}
+                <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
+                <h2>More information on operating hours and entrance fees:</h2>  
+                <OperatingHours parks={specificPark}/>
+                <EntranceFees parks={specificPark}/>
             </section>
         )
     }
 }
+

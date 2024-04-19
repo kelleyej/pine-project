@@ -5,7 +5,7 @@
 }
 
 .park-details {
-    background-color: #E9E5D5;;
+    background-color: #CED8DF;
 }
 
 .park-fullname {
@@ -21,6 +21,11 @@
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     justify-items: center; 
+    align-items: center; 
+}
+
+.details-image {
+    border: 5px solid #382819;
 }
 
 .heading {
@@ -35,7 +40,26 @@
 }
 
 .link {
-    text-decoration: underline;
+    background-color: #ABBA80;
+    border: solid 2px; 
+    width: 180px; 
+    border-radius: 20px; 
+    height: 20px;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    background-color: #fcffcd;
+}
+
+.tracker-image {
+    height: 150px; 
+    width: 130px;
+}
+
+.mountain {
+    width: 100vw;
+    height: 300px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -50,6 +74,10 @@
     .park-fullname {
         font-size: 2.5em; 
     }
+    .link {
+        font-size: .6em; 
+        height: 15px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -62,7 +90,8 @@
         font-size: 1.6em; 
     }
     .link {
-        font-size: .8em; 
+        font-size: .6em; 
+        height: 15px;
     }
     .description {
         font-size: 1em; 

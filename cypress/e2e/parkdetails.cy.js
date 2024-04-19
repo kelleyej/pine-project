@@ -14,6 +14,10 @@ describe('Park details page', () => {
     }).as('Get location details'),
     cy.visit('http://localhost:3001/region/Crater%20Lake%20National%20Park')
   })
+  it('Should show loading state when fetching data', () => {
+    cy.wait('@Get location details')
+    cy.get('h1').last().contains('Loading...')
+  })
   it('Should show the park details page', () => {
     cy.get('h1').contains('PINE')
     cy.get('a').contains('Park Tracker')
@@ -24,10 +28,13 @@ describe('Park details page', () => {
     cy.get('.link').last().contains('Link to Official Site')
     cy.get('h4').last().contains('2024')
     cy.get('.weather-info').contains("July, August, and September are your best bets for warm, dry weather. In May, June, and October, sunny days alternate with periods of rain and snow.")
+    cy.get('h2').contains('More information on operating hours and entrance fees:')
+    cy.get('.hours-description').contains('is open year round.')
+    cy.get('.fee-container').first().contains('This is the summer entrance')
   })
   it('Should provide a link to go to the park tracker', () => {
     cy.get('a').contains('Park Tracker').click()
-    cy.url().should('eq', 'http://localhost:3001/parks/tracker')
+    cy.url().should('eq', 'http://localhost:3001/parks/visited/tracker')
   })
   it('Should provide a link to go back to the homepage', () => {
     cy.get('h1').contains('PINE').click()

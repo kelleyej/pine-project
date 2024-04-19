@@ -23,7 +23,8 @@ img {
    border: 5px solid rgb(56, 40, 25, .9);
    border-radius: 10px;   
    &:hover {
-        transform: scale(1.1)
+        transform: scale(1.1);
+        border-color: #fcffcd; 
     }
 }
 

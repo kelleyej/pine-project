@@ -1,0 +1,13 @@
+.hours-description {
+    width: 85%;
+}
+
+.hours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day {
+    margin-bottom: 0; 
+}

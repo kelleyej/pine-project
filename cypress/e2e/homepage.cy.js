@@ -14,7 +14,7 @@ describe('Homepage', () => {
     cy.get('.region').first().contains('Alaska')
     cy.get('.region').last().contains('Mid-Atlantic')
     cy.get('a').contains('Park Tracker').click()
-    cy.url().should('eq', 'http://localhost:3001/parks/tracker')  
+    cy.url().should('eq', 'http://localhost:3001/parks/visited/tracker')  
     cy.get('a').contains('Park Tracker')
     cy.get('.park-tracker-heading').contains('Park Tracker')
     cy.get('h1').contains('PINE').click()

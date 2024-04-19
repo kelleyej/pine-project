@@ -4,7 +4,7 @@ describe('Park tracker', () => {
         statusCode: 200, 
         fixture: 'locations'
       }).as('Get all regions'),
-        cy.visit('http://localhost:3001/parks/tracker')
+        cy.visit('http://localhost:3001/parks/visited/tracker')
     })
     it('Should describe the parks tracker page', () => {
         cy.get('h1').contains('PINE')
@@ -16,8 +16,8 @@ describe('Park tracker', () => {
         cy.get('.park-container').last().contains('p', 'Arches National Park')
         cy.get('.park-container').find("input[type='checkbox']")
         cy.get("input[type='checkbox']").first().click()
-        // cy.get('.park-tracker-name').contains('Channel Islands National Park')
-        // cy.get('.counter').contains('You have visited 1')
+        cy.get('.park-tracker-name').contains('Channel Islands National Park')
+        cy.get('.counter').contains('You have visited 1')
     })
     it('Should provide a link to get back to the homepage', () => {
         cy.get('h1').contains('PINE').click()

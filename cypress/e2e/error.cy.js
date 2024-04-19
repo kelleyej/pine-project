@@ -1,6 +1,5 @@
 describe('Regions page', () => {
     beforeEach(() => {
-   
         cy.intercept('GET', 'http://localhost:3000/api/v1/locations', {
             statusCode: 500, 
             body: {
