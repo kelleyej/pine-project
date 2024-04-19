@@ -5,6 +5,9 @@ import './ParkTracker.css';
 
 export default function ParkTracker({parks}){
     const [visited, setVisited] = useState(getVisitedParks())
+    const [search, setSearch] = useState('')
+
+    const filteredParks = parks.filter(park => park.name.toLowerCase().includes(search))   
    
     function trackParks(event){
         let parkName = event.target.value
@@ -26,7 +29,7 @@ export default function ParkTracker({parks}){
         localStorage.setItem('visited', trackedParks)
     }, [visited])
 
-  const parkDisplay = parks.map(park => {
+  const parkDisplay = filteredParks.map(park => {
     if(visited.includes(park.name)){
         return (
             <div className='park-container'>
@@ -49,6 +52,7 @@ export default function ParkTracker({parks}){
     <div className='park-tracker-container'>   
         <h1 className='park-tracker-heading'>Park Tracker</h1>
         {visited.length === 1 ? <p className='counter'>You have visited {visited.length} National Park-- you have {63- (visited.length)} left to go!</p> : <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>}
+        <input type='text' onChange={event => setSearch(event.target.value)} />
         <div className='tracker-grid'>
             {parkDisplay}
         </div> 
