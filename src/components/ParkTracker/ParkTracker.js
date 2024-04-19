@@ -58,7 +58,7 @@
 // //             return (
 // //                 <div className='park-container' key={area.key}>
 // //                     <p className='park-tracker-name'>{area.name}</p>
-// //                     <img className='visited-image' src="https://cdn.pixabay.com/photo/2012/04/13/11/16/pine-31913_640.png"/> 
+                    // <img className='visited-image' src="https://cdn.pixabay.com/photo/2012/04/13/11/16/pine-31913_640.png"/> 
 // //                     <input id={area.id} name={area.name} type='checkbox' checked={checkedState[index]} onChange={() => handleOnChange(index)} />
 // //                 </div>
 // //             )
@@ -66,7 +66,7 @@
 // //                 return (
 // //                     <div className='park-container' key={area.key}> 
 // //                     <p className='park-tracker-name-second'>{area.name}</p>
-// //                     <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
+                    // <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
 // //                     <input id={area.id} type='checkbox' checked={checkedState[index]} onChange={() => handleOnChange(index)} />
 // //                 </div>
 // //                 )
@@ -74,13 +74,13 @@
 // //         })
 
 // //     return (
-// //         <div className='park-tracker-container'>
-// //              <h1 className='park-tracker-heading'>Park Tracker</h1>
-// //              <p className='counter'>You have visited {number.length} National Parks-- you have {63- (number.length)} left to go!</p>
-// //         <div className='tracker-grid'>
-// //             {park}
-// //         </div> 
-// //         </div>  
+        // <div className='park-tracker-container'>
+        //      <h1 className='park-tracker-heading'>Park Tracker</h1>
+        //      <p className='counter'>You have visited {number.length} National Parks-- you have {63- (number.length)} left to go!</p>
+        // <div className='tracker-grid'>
+        //     {park}
+        // </div> 
+        // </div>  
 // //     )
 // // }    
 
@@ -130,15 +130,17 @@ console.log('visitedParks:', visited)
   const park = parks.map(park => {
     if(visited.includes(park.name)){
              return (
-        <div>
+        <div className='park-container'>
             <p className='park-tracker-name'>{park.name}</p>
+            <img className='visited-image' src="https://cdn.pixabay.com/photo/2012/04/13/11/16/pine-31913_640.png"/> 
             <input type="checkbox" id={park.id} checked='true' value={park.name} onChange={(event) => trackParks(event)}/>
         </div>
     )
     } else {
         return (
-            <div>
-            <p>{park.name}</p>
+            <div className='park-container'>
+            <p className='park-tracker-name-second'>{park.name}</p>
+            <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
             <input type="checkbox" id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
         </div>
         )
@@ -147,7 +149,13 @@ console.log('visitedParks:', visited)
   })
   return (
 
-    <div>{park}</div>
+    <div className='park-tracker-container'>
+    <h1 className='park-tracker-heading'>Park Tracker</h1>
+    {/* <p className='counter'>You have visited {number.length} National Parks-- you have {63- (number.length)} left to go!</p> */}
+<div className='tracker-grid'>
+   {park}
+</div> 
+</div>  
   )
   
 }
