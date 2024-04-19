@@ -60,6 +60,7 @@
 .mountain {
     width: 100vw;
     height: 300px;
+    opacity: .65; 
 }
 
 @media screen and (max-width: 1024px) {
@@ -79,6 +80,12 @@
         height: 15px;
         width: 130px;
     }
+}
+
+footer {
+    height: 50px;
+    width: 100vw; 
+    background-image: url("https://garden.spoonflower.com/c/7236339/p/f/m/lkqSRmiV784V__upRxBcc4bEIp54Qn0lpRTOkfIPVD1XOfJARt7RBRT1/Forest%20Moose%20Tracks%20-%20Woodland%20Pine%20Trees%20-%20SMALL%20SCALE%20A%20.jpg");
 }
 
 @media screen and (max-width: 767px) {

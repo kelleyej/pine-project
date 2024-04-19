@@ -71,6 +71,7 @@ export default function ParkDetails(){
                 <h2>More information on operating hours and entrance fees:</h2>  
                 <OperatingHours parks={specificPark}/>
                 <EntranceFees parks={specificPark}/>
+                <footer />
             </section>
         )
     }
