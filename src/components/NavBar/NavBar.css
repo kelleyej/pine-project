@@ -16,7 +16,6 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: 4px solid #382819; 
-    opacity: .9; 
     background-image: url("https://garden.spoonflower.com/c/7236339/p/f/m/lkqSRmiV784V__upRxBcc4bEIp54Qn0lpRTOkfIPVD1XOfJARt7RBRT1/Forest%20Moose%20Tracks%20-%20Woodland%20Pine%20Trees%20-%20LARGE%20SCALE%20A%20.jpg");
 }
 
@@ -32,13 +31,14 @@ button {
 }
 
 button:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
+    background-color: #fcffcd;
 }
 
 .text-container {
-    background: linear-gradient(to right, transparent, 5%, #E9E5D5, 70%, transparent);
-    background: linear-gradient(to left, transparent, 5%, #E9E5D5, 70%, transparent);
-    background: linear-gradient(to top, transparent, 5%, #E9E5D5, 70%, transparent);
+    background: linear-gradient(to right, transparent, 10%, #E9E5D5, 70%, transparent);
+    background: linear-gradient(to left, transparent, 10%, #E9E5D5, 70%, transparent);
+    /* background: linear-gradient(to top, transparent, 5%, #E9E5D5, 70%, transparent); */
 }
 
 .nav-container {

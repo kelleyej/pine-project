@@ -71,9 +71,10 @@ export default function ParkDetails({parks}){
         return (
             <section className='park-details'>
                 <div className='heading'>
-                    <a className='link' href={specificPark[0].directionsUrl}>Link to Directions</a>
-                <h1 className='park-fullname'>{specificPark[0].fullName} </h1>
-                <a className='link' href={specificPark[0].url}>Link to Official Site</a> 
+                    <a className='link' href={specificPark[0].directionsUrl}>Link to Directions  </a>
+                <h1 className='park-fullname'>{specificPark[0].fullName} </h1>  
+                <a className='link' href={specificPark[0].url}>Link to Official Site </a> 
+                {/* <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/>  */}
                 </div>
                 <p>Phone Number: {specificPark[0].contacts.phoneNumbers[0].phoneNumber} ({specificPark[0].contacts.phoneNumbers[0].type})</p>
                 <div className='description-container'>
@@ -84,10 +85,11 @@ export default function ParkDetails({parks}){
                     <img src={specificPark[0].images[0].url}/>
                     <p className='weather-info'>{specificPark[0].weatherInfo}</p>
                 </div>
-                       
+                 <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>      
                 {/* <OperatingHours parks={specificPark}/>
                 <EntrancePasses parks={specificPark}/>
                 <EntranceFees parks={specificPark}/> */}
+
             </section>
         )
     }

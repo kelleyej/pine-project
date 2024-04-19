@@ -32,7 +32,7 @@ export default function ParkTracker({parks}){
              return (
         <div className='park-container'>
             <p className='park-tracker-name'>{park.name}</p>
-            <img className='visited-image' src="https://cdn.pixabay.com/photo/2012/04/13/11/16/pine-31913_640.png"/> 
+            <img className='retro' src={park.visited} />
             <input type="checkbox" id={park.id} checked='true' value={park.name} onChange={(event) => trackParks(event)}/>
         </div>
     )
@@ -40,7 +40,7 @@ export default function ParkTracker({parks}){
         return (
             <div className='park-container'>
             <p className='park-tracker-name-second'>{park.name}</p>
-            <img className='tracker-image' src="https://images.vexels.com/media/users/3/136584/isolated/preview/96086ee49328e64825862a853297d4e2-pine-tree-silhouette.png"/> 
+            <img className='retro' src={park.visited} />
             <input type="checkbox" id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
         </div>
         )
@@ -49,8 +49,10 @@ export default function ParkTracker({parks}){
   })
   return (
 
-    <div className='park-tracker-container'>
+    <div className='park-tracker-container'>   
     <h1 className='park-tracker-heading'>Park Tracker</h1>
+    
+
     <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>
 <div className='tracker-grid'>
    {parkDisplay}
