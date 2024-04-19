@@ -5,7 +5,7 @@ import './ParkTracker.css';
 
 export default function ParkTracker({parks}){
     const [visited, setVisited] = useState(getVisitedParks())
-
+   
     function trackParks(event){
         let parkName = event.target.value
         console.log(event.target.checked)
@@ -27,7 +27,7 @@ export default function ParkTracker({parks}){
         localStorage.setItem('visited', trackedParks)
     }, [visited])
 
-  const park = parks.map(park => {
+  const parkDisplay = parks.map(park => {
     if(visited.includes(park.name)){
              return (
         <div className='park-container'>
@@ -53,7 +53,7 @@ export default function ParkTracker({parks}){
     <h1 className='park-tracker-heading'>Park Tracker</h1>
     <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>
 <div className='tracker-grid'>
-   {park}
+   {parkDisplay}
 </div> 
 </div>  
   )
