@@ -5,7 +5,7 @@
     font-size: 7em; 
     margin-bottom: 0; 
     margin-top: 0; 
-    color: #fcffcd;
+    color: rgb(253, 255, 205, .9);
     -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: #382819;
 }
