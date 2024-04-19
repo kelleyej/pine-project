@@ -8,18 +8,19 @@ import FilteredParks from '../FilteredParks/FilteredParks';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loading from '../Loading/Loading';
 import PropTypes from 'prop-types'; 
+import NotFound from '../NotFound/NotFound'
 
 export default function RegionParks({parks}){
 
     const [states, setStates] = useState([])
     const [filterStates, setFilterStates] = useState(null)
     const [error, setError] = useState(null)
-    console.log(states)
+
     const area = useParams().region
     const parkByRegion = parks.filter(location => {
         return location.region === area
     })
-
+console.log(parkByRegion.length)
     useEffect(() => {
         const uniqueStates = new Set(parkByRegion.map(region => region.state))
         setStates([...uniqueStates])
@@ -33,8 +34,9 @@ export default function RegionParks({parks}){
     function resetStates(){
         setFilterStates(parkByRegion)
     }
-
-    const nationalPark = parkByRegion.map(park => {
+    
+        const nationalPark = parkByRegion.map(park => {
+           
         return (
             <Link to={`/region/${park.name}`}>
                 <Park 
@@ -47,6 +49,7 @@ export default function RegionParks({parks}){
                 />
             </Link>        
         )
+   
     })
 
     if(error){
@@ -68,7 +71,8 @@ export default function RegionParks({parks}){
                     {states.length > 1 && <button className='state-button' onClick={resetStates}>Reset States</button>}
                 </div>
             <div className='park-grid'>
-                {filterStates ? <FilteredParks filterStates={filterStates}/> : nationalPark}
+               {filterStates ? <FilteredParks filterStates={filterStates}/> : nationalPark}
+               {parkByRegion.length === 0 && <NotFound />}
             </div> 
         </main> 
     )

@@ -40,8 +40,7 @@ useEffect(() => {
       <Routes>
         <Route path='/' element={<Regions parks={parks}/>}/>
         <Route path='/parks/:region' element={<RegionParks parks={parks} setParks={setParks}/>} />
-        <Route path='/region/:park' element={<ParkDetails />} />
-         {/* <Route path='/states/:state' element={<StateCard />} /> */}
+        <Route path='/region/:park' element={<ParkDetails parks={parks}/>} />
         <Route path='/parks/visited/tracker' element={<ParkTracker parks={parks} />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
