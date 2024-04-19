@@ -132,7 +132,7 @@ console.log('visitedParks:', visited)
              return (
         <div>
             <p className='park-tracker-name'>{park.name}</p>
-            <input type="checkbox" id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
+            <input type="checkbox" id={park.id} checked='true' value={park.name} onChange={(event) => trackParks(event)}/>
         </div>
     )
     } else {
