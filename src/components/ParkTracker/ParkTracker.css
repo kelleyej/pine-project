@@ -52,7 +52,7 @@ input[type='checkbox'] {
 .search-bar {
     border: 2px solid #006400;
     border-radius: 20px; 
-    width: 150px; 
+    width: 165px; 
     height: 20px; 
     text-align: center; 
     background-color: #dfd3c3;
@@ -60,7 +60,7 @@ input[type='checkbox'] {
 
 ::placeholder {
     color: black;
-    opacity: 1; 
+    opacity: .7; 
   }
 
 @media screen and (max-width: 1024px) {

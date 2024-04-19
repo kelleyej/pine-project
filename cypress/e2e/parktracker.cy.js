@@ -18,6 +18,8 @@ describe('Park tracker', () => {
         cy.get("input[type='checkbox']").first().click()
         cy.get('.park-tracker-name').contains('Channel Islands National Park')
         cy.get('.counter').contains('You have visited 1')
+        cy.get('.search-bar').type('Arches').should('have.value', 'Arches')
+        cy.get('.tracker-grid').should('have.length', 1)
     })
     it('Should provide a link to get back to the homepage', () => {
         cy.get('h1').contains('PINE').click()
