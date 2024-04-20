@@ -11,7 +11,7 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
 
 ## 🦌 Installation Instructions
 - **Install frontend**
-  - Visit PINE [here](pine-project.vercel.app) *or*
+  - Visit PINE [here](https://pine-project.vercel.app) *or*
 1. `Fork and clone this repo: https://github.com/kelleyej/pine-project`
 2. `cd into pine-project in your terminal`
 3. `Run 'npm install' in your terminal to install all dependencies`
