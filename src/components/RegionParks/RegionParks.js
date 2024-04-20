@@ -5,7 +5,6 @@ import './RegionParks.css';
 import State from '../State/State';
 import { useState, useEffect } from 'react';
 import FilteredParks from '../FilteredParks/FilteredParks';
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loading from '../Loading/Loading';
 import PropTypes from 'prop-types'; 
 import NotFound from '../NotFound/NotFound'
@@ -14,8 +13,7 @@ export default function RegionParks({parks}){
 
     const [states, setStates] = useState([])
     const [filterStates, setFilterStates] = useState(null)
-    const [error, setError] = useState(null)
-
+ 
     const area = useParams().region
     const parkByRegion = parks.filter(location => {
         return location.region === area
@@ -34,7 +32,7 @@ export default function RegionParks({parks}){
     function resetStates(){
         setFilterStates(parkByRegion)
     }
-    
+    console.log(parkByRegion)
         const nationalPark = parkByRegion.map(park => {
            
         return (
@@ -51,12 +49,6 @@ export default function RegionParks({parks}){
         )
    
     })
-
-    if(error){
-        return (
-            <ErrorMessage error={error} /> 
-        )
-    }
 
     if(!states){
         return (

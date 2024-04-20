@@ -6,6 +6,7 @@ import EntranceFees from '../EntranceFees/EntranceFees';
 import OperatingHours from '../OperatingHours/OperatingHours';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import NotFound from '../NotFound/NotFound'
 import './ParkDetails.css';
 
 export default function ParkDetails(){
@@ -34,7 +35,7 @@ export default function ParkDetails(){
     })
     .catch(error => setError(error.message))
     }, [])
-console.log(specificPark)
+
     function findPark(allParks){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
@@ -45,7 +46,11 @@ console.log(specificPark)
             <ErrorMessage error={error}/>
         )
     }
-
+// console.log(specificPark[0].parkCode)
+// if(!parkCodes.includes(specificPark[0].parkCode)){
+//   console.log("please for the love of god, work.")
+// }
+console.log(specificPark[0])
     if(!specificPark.length){
         return (
             <Loading />
