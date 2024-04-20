@@ -7,7 +7,7 @@ export default function FilteredParks({filterStates}){
 
     const parkByState = filterStates.map(state => {
     return (
-            <Link to={`/region/${state.name}`}>
+            <Link to={`/region/${state.parkCode}`}>
                 <FilteredParksCard
                     name={state.name}
                     city={state.city}

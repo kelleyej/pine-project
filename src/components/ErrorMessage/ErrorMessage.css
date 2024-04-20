@@ -1,3 +1,8 @@
+.error-container {
+    height: 100vh; 
+    background-color: #EADFCB;
+}
+
 .error-message {
     font-size: 1.5em; 
     margin-top: 0; 

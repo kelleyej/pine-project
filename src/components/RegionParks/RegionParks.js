@@ -10,10 +10,8 @@ import PropTypes from 'prop-types';
 import NotFound from '../NotFound/NotFound'
 
 export default function RegionParks({parks}){
-
     const [states, setStates] = useState([])
     const [filterStates, setFilterStates] = useState(null)
- 
     const area = useParams().region
     const parkByRegion = parks.filter(location => {
         return location.region === area
@@ -32,8 +30,8 @@ export default function RegionParks({parks}){
     function resetStates(){
         setFilterStates(parkByRegion)
     }
-    console.log(parkByRegion)
-        const nationalPark = parkByRegion.map(park => {
+    
+    const nationalPark = parkByRegion.map(park => {
            
         return (
             <Link to={`/region/${park.parkCode}`}>

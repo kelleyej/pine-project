@@ -9,7 +9,7 @@ const eachState = states.map(location => {
         <StateCard
             location={location}
             filterParks={filterParks}
-             parkByRegion={parkByRegion}
+            parkByRegion={parkByRegion}
         />        
     )
 })
