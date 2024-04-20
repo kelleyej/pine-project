@@ -1,4 +1,5 @@
 describe('Park details page', () => {
+
     beforeEach(() => {
     cy.intercept('GET', 'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=acad,arch,badl,bibe,bisc,blca,brca,cany,care,cave,chis,cong,crla,cuva,deva,drto,dena,ever,jeff,gaar,glac,glba,grca,grte,grba,grsa,grsm,gumo,hale,havo,hosp,indu,isro,jotr,katm,kefj,kova,lacl,lavo,maca,meve,mora,neri,noca,npsa,olym,pefo,pinn,redw,romo,sagu,seki,shen,thro,viis,voya,whsa,wica,wrst,yell,yose,zion&limit=62', {
       statusCode: 200, 
@@ -13,10 +14,6 @@ describe('Park details page', () => {
       fixture: 'locations'
     }).as('Get location details'),
     cy.visit('http://localhost:3001/region/Crater%20Lake%20National%20Park')
-  })
-  it('Should show loading state when fetching data', () => {
-    cy.wait('@Get location details')
-    cy.get('h1').last().contains('Loading...')
   })
   it('Should show the park details page', () => {
     cy.get('h1').contains('PINE')

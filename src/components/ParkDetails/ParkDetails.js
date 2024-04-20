@@ -34,7 +34,7 @@ export default function ParkDetails(){
     })
     .catch(error => setError(error.message))
     }, [])
-
+console.log(specificPark)
     function findPark(allParks){
         const specificPark = allParks.filter(park => park.fullName === parkName)
         return specificPark; 
