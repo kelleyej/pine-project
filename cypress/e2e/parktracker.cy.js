@@ -1,6 +1,6 @@
 describe('Park tracker', () => {
     beforeEach(() => {
-        cy.intercept('GET', 'http://localhost:3000/api/v1/locations', {
+        cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
         statusCode: 200, 
         fixture: 'locations'
       }).as('Get all regions'),
