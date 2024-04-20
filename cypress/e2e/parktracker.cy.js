@@ -19,7 +19,11 @@ describe('Park tracker', () => {
         cy.get('.park-tracker-name').contains('Channel Islands National Park')
         cy.get('.counter').contains('You have visited 1')
         cy.get('.search-bar').type('Arches').should('have.value', 'Arches')
-        cy.get('.tracker-grid').should('have.length', 1)
+        cy.get('.park-container').should('have.length', 1)
+        cy.get('h4').contains('X').click()
+        cy.get('.park-container').should('have.length', 3)
+        cy.get('.search-bar').type('adfs').should('have.value', 'adfs')
+        cy.get('h3').contains('No park with that name exists.')
     })
     it('Should provide a link to get back to the homepage', () => {
         cy.get('h1').contains('PINE').click()
