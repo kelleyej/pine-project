@@ -5,6 +5,9 @@ import './ParkTracker.css';
 
 export default function ParkTracker({parks}){
     const [visited, setVisited] = useState(getVisitedParks())
+    const [search, setSearch] = useState('')
+   
+    const filteredParks = parks.filter(park => park.name.toLowerCase().includes(search.toLowerCase()))   
    
     function trackParks(event){
         let parkName = event.target.value
@@ -21,37 +24,48 @@ export default function ParkTracker({parks}){
         return saved || []
     }
 
+    function resetSearch(){
+       setSearch('')
+    }
+
     useEffect(() => {
         const trackedParks = JSON.stringify(visited)
         localStorage.setItem('visited', trackedParks)
     }, [visited])
 
-  const parkDisplay = parks.map(park => {
+  const parkDisplay = filteredParks.map(park => {
+
     if(visited.includes(park.name)){
         return (
             <div className='park-container'>
                 <p className='park-tracker-name'>{park.name}</p>
                 <img className='retro' src={park.visited} />
-                <input type="checkbox" id={park.id} checked='true' value={park.name} onChange={(event) => trackParks(event)}/>
+                <input type="checkbox" id={park.id} checked={true} value={park.name} onChange={(event) => trackParks(event)}/>
             </div>
         )
-    } else {
+    } else if(!visited.includes(park.name)) {
         return (
             <div className='park-container'>
                 <p className='park-tracker-name-second'>{park.name}</p>
                 <img className='retro' src={park.visited} />
-                <input type="checkbox" id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
+                <input type="checkbox" checked={false} id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
             </div>
         )
     }
   })
+
   return (
     <div className='park-tracker-container'>   
         <h1 className='park-tracker-heading'>Park Tracker</h1>
         {visited.length === 1 ? <p className='counter'>You have visited {visited.length} National Park-- you have {63- (visited.length)} left to go!</p> : <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>}
+        <div className='search-container'>
+            <input className='search-bar' type='text' value={search} placeholder='Search park by name 🔍' onChange={event => setSearch(event.target.value)} />
+            <h4 className='clear' onClick={event => resetSearch()}>X</h4>
+        </div>
+        {filteredParks.length > 0 ?
         <div className='tracker-grid'>
-            {parkDisplay}
-        </div> 
+            {parkDisplay} 
+        </div> : <div className='sad-path'><h3 className='sad-path-message'>No park with that name exists.</h3></div>}
     </div>  
     )
 }

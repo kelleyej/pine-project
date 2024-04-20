@@ -6,7 +6,7 @@ export default function NavBar(){
         <header>
             <div className='nav-container'>
                 <div className='text-container'>
-                    <Link to='/'><h1>PINE</h1></Link>
+                    <Link to='/'><h1 className='title'>PINE</h1></Link>
                 </div>    
                 <NavLink className='tracker' to='/parks/visited/tracker'><button>Park Tracker</button></NavLink> 
             </div>

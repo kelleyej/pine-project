@@ -8,7 +8,7 @@ describe('Park details page', () => {
         statusCode: 200, 
         fixture: 'weatherinfo'
     }).as('Get weather details'),
-    cy.intercept('GET', 'http://localhost:3000/api/v1/locations', {
+    cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
       statusCode: 200, 
       fixture: 'locations'
     }).as('Get location details'),

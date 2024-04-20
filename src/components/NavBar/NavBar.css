@@ -1,10 +1,22 @@
-h1 {
+.title {
     font-family: "Spicy Rice", serif;
     font-weight: 100;
     font-style: normal;
     font-size: 7em; 
     margin-bottom: 0; 
     margin-top: 0; 
+    color: rgb(253, 255, 205, .9);
+    -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #382819;
+}
+
+h1 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 7em; 
+    margin-bottom: 0; 
+    margin-top: 0;
     color: #382819;
 }
 
@@ -16,7 +28,7 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: 4px solid #382819; 
-    background-image: url("https://garden.spoonflower.com/c/7236339/p/f/m/lkqSRmiV784V__upRxBcc4bEIp54Qn0lpRTOkfIPVD1XOfJARt7RBRT1/Forest%20Moose%20Tracks%20-%20Woodland%20Pine%20Trees%20-%20LARGE%20SCALE%20A%20.jpg");
+    background-image: linear-gradient(rgba(233, 229, 213, 0.2), rgba(233, 229, 213, 0.2)), url("https://garden.spoonflower.com/c/7236339/p/f/m/lkqSRmiV784V__upRxBcc4bEIp54Qn0lpRTOkfIPVD1XOfJARt7RBRT1/Forest%20Moose%20Tracks%20-%20Woodland%20Pine%20Trees%20-%20LARGE%20SCALE%20A%20.jpg");
 }
 
 button {
@@ -33,12 +45,6 @@ button {
 button:hover {
     transform: scale(1.1);
     background-color: #fcffcd;
-}
-
-.text-container {
-    background: linear-gradient(to right, transparent, 10%, #E9E5D5, 70%, transparent);
-    background: linear-gradient(to left, transparent, 10%, #E9E5D5, 70%, transparent);
-    /* background: linear-gradient(to top, transparent, 5%, #E9E5D5, 70%, transparent); */
 }
 
 .nav-container {

@@ -1,6 +1,6 @@
 describe('Other error handling', () => {
 beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:3000/api/v1/locations', {
+    cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
         statusCode: 500, 
         body: {
             message: "Internal Server Error"
@@ -18,7 +18,7 @@ beforeEach(() => {
         message: "Internal Server Error"
       }
   }).as('Server error  handling'),
-    cy.intercept('GET', 'http://localhost:3000/api/v1/locations', {
+    cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
         statusCode: 404, 
         body: {
             message: "Bad Request"

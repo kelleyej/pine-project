@@ -49,6 +49,41 @@ input[type='checkbox'] {
     border: 3px solid #fcffcd;
 }
 
+.search-bar {
+    border: 2px solid #006400;
+    border-radius: 20px; 
+    width: 165px; 
+    height: 20px; 
+    text-align: center; 
+    background-color: #dfd3c3;
+    margin-right: 10px;
+}
+
+::placeholder {
+    color: black;
+    opacity: .7; 
+    font-style: italic;
+  }
+
+  .sad-path {
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .sad-path-message {
+    width: 40%; 
+    color: #382819;
+  }
+
+  .search-container {
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .clear {
+    color: #382819;
+  }
+
 @media screen and (max-width: 1024px) {
     .tracker-grid {
         display: grid; 

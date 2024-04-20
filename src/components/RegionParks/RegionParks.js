@@ -72,8 +72,8 @@ export default function RegionParks({parks}){
                 </div>
             <div className='park-grid'>
                {filterStates ? <FilteredParks filterStates={filterStates}/> : nationalPark}
-               {parkByRegion.length === 0 && <NotFound />}
             </div> 
+                {parkByRegion.length === 0 && <NotFound />}
         </main> 
     )
 }

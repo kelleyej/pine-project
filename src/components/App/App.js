@@ -14,7 +14,7 @@ export default function App() {
   const [error, setError] = useState(null)
  
 useEffect(() => {
-  fetch('http://localhost:3000/api/v1/locations')
+  fetch('https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations')
   .then(res => {
       if(!res.ok){
         setError(`${res.status}`)
