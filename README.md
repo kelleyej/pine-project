@@ -1,7 +1,7 @@
 # PINE 🌲
 
 ## 🐻 Abstract
-Introducing PINE! It is your ultimate guide to all 63 National Parks in the United States. You can explore parks by region and filter parks by state. Click on a park to view the current weather, operating hours, entrance fees, and links to both directions to the park and the official park site. Do you have a goal to visit all National Parks in your lifetime? You can track how many parks you have already visited using the Park Tracker. The application was created using React and data is fetched from a few different APIs, including the OpenWeather and National Park Service public API and a server built using Express. Happy adventuring! 
+Introducing PINE! It is your ultimate guide to all 63 National Parks in the United States. You can explore parks by region and filter parks by state. Click on a park to view the current weather, general weather for certain times of the year, operating hours, entrance fees, and links to both directions to the park and the official park site. Do you have a goal to visit all National Parks in your lifetime? You can track how many parks you have already visited using the Park Tracker. The application was created using React and data is fetched from a few different APIs, including the OpenWeather and National Park Service public API and a server built using Express. Happy adventuring! 
 
 ## 🏕️ Contributors 
 [Erin Kelley](https://github.com/kelleyej)
@@ -16,6 +16,7 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
 2. `cd into pine-project in your terminal`
 3. `Run 'npm install' in your terminal to install all dependencies`
 4. `Run 'npm start' to start up the frontend.`
+5. Run Cypress E2E testing: `npm run cypress`
 
 - **Backend**
    - Visit: https://github.com/kelleyej/national-park-api for GET request instructions. 
