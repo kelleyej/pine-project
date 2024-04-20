@@ -64,6 +64,15 @@ input[type='checkbox'] {
     font-style: italic;
   }
 
+  .sad-path {
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .sad-path-message {
+    width: 40%; 
+  }
+
 @media screen and (max-width: 1024px) {
     .tracker-grid {
         display: grid; 
