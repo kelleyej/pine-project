@@ -24,7 +24,3 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
-
-parkdetails.cy.js
-regionerror.cy.js
-regionpage.cy.js
