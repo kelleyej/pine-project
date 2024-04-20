@@ -45,4 +45,5 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
     
 ## 🐿️ Future Improvements 
 - Add routing pages from the specific park page to show more details, such as camping sites, activities, accessibility, and information on entrance passes.
-- Add a maps feature, possibly utilizing the Google Maps API. 
+- Add a maps feature, possibly utilizing the Google Maps API.
+- Be able to show only visited parks versus non-visited parks on the Park Tracker page. 
