@@ -17,6 +17,8 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
 3. `Run 'npm install' in your terminal to install all dependencies`
 4. `Run 'npm start' to start up the frontend.`
 5. Run Cypress E2E testing: `npm run cypress`
+6. Click E2E Testing
+7. Click Start E2E Testing in Chrome
 
 - **Backend**
    - Visit: https://github.com/kelleyej/national-park-api for GET request instructions. 
