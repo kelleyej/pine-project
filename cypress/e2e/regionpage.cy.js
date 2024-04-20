@@ -4,7 +4,7 @@ describe('Regions page', () => {
       statusCode: 200, 
       fixture: 'locations'
     }).as('Get all regions'),
-    cy.intercept('GET', 'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=acad,arch,badl,bibe,bisc,blca,brca,cany,care,cave,chis,cong,crla,cuva,deva,drto,dena,ever,jeff,gaar,glac,glba,grca,grte,grba,grsa,grsm,gumo,hale,havo,hosp,indu,isro,jotr,katm,kefj,kova,lacl,lavo,maca,meve,mora,neri,noca,npsa,olym,pefo,pinn,redw,romo,sagu,seki,shen,thro,viis,voya,whsa,wica,wrst,yell,yose,zion&limit=62', {
+    cy.intercept('GET', 'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=crla&limit=62', {
       statusCode: 200, 
       fixture: "parkdetails"
     }).as('Get park details'),
@@ -33,7 +33,7 @@ describe('Regions page', () => {
     cy.get('button').contains('Reset States').click()
     cy.get('section').should('have.length', 2)
     cy.get('section').contains('Crater Lake').click()
-    cy.url().should('eq','http://localhost:3001/region/Crater%20Lake%20National%20Park')
+    cy.url().should('eq','http://localhost:3001/region/crla')
   })
 })
 

@@ -5,17 +5,13 @@ import './RegionParks.css';
 import State from '../State/State';
 import { useState, useEffect } from 'react';
 import FilteredParks from '../FilteredParks/FilteredParks';
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loading from '../Loading/Loading';
 import PropTypes from 'prop-types'; 
 import NotFound from '../NotFound/NotFound'
 
 export default function RegionParks({parks}){
-
     const [states, setStates] = useState([])
     const [filterStates, setFilterStates] = useState(null)
-    const [error, setError] = useState(null)
-
     const area = useParams().region
     const parkByRegion = parks.filter(location => {
         return location.region === area
@@ -35,10 +31,10 @@ export default function RegionParks({parks}){
         setFilterStates(parkByRegion)
     }
     
-        const nationalPark = parkByRegion.map(park => {
+    const nationalPark = parkByRegion.map(park => {
            
         return (
-            <Link to={`/region/${park.name}`}>
+            <Link to={`/region/${park.parkCode}`}>
                 <Park 
                 key={park.id}
                 name={park.name}
@@ -51,12 +47,6 @@ export default function RegionParks({parks}){
         )
    
     })
-
-    if(error){
-        return (
-            <ErrorMessage error={error} /> 
-        )
-    }
 
     if(!states){
         return (
@@ -81,13 +71,14 @@ export default function RegionParks({parks}){
 RegionParks.propTypes = {
     parks: PropTypes.arrayOf(
         PropTypes.shape({
-           id: PropTypes.number.isRequired, 
+           id: PropTypes.string.isRequired, 
            name: PropTypes.string.isRequired,
            state: PropTypes.string.isRequired,
            region: PropTypes.string.isRequired,
            city: PropTypes.string.isRequired,
            image: PropTypes.string.isRequired,
-           visited: PropTypes.string.isRequired
+           visited: PropTypes.string.isRequired,
+           parkCode: PropTypes.string.isRequired
         })
     )
 }

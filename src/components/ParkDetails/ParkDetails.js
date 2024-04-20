@@ -6,6 +6,7 @@ import EntranceFees from '../EntranceFees/EntranceFees';
 import OperatingHours from '../OperatingHours/OperatingHours';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import NotFound from '../NotFound/NotFound'
 import './ParkDetails.css';
 
 export default function ParkDetails(){
@@ -20,24 +21,24 @@ export default function ParkDetails(){
     'yell', 'yose', 'zion']  
 
     useEffect(() => {
-         fetch(`https://developer.nps.gov/api/v1/parks/?api_key=${process.env.REACT_APP_API_KEY}&parkCode=${parkCodes}&limit=62`)
-
-    .then(res => {
-        if(!res.ok){
-           setError('Something went wrong. Please try again later')
-        } else {
-            return res.json()
-        }
-    })
+        fetch(`https://developer.nps.gov/api/v1/parks/?api_key=${process.env.REACT_APP_API_KEY}&parkCode=${parkName}&limit=62`)
+        .then(res => {
+            if(!res.ok){
+            setError('Something went wrong. Please try again later')
+            } else {
+                return res.json()
+            }
+        })
     .then(data => {
-        setSpecificPark(findPark(data.data))
+        setSpecificPark(data.data)
     })
     .catch(error => setError(error.message))
     }, [])
 
-    function findPark(allParks){
-        const specificPark = allParks.filter(park => park.fullName === parkName)
-        return specificPark; 
+   if(!parkCodes.includes(parkName)){
+        return (
+            <NotFound />
+        )
     }
 
     if(error){

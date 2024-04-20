@@ -7,7 +7,7 @@ export default function FilteredParks({filterStates}){
 
     const parkByState = filterStates.map(state => {
     return (
-            <Link to={`/region/${state.name}`}>
+            <Link to={`/region/${state.parkCode}`}>
                 <FilteredParksCard
                     name={state.name}
                     city={state.city}
@@ -28,12 +28,13 @@ export default function FilteredParks({filterStates}){
 FilteredParks.propTypes = {
     filterStates: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number.isRequired, 
+            id: PropTypes.string.isRequired, 
             city: PropTypes.string.isRequired, 
             image: PropTypes.string.isRequired, 
             name: PropTypes.string.isRequired, 
             region: PropTypes.string.isRequired, 
-            state: PropTypes.string.isRequired
+            state: PropTypes.string.isRequired,
+            parkCode: PropTypes.string.isRequired
         })
     )
 }

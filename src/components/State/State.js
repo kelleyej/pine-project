@@ -9,7 +9,7 @@ const eachState = states.map(location => {
         <StateCard
             location={location}
             filterParks={filterParks}
-             parkByRegion={parkByRegion}
+            parkByRegion={parkByRegion}
         />        
     )
 })
@@ -27,11 +27,12 @@ State.propTypes = {
     states: PropTypes.arrayOf(PropTypes.string).isRequired,
     parkByRegion: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number.isRequired, 
+            id: PropTypes.string.isRequired, 
             name: PropTypes.string.isRequired, 
             state: PropTypes.string.isRequired, 
             region: PropTypes.string.isRequired, 
-            image: PropTypes.string.isRequired
+            image: PropTypes.string.isRequired,
+            parkCode: PropTypes.string.isRequired
         })
     )
 }

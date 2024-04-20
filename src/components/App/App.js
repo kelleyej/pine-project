@@ -31,14 +31,14 @@ useEffect(() => {
   return (
     <div className="App">
       <NavBar />
-      {error && <ErrorMessage error={error} />}
+      {error ? <ErrorMessage error={error} /> :
       <Routes>
         <Route path='/' element={<Regions parks={parks}/>}/>
         <Route path='/parks/:region' element={<RegionParks parks={parks} setParks={setParks}/>} />
         <Route path='/region/:park' element={<ParkDetails parks={parks}/>} />
         <Route path='/parks/visited/tracker' element={<ParkTracker parks={parks} />} />
         <Route path='*' element={<NotFound />} />
-      </Routes>
+      </Routes> }
     </div>
   );
 }
