@@ -59,7 +59,7 @@ export default function ParkTracker({parks}){
         <h1 className='park-tracker-heading'>Park Tracker</h1>
         {visited.length === 1 ? <p className='counter'>You have visited {visited.length} National Park-- you have {63- (visited.length)} left to go!</p> : <p className='counter'>You have visited {visited.length} National Parks-- you have {63- (visited.length)} left to go!</p>}
         <div className='search-container'>
-            <input className='search-bar' type='text' value={search} placeholder='Search park by name 🔍' onChange={event => setSearch(event.target.value)} />
+            <input className='search-bar' type='text' value={search} placeholder='Search park by name 🔍 ' onChange={event => setSearch(event.target.value)} />
             <h4 className='clear' onClick={event => resetSearch()}>X</h4>
         </div>
         {filteredParks.length > 0 ?

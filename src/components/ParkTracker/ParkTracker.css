@@ -82,6 +82,7 @@ input[type='checkbox'] {
 
   .clear {
     color: #382819;
+    cursor: pointer; 
   }
 
 @media screen and (max-width: 1024px) {
