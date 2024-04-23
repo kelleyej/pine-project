@@ -13,7 +13,7 @@ describe('Error handling', () => {
             }
           }).as('Bad request error handling'),
     
-     cy.visit('http://localhost:3001/')
+     cy.visit('http://localhost:3000/')
   })
   it('Should show user feedback if there is an error', () => {
     cy.get('h1').contains('Awww, nuts!')

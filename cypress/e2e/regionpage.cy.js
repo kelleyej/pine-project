@@ -12,7 +12,7 @@ describe('Regions page', () => {
       statusCode: 200, 
       fixture: 'weatherinfo'
   }).as('Get weather details'),
-    cy.visit('http://localhost:3001/parks/Pacific%20West')
+    cy.visit('http://localhost:3000/parks/Pacific%20West')
   })
   it('Should describe the regions page', () => {
     cy.get('h1').contains('PINE')
@@ -33,7 +33,7 @@ describe('Regions page', () => {
     cy.get('button').contains('Reset States').click()
     cy.get('section').should('have.length', 2)
     cy.get('section').contains('Crater Lake').click()
-    cy.url().should('eq','http://localhost:3001/region/crla')
+    cy.url().should('eq','http://localhost:3000/region/crla')
   })
 })
 

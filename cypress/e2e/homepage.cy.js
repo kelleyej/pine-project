@@ -4,7 +4,7 @@ describe('Homepage', () => {
         statusCode: 200, 
         fixture: 'locations'
       }).as('Get all regions'),
-      cy.visit('http://localhost:3001')
+      cy.visit('http://localhost:3000')
     })
   it('Should describe what the user will see when visiting the homepage', () => {
     cy.get('h1').contains('PINE')
@@ -14,12 +14,12 @@ describe('Homepage', () => {
     cy.get('.region').first().contains('Alaska')
     cy.get('.region').last().contains('Mid-Atlantic')
     cy.get('a').contains('Park Tracker').click()
-    cy.url().should('eq', 'http://localhost:3001/parks/visited/tracker')  
+    cy.url().should('eq', 'http://localhost:3000/parks/visited/tracker')  
     cy.get('a').contains('Park Tracker')
     cy.get('.park-tracker-heading').contains('Park Tracker')
     cy.get('h1').contains('PINE').click()
-    cy.url().should('eq', 'http://localhost:3001/')
+    cy.url().should('eq', 'http://localhost:3000/')
     cy.get('.region').contains('Pacific West').click()
-    cy.url().should('eq', 'http://localhost:3001/parks/Pacific%20West')
+    cy.url().should('eq', 'http://localhost:3000/parks/Pacific%20West')
   })
 })

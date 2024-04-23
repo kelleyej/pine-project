@@ -5,7 +5,7 @@ describe('Homepage', () => {
         fixture: 'locations'
       }).as('Get all regions')
      
-    cy.visit('http://localhost:3001/adsfsad')
+    cy.visit('http://localhost:3000/adsfsad')
   })
 
   it('Should show the user an error message', () => {

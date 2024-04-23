@@ -36,7 +36,7 @@ beforeEach(() => {
             message: "Bad Request"
         }
     }).as('Bad request error  handling'),
-    cy.visit('http://localhost:3001/parks/Pacific%20West')
+    cy.visit('http://localhost:3000/parks/Pacific%20West')
     })
     it('Should inform user if there is an error', () => {
         cy.get('h1').contains('Awww, nuts!')

@@ -46,7 +46,7 @@ export default function ParkDetails(){
             <ErrorMessage error={error}/>
         )
     }
-
+ 
     if(!specificPark.length){
         return (
             <Loading />
