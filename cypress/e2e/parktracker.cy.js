@@ -4,7 +4,7 @@ describe('Park tracker', () => {
         statusCode: 200, 
         fixture: 'locations'
       }).as('Get all regions'),
-        cy.visit('http://localhost:3001/parks/visited/tracker')
+        cy.visit('http://localhost:3000/parks/visited/tracker')
     })
     it('Should describe the parks tracker page', () => {
         cy.get('h1').contains('PINE')
@@ -27,6 +27,6 @@ describe('Park tracker', () => {
     })
     it('Should provide a link to get back to the homepage', () => {
         cy.get('h1').contains('PINE').click()
-        cy.url().should('eq', 'http://localhost:3001/')
+        cy.url().should('eq', 'http://localhost:3000/')
     })
 })

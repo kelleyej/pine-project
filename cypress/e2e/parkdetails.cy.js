@@ -13,7 +13,7 @@ describe('Park details page', () => {
       statusCode: 200, 
       fixture: 'locations'
     }).as('Get location details'),
-    cy.visit('http://localhost:3001/region/crla')
+    cy.visit('http://localhost:3000/region/crla')
   })
   it('Should show the park details page', () => {
     cy.get('h1').contains('PINE')
@@ -31,10 +31,10 @@ describe('Park details page', () => {
   })
   it('Should provide a link to go to the park tracker', () => {
     cy.get('a').contains('Park Tracker').click()
-    cy.url().should('eq', 'http://localhost:3001/parks/visited/tracker')
+    cy.url().should('eq', 'http://localhost:3000/parks/visited/tracker')
   })
   it('Should provide a link to go back to the homepage', () => {
     cy.get('h1').contains('PINE').click()
-    cy.url().should('eq', 'http://localhost:3001/')
+    cy.url().should('eq', 'http://localhost:3000/')
   })
 })
