@@ -1,15 +1,20 @@
 import './Park.css';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 export default function Park({name, state, image, city}) {
+    const [loaded, setLoaded] = useState(false)
 
-    return (
+         return (
         <section className="state-widget">
-            <img className='park' src={image} />
+            <img style={{display: !loaded && 'none'}} className='park' src={image} onLoad={() => setLoaded(true)}/>
+{(!loaded) && <img src="https://natureforall.tiged.org/images/tiged/docs/class/225917.gif"/>}
             <h2 className='park-name'>{name}</h2>
             <p className='location'>{city}, {state}</p>
         </section>
     )
+    
+   
 }
 
 Park.propTypes = {

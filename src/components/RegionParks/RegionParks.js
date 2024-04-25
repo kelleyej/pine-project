@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import FilteredParks from '../FilteredParks/FilteredParks';
 import Loading from '../Loading/Loading';
 import PropTypes from 'prop-types'; 
-import NotFound from '../NotFound/NotFound'
+import NotFound from '../NotFound/NotFound';
 
 export default function RegionParks({parks}){
     const [states, setStates] = useState([])

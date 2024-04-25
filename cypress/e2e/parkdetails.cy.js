@@ -1,18 +1,20 @@
 describe('Park details page', () => {
 
     beforeEach(() => {
-    cy.intercept('GET', 'https://developer.nps.gov/api/v1/parks/?api_key=L85BGF7lUDFAWRO9q3sz5DijJohpytxVfajv4UXu&parkCode=crla&limit=62', {
+    const openWeatherApiKey = Cypress.env('REACT_APP_API_SECRET_KEY')
+    const NPSApiKey = Cypress.env('REACT_APP_API_KEY')
+    cy.intercept('GET', `https://developer.nps.gov/api/v1/parks/?api_key=${NPSApiKey}&parkCode=crla&limit=62`, {
       statusCode: 200, 
       fixture: 'parkdetails'
-    }).as('Get park details'),
-    cy.intercept('GET', 'https://api.openweathermap.org/data/2.5/weather?lat=42.94065854&lon=-122.1338414&appid=f962fe6dc01d07061642d772a8ee9592&units=imperial', {
+    }).as('parkDetails'),
+    cy.intercept('GET', `https://api.openweathermap.org/data/2.5/weather?lat=42.94065854&lon=-122.1338414&appid=${openWeatherApiKey}&units=imperial`, {
         statusCode: 200, 
         fixture: 'weatherinfo'
-    }).as('Get weather details'),
+    }).as('weatherDetails'),
     cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
       statusCode: 200, 
       fixture: 'locations'
-    }).as('Get location details'),
+    }).as('locationDetails'),
     cy.visit('http://localhost:3000/region/crla')
   })
   it('Should show the park details page', () => {

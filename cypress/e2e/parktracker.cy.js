@@ -3,7 +3,7 @@ describe('Park tracker', () => {
         cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
         statusCode: 200, 
         fixture: 'locations'
-      }).as('Get all regions'),
+      }).as('getRegions'),
         cy.visit('http://localhost:3000/parks/visited/tracker')
     })
     it('Should describe the parks tracker page', () => {
