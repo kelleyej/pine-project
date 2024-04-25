@@ -26,6 +26,4 @@ yarn-error.log*
 .env
 
 #Cypress sensitive information 
-cypress/e2e/parkdetails.cy.js
-cypress/e2e/regionerror.cy.js
-cypress/e2e/regionpage.cy.js
+cypress.env.json
