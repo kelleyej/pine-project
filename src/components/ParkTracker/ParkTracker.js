@@ -6,6 +6,7 @@ import './ParkTracker.css';
 export default function ParkTracker({parks}){
     const [visited, setVisited] = useState(getVisitedParks())
     const [search, setSearch] = useState('')
+    const [loaded, setLoaded] = useState(false)
    
     const filteredParks = parks.filter(park => park.name.toLowerCase().includes(search.toLowerCase()))   
    
@@ -39,7 +40,8 @@ export default function ParkTracker({parks}){
         return (
             <div className='park-container'>
                 <p className='park-tracker-name'>{park.name}</p>
-                <img className='retro' src={park.visited} />
+                <img className='retro' src={park.visited} onLoad={() => setLoaded(true)} style={{display: !loaded && 'none'}}/>
+                {(!loaded) && <img className='tree' src="https://media2.giphy.com/media/XpgKxGfpgAJE2cMtTd/giphy.gif?cid=6c09b9521bqjjagm8h0l4em3ebv4oc860dib028qderi8c5z&ep=v1_stickers_related&rid=giphy.gif&ct=s" />}
                 <input type="checkbox" id={park.id} checked={true} value={park.name} onChange={(event) => trackParks(event)}/>
             </div>
         )
@@ -47,7 +49,8 @@ export default function ParkTracker({parks}){
         return (
             <div className='park-container'>
                 <p className='park-tracker-name-second'>{park.name}</p>
-                <img className='retro' src={park.visited} />
+                <img className='retro' src={park.visited} onLoad={() => setLoaded(true)} style={{display: !loaded && 'none'}}/>
+                {(!loaded) && <img className='tree' src="https://media2.giphy.com/media/XpgKxGfpgAJE2cMtTd/giphy.gif?cid=6c09b9521bqjjagm8h0l4em3ebv4oc860dib028qderi8c5z&ep=v1_stickers_related&rid=giphy.gif&ct=s" />}
                 <input type="checkbox" checked={false} id={park.id} value={park.name} onChange={(event) => trackParks(event)}/>
             </div>
         )
