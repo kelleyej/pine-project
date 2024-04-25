@@ -8,7 +8,7 @@ export default function Park({name, state, image, city}) {
          return (
         <section className="state-widget">
             <img className='park' src={image} onLoad={() => setLoaded(true)}/>
-{(!loaded) && <img className='park' src="https://loading.io/assets/mod/spinner/spinner/lg.gif"/>}
+{(!loaded) && <img src="https://media4.giphy.com/media/DkGoE0YPSLSyqKnGN4/200w.gif?cid=6c09b952k549mdmihynkxa65lauw91p1o6gjuprm3gh5halb&ep=v1_gifs_search&rid=200w.gif&ct=g"/>}
             <h2 className='park-name'>{name}</h2>
             <p className='location'>{city}, {state}</p>
         </section>
