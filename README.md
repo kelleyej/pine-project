@@ -10,7 +10,7 @@ Introducing PINE! It is your ultimate guide to all 63 National Parks in the Unit
 https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a8-4b827d37b995
 
 ## 🦌 Installation Instructions
-- **Install frontend**
+### **Frontend**
   - Visit PINE [here](https://pine-project.vercel.app) *or*
 1. `Fork and clone this repo: https://github.com/kelleyej/pine-project`
 2. `cd into pine-project in your terminal`
@@ -20,10 +20,23 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
 6. Click E2E Testing
 7. Click Start E2E Testing in Chrome
 
-- **Backend**
+### **Backend**
    - Visit: https://github.com/kelleyej/national-park-api for GET request instructions. 
    - There is no setup to use this API! The API does **not** need to be run locally as it is hosted on Heroku.
    - BASE URL: https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1
+
+### **Environment Variables**
+- Create a `.env` file in the root directory.
+- Copy and paste REACT_APP_API_KEY=myNPSKey
+- Copy and paste REACT_APP_API_SECRET_KEY=myOpenWeatherKey
+- Replace `myNPSKey` and `myOpenWeatherKey` with your API key from [get NPS API key](https://www.nps.gov/subjects/developer/get-started.htm) and [get OpenWeather API key](https://openweathermap.org/current), respectively, *or* feel free to message me and I can provide you with my API key information.
+- Create a `cypress.env.json` file in your Cypress directory.
+- Copy and paste
+  `{
+  "REACT_APP_API_KEY": "myNPSKey",
+  "REACT_APP_API_SECRET_KEY": "myOpenWeatherKey"
+}`
+- Replace `myNPSKey` and `myOpenWeatherKey` with your API keys from above. 
 
 ## 🫎 Technologies Used 
 ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat) ![React Router Badge](https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=flat) ![Cypress Badge](https://img.shields.io/badge/Cypress-69D3A7?logo=cypress&logoColor=fff&style=flat) ![Express Badge](https://img.shields.io/badge/Express-000?logo=express&logoColor=fff&style=flat) ![Vercel Badge](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=flat) ![Heroku Badge](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=fff&style=flat)
