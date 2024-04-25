@@ -62,7 +62,7 @@ export default function ParkDetails(){
                 <div className='info-grid'>
                     <CurrentWeather parks={specificPark}/>  
                     <img onLoad={() => setLoaded(true)} style={{display: !loaded && 'none'}} className='details-image' src={specificPark[0].images[0].url}/>
-                    {(!loaded) && <img src="https://media0.giphy.com/media/eL46FfEZXz9DG4gmgi/giphy.gif?cid=6c09b952kyfpy9ej7y01dedity8yxpdctcyqxqngdmje9hjl&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" />}
+                    {(!loaded) && <img src="https://media1.giphy.com/media/hQOwAArBl6lgM4olzm/giphy.gif?cid=6c09b952gy4wmxbe3ng0cthxjrh1bw5c6qfuybk5o3obrl6m&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" />}
                     <p className='weather-info'>{specificPark[0].weatherInfo}</p>
                 </div>
                 <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
