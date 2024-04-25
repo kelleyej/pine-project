@@ -7,7 +7,7 @@ export default function Park({name, state, image, city}) {
 
          return (
         <section className="state-widget">
-            {/* <img className='park' src={image} onLoad={() => setLoaded(true)}/> */}
+            <img style={{display: !loaded && 'none'}}className='park' src={image} onLoad={() => setLoaded(true)}/>
 {(!loaded) && <img src="https://natureforall.tiged.org/images/tiged/docs/class/225917.gif"/>}
             <h2 className='park-name'>{name}</h2>
             <p className='location'>{city}, {state}</p>
