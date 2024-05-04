@@ -12,10 +12,10 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
 ## 🦌 Installation Instructions
 ### **Frontend**
   - Visit PINE [here](https://pine-project.vercel.app) *or*
-1. `Fork and clone this repo: https://github.com/kelleyej/pine-project`
-2. `cd into pine-project in your terminal`
-3. `Run 'npm install' in your terminal to install all dependencies`
-4. `Run 'npm start' to start up the frontend.`
+1. Fork and clone this repo: https://github.com/kelleyej/pine-project
+2. cd into pine-project in your terminal
+3. Run `npm install` in your terminal to install all dependencies
+4. Run `npm start` to start up the frontend
 5. Run Cypress E2E testing: `npm run cypress`
 6. Click E2E Testing
 7. Click Start E2E Testing in Chrome
@@ -27,15 +27,11 @@ https://github.com/kelleyej/pine-project/assets/120286689/f74601cd-935a-4757-a0a
 
 ### **Environment Variables**
 - Create a `.env` file in the root directory.
-- Copy and paste REACT_APP_API_KEY=myNPSKey
-- Copy and paste REACT_APP_API_SECRET_KEY=myOpenWeatherKey
+- Copy and paste REACT_APP_API_KEY=myNPSKey into the `.env` file. 
+- Copy and paste REACT_APP_API_SECRET_KEY=myOpenWeatherKey into the `.env` file. 
 - Replace `myNPSKey` and `myOpenWeatherKey` with your API key from [get NPS API key](https://www.nps.gov/subjects/developer/get-started.htm) and [get OpenWeather API key](https://openweathermap.org/current), respectively, *or* feel free to message me and I can provide you with my API key information.
-- Create a `cypress.env.json` file in your Cypress directory.
-- Copy and paste
-  `{
-  "REACT_APP_API_KEY": "myNPSKey",
-  "REACT_APP_API_SECRET_KEY": "myOpenWeatherKey"
-}`
+- Create a `cypress.env.json` file in your root directory.
+- Copy and paste `{ "env": { "REACT_APP_API_KEY": "myNPSKey", "REACT_APP_API_SECRET_KEY": "myOpenWeatherKey" } }` into the `cypress.env.json` file. 
 - Replace `myNPSKey` and `myOpenWeatherKey` with your API keys from above. 
 
 ## 🫎 Technologies Used 
