@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import FilteredParks from '../FilteredParks/FilteredParks';
 import Loading from '../Loading/Loading';
 import PropTypes from 'prop-types'; 
-import NotFound from '../NotFound/NotFound';
+import NotFound from '../NotFound/NotFound'
 
 export default function RegionParks({parks}){
     const [states, setStates] = useState([])
@@ -45,7 +45,6 @@ export default function RegionParks({parks}){
                 />
             </Link>        
         )
-   
     })
 
     if(!states){
@@ -63,7 +62,7 @@ export default function RegionParks({parks}){
             <div className='park-grid'>
                {filterStates ? <FilteredParks filterStates={filterStates}/> : nationalPark}
             </div> 
-                {parkByRegion.length === 0 && <NotFound />}
+                {!parkByRegion.length && <NotFound />}
         </main> 
     )
 }

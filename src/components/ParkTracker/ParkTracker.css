@@ -83,6 +83,7 @@ input[type='checkbox'] {
   .search-container {
     display: flex; 
     justify-content: center; 
+    align-items: center; 
   }
 
   .clear {
