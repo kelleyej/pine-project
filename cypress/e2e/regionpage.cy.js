@@ -1,17 +1,14 @@
 describe('Regions page', () => {
     beforeEach(() => {
-    const openWeatherApiKey = Cypress.env('REACT_APP_API_SECRET_KEY')
-    const NPSApiKey = Cypress.env('REACT_APP_API_KEY')
-
     cy.intercept('GET', 'https://national-park-ce3a01ee1a6f.herokuapp.com/api/v1/locations', {
       statusCode: 200, 
       fixture: 'locations'
     }).as('getRegions'),
-    cy.intercept('GET', `https://developer.nps.gov/api/v1/parks/?api_key=${NPSApiKey}&parkCode=crla&limit=62`, {
+    cy.intercept('GET', `https://developer.nps.gov/api/v1/parks/?api_key=${Cypress.env('env').REACT_APP_API_KEY}&parkCode=crla&limit=62`, {
       statusCode: 200, 
       fixture: "parkdetails"
     }).as('parkDetails'),
-    cy.intercept('GET', `https://api.openweathermap.org/data/2.5/weather?lat=42.94065854&lon=-122.1338414&appid=${openWeatherApiKey}&units=imperial`, {
+    cy.intercept('GET', `https://api.openweathermap.org/data/2.5/weather?lat=42.94065854&lon=-122.1338414&appid=${Cypress.env('env').REACT_APP_API_SECRET_KEY}&units=imperial`, {
       statusCode: 200, 
       fixture: 'weatherinfo'
   }).as('weatherDetails'),

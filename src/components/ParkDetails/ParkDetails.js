@@ -63,7 +63,10 @@ export default function ParkDetails(){
                     <CurrentWeather parks={specificPark}/>  
                     <img onLoad={() => setLoaded(true)} style={{display: !loaded && 'none'}} className='details-image' src={specificPark[0].images[0].url}/>
                     {(!loaded) && <img src="https://media1.giphy.com/media/hQOwAArBl6lgM4olzm/giphy.gif?cid=6c09b952gy4wmxbe3ng0cthxjrh1bw5c6qfuybk5o3obrl6m&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" />}
-                    <p className='weather-info'>{specificPark[0].weatherInfo}</p>
+                    <div className='weather-container'>
+                       <h3 className='weather-trends'>Weather Trends 🌦️</h3>
+                        <p className='weather-info'>{specificPark[0].weatherInfo}</p> 
+                    </div>
                 </div>
                 <img className='mountain' src="https://media.istockphoto.com/id/1351811592/pt/vetorial/green-forest-pine-trees-silhouette-landscape.jpg?s=170667a&w=0&k=20&c=sK4AKdGhXXsGI0rS5Qx8Ad4PxgwokBWTiPJHEUW___E="/>    
                 <h2>More information on operating hours and entrance fees:</h2>  

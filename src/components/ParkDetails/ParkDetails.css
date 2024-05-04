@@ -19,18 +19,24 @@
 .description-container {
     display: flex; 
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .info-grid {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center; 
-    align-items: center; 
+    justify-items: center;  
 }
 
 .details-image {
     border: 5px solid #382819;
     opacity: 1; 
+}
+
+.weather-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 
 .heading {
